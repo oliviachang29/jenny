@@ -1,0 +1,20 @@
+#footer-copyright {
+	/*margin-top: 30px;*/
+	text-align: center;
+	font-weight: 300;
+	color: #DBDBDB;
+}
+
+#footer-underline {
+	background-color: #DBDBDB;
+	margin-bottom: 1em;
+}
+
+footer {
+	padding: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+

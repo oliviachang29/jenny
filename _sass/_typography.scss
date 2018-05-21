@@ -1,0 +1,38 @@
+@font-face {
+   font-family: Sofia Pro;
+   font-weight: 100;
+   src: url('/assets/fonts/SofiaProLight-webfont.ttf');
+} 
+
+@font-face {
+   font-family: Sofia Pro;
+   font-weight: 500;
+   src: url('/assets/fonts/SofiaProMedium-webfont.ttf');
+} 
+
+h1 {
+	font-weight: 500;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+h2 {
+	text-align: center;
+}
+
+span {
+	font-size: 16px;
+	font-weight: 200;
+}
+
+p {
+
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+}
