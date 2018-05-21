@@ -1,15 +1,28 @@
+<!--DEMO01-->
+<div id="animatedModal">
+	<!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+	<div  id="btn-close-modal" class="close-animatedModal">
+		CLOSE MODAL
+	</div>
+	<div class="modal-content">
+		<!--Your modal content goes here-->
+	</div>
+</div>
 
 <div class="column">
-		{% for project in site.projects %}
-      {% assign counter = forloop.index | minus: 1 | modulo:3 %}
-      {% if counter == 0 %}<div class="row-container">{% endif %}
-      <div class="image-hover-container project" data-aos="fade-up" data-aos-duration="1000"  {% if counter == 1 %}data-aos-delay="500"{% endif %}>
-				<img class="image-hover-img" src="/assets/images/{{forloop.index}}.jpeg">
-				<div class="overlay">
-					<div class="overlay-text">{{project.title}}</div>
+	{% for project in site.projects %}
+		{% assign counter = forloop.index | minus: 1 | modulo:3 %}
+		{% if counter == 0 %}<div class="row-container">{% endif %}
+			
+				<div class="image-hover-container project" data-aos="fade-up" data-aos-duration="1000"  {% if counter == 1 %}data-aos-delay="500"{% endif %}>
+					<a class="project-link" href="#animatedModal">
+					<img class="image-hover-img" src="/assets/images/compressed/{{forloop.index}}.jpg">
+					<div class="overlay">
+						<div class="overlay-text">{{project.title}}</div>
+					</div>
+					</a>
 				</div>
-			</div>
-      {% if counter == 1 %}</div>{% endif %}
-
-  {% endfor %}
- </div>
+			
+	{% if counter == 1 %}</div>{% endif %}
+{% endfor %}
+</div>
