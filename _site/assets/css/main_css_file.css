@@ -1,39 +1,48 @@
-body {
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body, html {
+  font-size: 100%;
+  padding: 0;
   margin: 0; }
 
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
 * {
-  font-family: Sofia Pro,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-family: Proxima Nova,Helvetica Neue,Helvetica,Arial,sans-serif;
   font-weight: 100; }
 
 nav {
   display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.nav-link-container {
+  display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  margin-bottom: 50px; }
 
 .nav-link {
-  /* about: */
-  font-family: SofiaProLight;
-  font-size: 18px;
+  padding: 0 8px;
+  font-size: 24px;
   color: #212121;
-  margin: 30px; }
-
-.desc-container {
-  width: 40%;
-  margin: 0 auto; }
-
-.desc-text {
-  text-align: center;
-  margin-bottom: 100px;
-  font-size: 17px;
-  color: #212121; }
+  justify-content: flex-start; }
 
 #logo {
-  text-transform: uppercase;
-  font-family: Sofia Pro;
-  font-size: 30px;
+  text-transform: lowercase;
+  font-size: 50px;
   color: #000000;
-  font-weight: 500;
-  margin-bottom: 60px; }
+  font-weight: 600;
+  padding: 50px 0px 0px;
+  line-height: 0; }
 
 .column {
   display: flex;
@@ -82,23 +91,26 @@ nav {
   text-transform: capitalize; }
 
 .image-hover-img {
-  object-fit: cover;
+  /*object-fit: cover;
   width: 100%;
-  height: 100%; }
+  height: 100%;*/ }
 
 .image-hover-container:hover .overlay {
   opacity: 0.8; }
 
 .underline {
+  padding-bottom: 3px;
   cursor: pointer;
   background-image: linear-gradient(120deg, #212121 0%, #212121 100%);
   background-repeat: no-repeat;
-  background-size: 30% 2px;
-  background-position: 95% 102.75%;
+  background-size: 0% 2px;
+  background-position: 50% 102.75%;
   transition: all 0.2s ease; }
   .underline:hover {
-    background-size: 120% 30px;
-    color: #fff; }
+    background-size: 95% 2px; }
+
+.project-img {
+  /*min-height: 800px;*/ }
 
 @font-face {
   font-family: Sofia Pro;
@@ -142,3 +154,202 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column; }
+
+.grid {
+  max-width: 69em;
+  list-style: none;
+  margin: 30px auto;
+  padding: 0; }
+
+.grid li {
+  display: block;
+  float: left;
+  padding: 7px;
+  width: 33%;
+  opacity: 0; }
+
+.grid li.shown,
+.no-js .grid li,
+.no-cssanimations .grid li {
+  opacity: 1; }
+
+.grid li a,
+.grid li img {
+  outline: none;
+  border: none;
+  display: block;
+  max-width: 100%; }
+
+/* Effect 1: opacity */
+.grid.effect-1 li.animate {
+  -webkit-animation: fadeIn 0.65s ease forwards;
+  animation: fadeIn 0.65s ease forwards; }
+
+@-webkit-keyframes fadeIn {
+  100% {
+    opacity: 1; } }
+@keyframes fadeIn {
+  100% {
+    opacity: 1; } }
+/* Effect 2: Move Up */
+.grid.effect-2 li.animate {
+  -webkit-transform: translateY(200px);
+  transform: translateY(200px);
+  -webkit-animation: moveUp 0.65s ease forwards;
+  animation: moveUp 0.65s ease forwards; }
+
+@-webkit-keyframes moveUp {
+  100% {
+    -webkit-transform: translateY(0);
+    opacity: 1; } }
+@keyframes moveUp {
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+/* Effect 3: Scale up */
+.grid.effect-3 li.animate {
+  -webkit-transform: scale(0.6);
+  transform: scale(0.6);
+  -webkit-animation: scaleUp 0.65s ease-in-out forwards;
+  animation: scaleUp 0.65s ease-in-out forwards; }
+
+@-webkit-keyframes scaleUp {
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1; } }
+@keyframes scaleUp {
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+/* Effect 4: fall perspective */
+.grid.effect-4 {
+  -webkit-perspective: 1300px;
+  perspective: 1300px; }
+
+.grid.effect-4 li.animate {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateZ(400px) translateY(300px) rotateX(-90deg);
+  transform: translateZ(400px) translateY(300px) rotateX(-90deg);
+  -webkit-animation: fallPerspective .8s ease-in-out forwards;
+  animation: fallPerspective .8s ease-in-out forwards; }
+
+@-webkit-keyframes fallPerspective {
+  100% {
+    -webkit-transform: translateZ(0px) translateY(0px) rotateX(0deg);
+    opacity: 1; } }
+@keyframes fallPerspective {
+  100% {
+    -webkit-transform: translateZ(0px) translateY(0px) rotateX(0deg);
+    transform: translateZ(0px) translateY(0px) rotateX(0deg);
+    opacity: 1; } }
+/* Effect 5: fly (based on http://lab.hakim.se/scroll-effects/ by @hakimel) */
+.grid.effect-5 {
+  -webkit-perspective: 1300px;
+  perspective: 1300px; }
+
+.grid.effect-5 li.animate {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 50% -300px;
+  transform-origin: 50% 50% -300px;
+  -webkit-transform: rotateX(-180deg);
+  transform: rotateX(-180deg);
+  -webkit-animation: fly .8s ease-in-out forwards;
+  animation: fly .8s ease-in-out forwards; }
+
+@-webkit-keyframes fly {
+  100% {
+    -webkit-transform: rotateX(0deg);
+    opacity: 1; } }
+@keyframes fly {
+  100% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    opacity: 1; } }
+/* Effect 6: flip (based on http://lab.hakim.se/scroll-effects/ by @hakimel) */
+.grid.effect-6 {
+  -webkit-perspective: 1300px;
+  perspective: 1300px; }
+
+.grid.effect-6 li.animate {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+  -webkit-transform: rotateX(-80deg);
+  transform: rotateX(-80deg);
+  -webkit-animation: flip .8s ease-in-out forwards;
+  animation: flip .8s ease-in-out forwards; }
+
+@-webkit-keyframes flip {
+  100% {
+    -webkit-transform: rotateX(0deg);
+    opacity: 1; } }
+@keyframes flip {
+  100% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    opacity: 1; } }
+/* Effect 7: helix (based on http://lab.hakim.se/scroll-effects/ by @hakimel) */
+.grid.effect-7 {
+  -webkit-perspective: 1300px;
+  perspective: 1300px; }
+
+.grid.effect-7 li.animate {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  -webkit-animation: helix .8s ease-in-out forwards;
+  animation: helix .8s ease-in-out forwards; }
+
+@-webkit-keyframes helix {
+  100% {
+    -webkit-transform: rotateY(0deg);
+    opacity: 1; } }
+@keyframes helix {
+  100% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    opacity: 1; } }
+/* Effect 8:  */
+.grid.effect-8 {
+  -webkit-perspective: 1300px;
+  perspective: 1300px; }
+
+.grid.effect-8 li.animate {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: scale(0.4);
+  transform: scale(0.4);
+  -webkit-animation: popUp .8s ease-in forwards;
+  animation: popUp .8s ease-in forwards; }
+
+@-webkit-keyframes popUp {
+  70% {
+    -webkit-transform: scale(1.1);
+    opacity: .8;
+    -webkit-animation-timing-function: ease-out; }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1; } }
+@keyframes popUp {
+  70% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: .8;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+@media screen and (max-width: 900px) {
+  .grid li {
+    width: 50%; } }
+@media screen and (max-width: 400px) {
+  .grid li {
+    width: 100%; } }

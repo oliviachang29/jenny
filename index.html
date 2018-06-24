@@ -1,5 +1,21 @@
 ---
 layout: default
 ---
-{% include header.html %}
-{% include work.html %}
+
+<div class="container">
+	<header>
+		<nav>
+			<p class="p-text" id="logo">Jenny Shi</p>
+			<div class="nav-link-container">
+				<a href="test" class="p-text nav-link"><span class="underline">about</span></a>
+				<span class="p-text nav-link dot">·</span>
+				<a href="test" class="p-text nav-link"><span class="underline">contact</span></a>
+			</div>
+		</nav>
+	</header>
+	<ul class="grid effect-2" id="grid">
+		{% for project in site.projects %}
+			<li><a href="#"><img src="/assets/images/compressed/{{forloop.index}}.jpg"></a></li>
+		{% endfor %}
+	</ul>
+</div>
