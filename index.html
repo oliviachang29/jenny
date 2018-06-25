@@ -1,28 +1,15 @@
 ---
 layout: default
 ---
-
-<div class="container">
-	<header>
-		<nav>
-			<p class="p-text not-selectable" id="logo">Jenny Shi</p>
-			<div class="nav-link-container">
-				<a href="test" class="p-text nav-link"><span class="underline">about</span></a>
-				<span class="p-text nav-link dot">·</span>
-				<a href="test" class="p-text nav-link"><span class="underline">contact</span></a>
+<ul class="grid effect-2" id="grid">
+	{% for project in site.projects %}
+		<li><a href="{{project.url}}">
+		<div class="image-hover-container">
+			<img class="image-hover-img" src="/assets/images/compressed/{{project.image}}.jpg">
+			<div class="overlay">
+				<div class="overlay-text">{{project.title}}</div>
 			</div>
-		</nav>
-	</header>
-	<ul class="grid effect-2" id="grid">
-		{% for project in site.projects %}
-			<li><a href="#">
-			<div class="image-hover-container">
-				<img class="image-hover-img" src="/assets/images/compressed/{{forloop.index}}.jpg">
-				<div class="overlay">
-					<div class="overlay-text">{{project.title}}</div>
-				</div>
-			</div>
-			</a></li>
-		{% endfor %}
-	</ul>
-</div>
+		</div>
+		</a></li>
+	{% endfor %}
+</ul>
