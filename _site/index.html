@@ -10,10 +10,9 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="/assets/css/main_css_file.css">
-  <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
-  <link rel="stylesheet" type="text/css" href="/assets/css/default.css" />
   <script src="/assets/js/modernizr.custom.js"></script>
-  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+
 </head>
 
 	<body>
@@ -29,7 +28,8 @@
 	</header>
 		<ul class="grid effect-2" id="grid">
 	
-		<li><a href="/projects/1.html">
+		<li><a class="modal-link" id="1" href="#animatedModal">
+			<!-- href="/projects/1.html" -->
 		<div class="image-hover-container">
 			<img class="image-hover-img" src="/assets/images/compressed/1.jpg">
 			<div class="overlay">
@@ -38,7 +38,8 @@
 		</div>
 		</a></li>
 	
-		<li><a href="/projects/10.html">
+		<li><a class="modal-link" id="10" href="#animatedModal">
+			<!-- href="/projects/10.html" -->
 		<div class="image-hover-container">
 			<img class="image-hover-img" src="/assets/images/compressed/10.jpg">
 			<div class="overlay">
@@ -47,7 +48,8 @@
 		</div>
 		</a></li>
 	
-		<li><a href="/projects/2.html">
+		<li><a class="modal-link" id="2" href="#animatedModal">
+			<!-- href="/projects/2.html" -->
 		<div class="image-hover-container">
 			<img class="image-hover-img" src="/assets/images/compressed/2.jpg">
 			<div class="overlay">
@@ -56,7 +58,8 @@
 		</div>
 		</a></li>
 	
-		<li><a href="/projects/3.html">
+		<li><a class="modal-link" id="3" href="#animatedModal">
+			<!-- href="/projects/3.html" -->
 		<div class="image-hover-container">
 			<img class="image-hover-img" src="/assets/images/compressed/3.jpg">
 			<div class="overlay">
@@ -65,7 +68,8 @@
 		</div>
 		</a></li>
 	
-		<li><a href="/projects/4.html">
+		<li><a class="modal-link" id="4" href="#animatedModal">
+			<!-- href="/projects/4.html" -->
 		<div class="image-hover-container">
 			<img class="image-hover-img" src="/assets/images/compressed/4.jpg">
 			<div class="overlay">
@@ -74,7 +78,8 @@
 		</div>
 		</a></li>
 	
-		<li><a href="/projects/5.html">
+		<li><a class="modal-link" id="5" href="#animatedModal">
+			<!-- href="/projects/5.html" -->
 		<div class="image-hover-container">
 			<img class="image-hover-img" src="/assets/images/compressed/5.jpg">
 			<div class="overlay">
@@ -83,7 +88,8 @@
 		</div>
 		</a></li>
 	
-		<li><a href="/projects/6.html">
+		<li><a class="modal-link" id="6" href="#animatedModal">
+			<!-- href="/projects/6.html" -->
 		<div class="image-hover-container">
 			<img class="image-hover-img" src="/assets/images/compressed/6.jpg">
 			<div class="overlay">
@@ -92,7 +98,8 @@
 		</div>
 		</a></li>
 	
-		<li><a href="/projects/7.html">
+		<li><a class="modal-link" id="7" href="#animatedModal">
+			<!-- href="/projects/7.html" -->
 		<div class="image-hover-container">
 			<img class="image-hover-img" src="/assets/images/compressed/7.jpg">
 			<div class="overlay">
@@ -101,7 +108,8 @@
 		</div>
 		</a></li>
 	
-		<li><a href="/projects/8.html">
+		<li><a class="modal-link" id="8" href="#animatedModal">
+			<!-- href="/projects/8.html" -->
 		<div class="image-hover-container">
 			<img class="image-hover-img" src="/assets/images/compressed/8.jpg">
 			<div class="overlay">
@@ -110,7 +118,8 @@
 		</div>
 		</a></li>
 	
-		<li><a href="/projects/9.html">
+		<li><a class="modal-link" id="9" href="#animatedModal">
+			<!-- href="/projects/9.html" -->
 		<div class="image-hover-container">
 			<img class="image-hover-img" src="/assets/images/compressed/9.jpg">
 			<div class="overlay">
@@ -120,16 +129,70 @@
 		</a></li>
 	
 </ul>
+
+ <div id="animatedModal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+        <div class="close-animatedModal"> 
+            CLOSE MODAL
+        </div>
+            
+        <div class="modal-content">
+             <div class="project-container">
+				<img id="project-img">
+				<div class="project-text-container">
+					<div class="title-desc">
+						<p class="project-title">title</p>
+						<div class="project-desc-container">
+							<p class="project-desc">Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+						</div>
+					</div>
+					<div class="tags">
+						<ul>
+							<li>Oil painting</li>
+							<hr class="tag-hr">
+							<li>Art school</li>
+							<hr class="tag-hr">
+							<li>August 12, 2017</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
 	</body>
-	<script src="/assets/js/masonry.pkgd.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="/assets/js/masonry.pkgd.min.js"></script>
 <script src="/assets/js/imagesloaded.js"></script>
 <script src="/assets/js/classie.js"></script>
 <script src="/assets/js/AnimOnScroll.js"></script>
+<script src="/assets/js/animatedModal.min.js"></script>
 <script>
 	new AnimOnScroll( document.getElementById( 'grid' ), {
 		minDuration : 0.4,
 		maxDuration : 0.7,
 		viewportFactor : 0.2
 	} );
+</script>
+<script>
+$('.modal-link').on('click', function(event) {
+	var newSrc = "/assets/images/original/" + event.currentTarget.id + ".jpeg"
+	$('#project-img').attr('src', newSrc);
+	// $(".project-title").text(people[node-1]['name']);
+});
+
+$(".modal-link").animatedModal({
+  	color: 'white',
+  	animatedIn: 'fadeIn',
+  	animatedOut: 'fadeOut',
+  	animationDuration: '.6s'
+  });
+
+$('.close-animatedModal').on('click', function(event) {
+	setTimeout(
+    function() {
+        $('#project-img').attr('src', '');
+    }, 600); // 600 is same number ms as animatedModal fadeOut
+});
+
 </script>
 </html>

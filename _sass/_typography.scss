@@ -1,13 +1,15 @@
 @font-face {
-   font-family: Sofia Pro;
+   font-family: Proxima Nova;
    font-weight: 100;
-   src: url('/assets/fonts/SofiaProLight-webfont.ttf');
+   font-style: normal;
+   src: url('/assets/fonts/ProximaNova-Light.otf');
 } 
 
 @font-face {
-   font-family: Sofia Pro;
-   font-weight: 500;
-   src: url('/assets/fonts/SofiaProMedium-webfont.ttf');
+   font-family: Proxima Nova;
+   font-weight: 100;
+   font-style: italic;
+   src: url('/assets/fonts/ProximaNova-LightItalic.otf');
 } 
 
 h1 {
