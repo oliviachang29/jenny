@@ -2,12 +2,9 @@
 layout: default
 ---
 
-    
-
 <ul class="grid effect-2" id="grid">
 	{% for project in site.projects %}
-		<li><a class="modal-link" id="{{project.image}}" href="#animatedModal">
-			<!-- href="{{project.url}}" -->
+		<li><a class="modal-link" id="{{project.image}}" data-title="{{project.title}}" data-desc="{{project.description}}" href="#animatedModal">
 		<div class="image-hover-container">
 			<img class="image-hover-img" src="/assets/images/compressed/{{project.image}}.jpg">
 			<div class="overlay">
@@ -19,11 +16,6 @@ layout: default
 </ul>
 
  <div id="animatedModal">
-        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-        <div class="close-animatedModal"> 
-            CLOSE MODAL
-        </div>
-            
         <div class="modal-content">
              <div class="project-container">
 				<img id="project-img">
@@ -31,7 +23,7 @@ layout: default
 					<div class="title-desc">
 						<p class="project-title">title</p>
 						<div class="project-desc-container">
-							<p class="project-desc">Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+							<p class="project-desc"></p>
 						</div>
 					</div>
 					<div class="tags">
@@ -43,6 +35,10 @@ layout: default
 							<li>August 12, 2017</li>
 						</ul>
 					</div>
+				</div>
+				<div class="close-animatedModal">
+					<img class="close-icon" src="/assets/images/close-icon.svg">
+					<p class="p-text not-selectable">Back</p>
 				</div>
 			</div>
         </div>

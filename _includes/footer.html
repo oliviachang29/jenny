@@ -15,7 +15,8 @@
 $('.modal-link').on('click', function(event) {
 	var newSrc = "/assets/images/original/" + event.currentTarget.id + ".jpeg"
 	$('#project-img').attr('src', newSrc);
-	// $(".project-title").text(people[node-1]['name']);
+	$(".project-title").text(event.currentTarget.getAttribute("data-title"));
+	$(".project-desc").text(event.currentTarget.getAttribute("data-desc"));
 });
 
 $(".modal-link").animatedModal({

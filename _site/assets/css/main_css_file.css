@@ -346,6 +346,12 @@ footer {
 @media screen and (max-width: 400px) {
   .grid li {
     width: 100%; } }
+.modal-content {
+  padding: 50px 0px; }
+  @media only screen and (min-width: 768px) {
+    .modal-content {
+      /*padding: 80px 0px;*/ } }
+
 .project-container {
   width: 100%;
   height: 90%;
@@ -361,23 +367,39 @@ footer {
   display: block; }
 
 .project-text-container {
-  margin-top: 100px;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   width: 90%; }
   @media only screen and (min-width: 768px) {
     .project-text-container {
-      width: 70%;
+      margin-top: 100px;
+      width: 80%;
       flex-direction: row; } }
+  @media only screen and (min-width: 992px) {
+    .project-text-container {
+      width: 70%; } }
 
 .title-desc {
-  width: 50%; }
+  padding: 0;
+  margin: 0; }
+  @media only screen and (min-width: 768px) {
+    .title-desc {
+      width: 50%;
+      margin-right: 100px; } }
 
-.tags {
-  width: 50%; }
+@media only screen and (min-width: 768px) {
+  .tags {
+    width: 50%; } }
 
 .tags ul {
-  list-style-type: none; }
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: -50px; }
+  @media only screen and (min-width: 768px) {
+    .tags ul {
+      margin-top: 20px; } }
 
 .tags li {
   padding: 20px 0px 10px; }
@@ -400,3 +422,16 @@ hr {
   /*margin-top: 30px;*/
   line-height: 28px;
   margin-bottom: 100px; }
+
+.close-animatedModal {
+  cursor: pointer;
+  text-align: center; }
+  @media only screen and (max-width: 768px) {
+    .close-animatedModal {
+      margin-top: 50px; } }
+
+.close-icon {
+  transition: all .5s ease; }
+
+.close-animatedModal:hover .close-icon {
+  transform: rotate(90deg); }
