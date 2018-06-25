@@ -20,10 +20,19 @@ body, html {
   font-family: Proxima Nova,Helvetica Neue,Helvetica,Arial,sans-serif;
   font-weight: 100; }
 
+.not-selectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
 nav {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  padding: 80px 0px 0px; }
 
 .nav-link-container {
   display: flex;
@@ -31,41 +40,21 @@ nav {
   margin-bottom: 50px; }
 
 .nav-link {
-  padding: 0 8px;
-  font-size: 24px;
+  padding: 10px 8px;
   color: #212121;
   justify-content: flex-start; }
 
 #logo {
+  /*font-family: Brandon Grotesque*/
   text-transform: lowercase;
+  letter-spacing: 1.5px;
   font-size: 50px;
   color: #000000;
-  font-weight: 600;
-  padding: 50px 0px 0px;
+  font-weight: 100;
   line-height: 0; }
 
-.column {
-  display: flex;
-  flex-direction: column;
-  /*width: 70%;*/
-  margin: 0 auto; }
-
-.row-container {
-  /* Medium Devices, Desktops */ }
-  @media only screen and (min-width: 992px) {
-    .row-container {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap; } }
-
-.project {
-  flex: 1;
-  background-color: pink;
-  height: 80vh;
-  max-width: auto;
-  transition: all 0.2s ease;
-  cursor: pointer;
-  /*margin: 20px;*/ }
+.image-hover-container {
+  overflow: hidden; }
 
 .overlay {
   position: absolute;
@@ -76,7 +65,7 @@ nav {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .24s linear;
+  transition: all .5s;
   background-color: #fff; }
 
 .overlay-text {
@@ -88,15 +77,17 @@ nav {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 90%;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  transition: all .5s; }
 
 .image-hover-img {
-  /*object-fit: cover;
-  width: 100%;
-  height: 100%;*/ }
+  transition: all .5s; }
 
 .image-hover-container:hover .overlay {
-  opacity: 0.8; }
+  opacity: 0.7; }
+
+.image-hover-container:hover .image-hover-img {
+  transform: scale(1.2); }
 
 .underline {
   padding-bottom: 3px;
