@@ -16,6 +16,7 @@
 </head>
 
 	<body>
+		<div id="loading"></div>
 		<header>
 		<nav>
 			<a class="p-text" id="logo" href="https://jennyshi.me">Jenny Shi</a>
@@ -26,13 +27,50 @@
 			</div>
 		</nav>
 	</header>
-		<ul class="grid effect-2" id="grid">
+		<div class="hidden">
+	<script type="text/javascript">
+		<!--//--><![CDATA[//><!--
+			var images = new Array()
+			function preload() {
+				for (i = 0; i < preload.arguments.length; i++) {
+					images[i] = new Image()
+					images[i].src = preload.arguments[i]
+				}
+			}
+			preload(
+				
+					"/assets/images/original/1.jpeg",
+				
+					"/assets/images/original/10.jpeg",
+				
+					"/assets/images/original/2.jpeg",
+				
+					"/assets/images/original/3.jpeg",
+				
+					"/assets/images/original/4.jpeg",
+				
+					"/assets/images/original/5.jpeg",
+				
+					"/assets/images/original/6.jpeg",
+				
+					"/assets/images/original/7.jpeg",
+				
+					"/assets/images/original/8.jpeg",
+				
+					"/assets/images/original/9.jpeg",
+				
+			)
+		//--><!]]>
+	</script>
+</div>
+
+<ul class="grid effect-2" id="grid">
 	
-		<li><a class="modal-link" id="1" data-title="1" data-desc="Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam quis risus eget urna mollis ornare vel eu leo." href="#animatedModal">
+		<li><a class="modal-link" id="1" data-title="Nullam quis risus eget urna mollis ornare vel eu leo" data-desc="Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam quis risus eget urna mollis ornare vel eu leo." href="#animatedModal">
 		<div class="image-hover-container">
 			<img class="image-hover-img" src="/assets/images/original/1.jpeg">
 			<div class="overlay">
-				<div class="overlay-text">1</div>
+				<div class="overlay-text">Nullam quis risus eget urna mollis ornare vel eu leo</div>
 			</div>
 		</div>
 		</a></li>
@@ -124,7 +162,7 @@
         <div class="modal-content">
              <div class="project-container">
 				<img id="project-img">
-				<div class="project-text-container">
+				<div class="project-info-container">
 					<div class="title-desc">
 						<p class="project-title">title</p>
 						<div class="project-desc-container">
@@ -153,21 +191,37 @@
 <script src="/assets/js/masonry.pkgd.min.js"></script>
 <script src="/assets/js/imagesloaded.js"></script>
 <script src="/assets/js/classie.js"></script>
+<script src="/assets/js/.js"></script>
 <script src="/assets/js/AnimOnScroll.js"></script>
 <script src="/assets/js/animatedModal.min.js"></script>
 <script>
-	new AnimOnScroll( document.getElementById( 'grid' ), {
-		minDuration : 0.4,
-		maxDuration : 0.7,
-		viewportFactor : 0.2
-	} );
-</script>
-<script>
+new AnimOnScroll( document.getElementById( 'grid' ), {
+	minDuration : 0.4,
+	maxDuration : 0.7,
+	viewportFactor : 0.2
+} );
+
+$(window).on('load', function () {
+ 	$("#loading").fadeOut("slow");;
+});
+
+// $('img').imgPreload()
+
 $('.modal-link').on('click', function(event) {
 	var newSrc = "/assets/images/original/" + event.currentTarget.id + ".jpeg"
 	$('#project-img').attr('src', newSrc);
 	$(".project-title").text(event.currentTarget.getAttribute("data-title"));
 	$(".project-desc").text(event.currentTarget.getAttribute("data-desc"));
+
+	// show loading image
+	$('#loading').show();
+
+	// main image loaded ?
+	$('#project-img').on('load', function(){
+	  // hide/remove the loading image
+	  $('#loading').hide();
+	});
+
 });
 
 $(".modal-link").animatedModal({

@@ -2,6 +2,25 @@
 layout: default
 ---
 
+<div class="hidden">
+	<script type="text/javascript">
+		<!--//--><![CDATA[//><!--
+			var images = new Array()
+			function preload() {
+				for (i = 0; i < preload.arguments.length; i++) {
+					images[i] = new Image()
+					images[i].src = preload.arguments[i]
+				}
+			}
+			preload(
+				{% for project in site.projects %}
+					"/assets/images/original/{{project.image}}.jpeg",
+				{% endfor %}
+			)
+		//--><!]]>
+	</script>
+</div>
+
 <ul class="grid effect-2" id="grid">
 	{% for project in site.projects %}
 		<li><a class="modal-link" id="{{project.image}}" data-title="{{project.title}}" data-desc="{{project.description}}" href="#animatedModal">
@@ -19,7 +38,7 @@ layout: default
         <div class="modal-content">
              <div class="project-container">
 				<img id="project-img">
-				<div class="project-text-container">
+				<div class="project-info-container">
 					<div class="title-desc">
 						<p class="project-title">title</p>
 						<div class="project-desc-container">

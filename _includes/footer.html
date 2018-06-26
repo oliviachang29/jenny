@@ -2,21 +2,37 @@
 <script src="/assets/js/masonry.pkgd.min.js"></script>
 <script src="/assets/js/imagesloaded.js"></script>
 <script src="/assets/js/classie.js"></script>
+<script src="/assets/js/.js"></script>
 <script src="/assets/js/AnimOnScroll.js"></script>
 <script src="/assets/js/animatedModal.min.js"></script>
 <script>
-	new AnimOnScroll( document.getElementById( 'grid' ), {
-		minDuration : 0.4,
-		maxDuration : 0.7,
-		viewportFactor : 0.2
-	} );
-</script>
-<script>
+new AnimOnScroll( document.getElementById( 'grid' ), {
+	minDuration : 0.4,
+	maxDuration : 0.7,
+	viewportFactor : 0.2
+} );
+
+$(window).on('load', function () {
+ 	$("#loading").fadeOut("slow");;
+});
+
+// $('img').imgPreload()
+
 $('.modal-link').on('click', function(event) {
 	var newSrc = "/assets/images/original/" + event.currentTarget.id + ".jpeg"
 	$('#project-img').attr('src', newSrc);
 	$(".project-title").text(event.currentTarget.getAttribute("data-title"));
 	$(".project-desc").text(event.currentTarget.getAttribute("data-desc"));
+
+	// show loading image
+	$('#loading').show();
+
+	// main image loaded ?
+	$('#project-img').on('load', function(){
+	  // hide/remove the loading image
+	  $('#loading').hide();
+	});
+
 });
 
 $(".modal-link").animatedModal({

@@ -17,11 +17,11 @@
 #project-img {
 	object-fit: cover;
 	max-width: 90%;
-	max-height: 800px;
+	max-height: 90vh;
 	display: block;
 }
 
-.project-text-container {
+.project-info-container {
 	margin-top: 10px;
 	display: flex;
 	flex-direction: column;
@@ -46,7 +46,31 @@
 	}
 }
 
+.project-title {
+	/* title: */
+	font-weight: 100;
+	font-size: 50px;
+	color: #000000;
+	letter-spacing: 0;
+	/*line-height: 0px*/
+}
+
+.project-desc-container {
+	margin: 0 auto;
+}
+
+.project-desc {
+	margin-top: -15px;
+	@media only screen and (min-width : 768px) {
+		margin-top: -30px;
+	}
+	line-height: 28px;
+}
+
 .tags {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	@media only screen and (min-width : 768px) {
 		width: 50%;
 	}
@@ -56,10 +80,6 @@
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
-	margin-top: -50px;
-	@media only screen and (min-width : 768px) {
-		margin-top: 20px;
-	}
 }
 
 .tags li {
@@ -70,30 +90,12 @@ hr {
 	border-top: 1px solid #E7EDF1;
 }
 
-.project-title {
-	/* title: */
-	font-weight: 100;
-	font-size: 50px;
-	color: #000000;
-	letter-spacing: 0;
-	line-height: 10px
-}
-
-.project-desc-container {
-	margin: 0 auto;
-}
-
-.project-desc {
-	/*margin-top: 30px;*/
-	line-height: 28px;
-	margin-bottom: 100px;
-}
-
 .close-animatedModal {
 	cursor: pointer;
 	text-align: center;
-	@media only screen and (max-width : 768px) {
-		margin-top: 50px;
+	margin-top: 50px;
+	@media only screen and (min-width : 768px) {
+		margin-top: 100px;
 	}
 }
 
