@@ -17,7 +17,7 @@ body, html {
   clear: both; }
 
 * {
-  font-family: Proxima Nova,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-family: Super Grotesk,Proxima Nova,Helvetica Neue,Helvetica,Arial,sans-serif;
   font-weight: 100; }
 
 .not-selectable {
@@ -47,31 +47,56 @@ body, html {
   background: url("/assets/images/preloader.gif") center no-repeat #fff;
   background-size: 20%; }
 
+#logo {
+  font-family: Playfair Display;
+  text-transform: capitalize;
+  /*letter-spacing: 4px;*/
+  font-size: 50px !important;
+  color: #000000;
+  font-weight: bold;
+  line-height: 0;
+  padding-bottom: 30px;
+  max-width: 235px; }
+
+.underline-magical {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+  background-position: 0 100%;
+  transition: background-size 0.2s linear; }
+  .underline-magical:hover {
+    background-size: 100% 100%; }
+
+.header-desc {
+  font: 400 35px "SuperGroteskComp";
+  color: #222222;
+  line-height: 52px;
+  letter-spacing: -0.5px;
+  text-transform: none; }
+
 nav {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 100px 0px 30px; }
+  /*align-items: center;*/
+  margin: 80px 20px; }
+  @media only screen and (min-width: 480px) {
+    nav {
+      margin: 60px 40px; } }
+  @media only screen and (min-width: 768px) {
+    nav {
+      margin: 80px 40px; } }
+  @media only screen and (min-width: 992px) {
+    nav {
+      margin: 80px 100px; } }
 
 .nav-link-container {
   display: flex;
-  flex-direction: row;
-  margin-bottom: 50px; }
+  flex-direction: row; }
 
 .nav-link {
   padding: 10px 8px;
   color: #212121;
   justify-content: flex-start; }
-
-#logo {
-  /*font-family: Brandon Grotesque*/
-  text-transform: lowercase;
-  letter-spacing: 1.5px;
-  font-size: 50px;
-  color: #000000;
-  font-weight: 100;
-  line-height: 0;
-  padding-bottom: 50px; }
 
 .image-hover-container {
   overflow: hidden; }
@@ -122,6 +147,16 @@ nav {
 .project-img {
   /*min-height: 800px;*/ }
 
+@font-face {
+  font-family: Playfair Display;
+  font-weight: bold;
+  font-style: normal;
+  src: url("/assets/fonts/PlayfairDisplay-Black.ttf"); }
+@font-face {
+  font-family: Super Grotesk;
+  font-weight: 100;
+  font-style: normal;
+  src: url("/assets/fonts/SuperGroteskWeb.ttf"); }
 @font-face {
   font-family: Proxima Nova;
   font-weight: 100;
@@ -380,39 +415,43 @@ footer {
   align-items: center; }
 
 .project-img-container {
-  height: 100vh;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center; }
+  @media only screen and (min-width: 768px) {
+    .project-img-container {
+      margin-top: 0px;
+      height: 100vh; } }
 
 #project-img {
   object-fit: cover;
   max-width: 90%;
-  max-height: 90vh;
-  position: fixed;
+  max-height: 800px;
+  /*position: fixed;*/
   margin: 0 auto;
   /* Will not center vertically and won't work in IE6/7. */
   left: 0;
   right: 0; }
+  @media only screen and (min-width: 768px) {
+    #project-img {
+      max-height: 90vh; } }
 
 .project-other {
   background-color: white;
-  z-index: 99999; }
+  z-index: 99999;
+  width: 100%; }
 
 .project-info-container {
-  margin-top: 10px;
+  margin-top: 0px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   width: 90%; }
   @media only screen and (min-width: 768px) {
     .project-info-container {
-      margin-top: 100px;
       width: 80%;
       flex-direction: row; } }
-  @media only screen and (min-width: 992px) {
-    .project-info-container {
-      width: 70%; } }
 
 .title-desc {
   padding: 0;
@@ -424,7 +463,8 @@ footer {
 
 .project-title {
   /* title: */
-  font-weight: 100;
+  font-family: Playfair Display;
+  font-weight: 500;
   font-size: 50px;
   color: #000000;
   letter-spacing: 0;
@@ -454,7 +494,7 @@ footer {
   margin: 0; }
 
 .tags li {
-  padding: 20px 0px 10px; }
+  padding: 16px 0px 10px; }
 
 hr {
   border-top: 1px solid #E7EDF1; }

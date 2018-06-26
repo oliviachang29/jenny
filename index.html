@@ -4,20 +4,18 @@ layout: default
 
 <div class="hidden">
 	<script type="text/javascript">
-		<!--//--><![CDATA[//><!--
-			var images = new Array()
-			function preload() {
-				for (i = 0; i < preload.arguments.length; i++) {
-					images[i] = new Image()
-					images[i].src = preload.arguments[i]
-				}
+		var images = new Array()
+		function preload() {
+			for (i = 0; i < preload.arguments.length; i++) {
+				images[i] = new Image()
+				images[i].src = preload.arguments[i]
 			}
-			preload(
-				{% for project in site.projects %}
-					"/assets/images/original/{{project.image}}.jpeg",
-				{% endfor %}
-			)
-		//--><!]]>
+		}
+		preload(
+			{% for project in site.projects %}
+				"/assets/images/projects/{{project.image}}.jpg"
+			{% endfor %}
+		)
 	</script>
 </div>
 
@@ -25,7 +23,7 @@ layout: default
 	{% for project in site.projects %}
 		<li><a class="modal-link" id="{{project.image}}" data-title="{{project.title}}" data-desc="{{project.description}}" href="#animatedModal">
 		<div class="image-hover-container">
-			<img class="image-hover-img" src="/assets/images/original/{{project.image}}.jpeg">
+			<img class="image-hover-img" src="/assets/images/projects/{{project.image}}.jpg">
 			<div class="overlay">
 				<div class="overlay-text">{{project.title}}</div>
 			</div>

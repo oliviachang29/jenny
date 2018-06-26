@@ -15,10 +15,8 @@ $(window).on('load', function () {
  	$("#loading").fadeOut("slow");;
 });
 
-// $('img').imgPreload()
-
 $('.modal-link').on('click', function(event) {
-	var newSrc = "/assets/images/original/" + event.currentTarget.id + ".jpeg"
+	var newSrc = "/assets/images/projects/" + event.currentTarget.id + ".jpg"
 	$('#project-img').attr('src', newSrc);
 	$(".project-title").text(event.currentTarget.getAttribute("data-title"));
 	$(".project-desc").text(event.currentTarget.getAttribute("data-desc"));
