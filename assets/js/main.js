@@ -1,3 +1,5 @@
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
 new AnimOnScroll( document.getElementById( 'grid' ), {
     minDuration : 0.4,
     maxDuration : 0.7,
@@ -16,25 +18,20 @@ $(".modal-link").animatedModal({
 });
 
 $('.modal-link').on('click', function(event) {
-    var newSrc = event.currentTarget.id
-    $('#project-img').attr('src', newSrc);
     $('#project-img').hide()
-    $(".project-title").text(event.currentTarget.getAttribute("data-title"));
-    $(".project-desc").text(event.currentTarget.getAttribute("data-desc"));
+    $('#project-img').attr('src', event.currentTarget.getAttribute("data-image-url"));
+    $("#project-title").text(event.currentTarget.getAttribute("data-title"));
+    $("#project-desc").text(event.currentTarget.getAttribute("data-desc"));
+    $("#project-medium").text(event.currentTarget.getAttribute("data-medium"));
+    $("#project-style").text(event.currentTarget.getAttribute("data-style"));
 
-    setTimeout(
-    function() {
-        $('#project-img').fadeIn("slow")
-    }, 600); // 600 is same number ms as animatedModal fadeOut
+    var date = new Date(event.currentTarget.getAttribute("data-date"))
+    
+    $("#project-date").text(months[date.getMonth()] + " " + date.getDate() + ", " + date.getFullYear());
 
-    // // show loading image
-    // $('#loading').show();
-
-    // // main image loaded ?
-    // $('#project-img').on('load', function(){
-    //   // hide/remove the loading image
-    //   $('#loading').hide();
-    // });
+    $('#project-img').on('load', function(){
+      $('#project-img').fadeIn("slow")
+    });
 
 });
 

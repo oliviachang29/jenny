@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+<div id="loading"></div>
+{% include nav.html %}
 
 <div class="hidden">
 	<script type="text/javascript">
@@ -22,7 +24,7 @@ layout: default
 
 <ul class="grid effect-2" id="grid">
 	{% for project in site.projects %}
-		<li><a class="modal-link" id="{{project.high_res_image}}" data-title="{{project.title}}" data-desc="{{project.description}}" href="#animatedModal">
+		<li><a href="#animatedModal" class="modal-link" data-image-url="{{project.high_res_image}}" data-title="{{project.title}}" data-desc="{{project.description}}" data-date="{{project.date}}" data-medium="{{project.medium}}" data-medium="{{project.medium}}" data-style="{{project.style}}">
 		<div class="image-hover-container">
 			<img class="image-hover-img" src="{{project.low_res_image}}">
 			<div class="overlay">
@@ -42,18 +44,18 @@ layout: default
 				<div class="project-other">
 					<div class="project-info-container">
 						<div class="title-desc">
-							<p class="project-title">title</p>
+							<p id="project-title">title</p>
 							<div class="project-desc-container">
-								<p class="project-desc"></p>
+								<p id="project-desc"></p>
 							</div>
 						</div>
 						<div class="tags">
 							<ul>
-								<li>Oil painting</li>
+								<li id="project-medium"></li>
 								<hr class="tag-hr">
-								<li>Art school</li>
+								<li id="project-style"></li>
 								<hr class="tag-hr">
-								<li>August 12, 2017</li>
+								<li id="project-date"></li>
 							</ul>
 						</div>
 					</div>

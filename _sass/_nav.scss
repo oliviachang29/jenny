@@ -1,6 +1,6 @@
 
 #logo {
-  font-family: Sofia Pro;
+  /*font-family: Sofia Pro;*/
   text-transform: lowercase;
   /*letter-spacing: 4px;*/
   font-size: 50px !important;
@@ -8,23 +8,23 @@
   font-weight: bold;
   line-height: 0;
   padding-bottom: 30px;
-  max-width: 210px;
+  max-width: 220px;
 }
 
 .underline-magical {
   background-image: linear-gradient(120deg, #000 0%, #000 100%);
   background-repeat: no-repeat;
-  background-size: 0% 5px;
-  background-position: 50% 102.75%;
+  background-size: 0% 20px;
+  background-position: 50% 280%;
   transition: all 0.4s ease;
   &:hover {
-    background-size: 95% 5px;
+    background-size: 95% 20px;
   }
 }
 
 .header-desc {
   font-size: 35px;
-  font-family: Super Grotesk;
+  /*font-family: Super Grotesk;*/
   color: #222222;
   line-height: 52px;
   letter-spacing: -0.5px;
@@ -59,7 +59,8 @@ nav {
 }
 
 .nav-link {
-  padding: 10px 8px;
+  padding: 10px 16px;
+  padding-left: 0px;
   color: #212121;
   justify-content: flex-start;
 }

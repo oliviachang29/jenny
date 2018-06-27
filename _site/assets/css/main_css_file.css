@@ -17,7 +17,7 @@ body, html {
   clear: both; }
 
 * {
-  font-family: Super Grotesk,Sofia Pro,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-family: Proxima Nova,Helvetica Neue,Helvetica,Arial,sans-serif;
   font-weight: 100; }
 
 .not-selectable {
@@ -72,6 +72,7 @@ body, html {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 85%;
+  line-height: 34px;
   background-image: linear-gradient(120deg, #000 0%, #000 100%);
   background-repeat: no-repeat;
   background-size: 0% 3px;
@@ -95,7 +96,7 @@ body, html {
   /*min-height: 800px;*/ }
 
 #logo {
-  font-family: Sofia Pro;
+  /*font-family: Sofia Pro;*/
   text-transform: lowercase;
   /*letter-spacing: 4px;*/
   font-size: 50px !important;
@@ -103,20 +104,20 @@ body, html {
   font-weight: bold;
   line-height: 0;
   padding-bottom: 30px;
-  max-width: 210px; }
+  max-width: 220px; }
 
 .underline-magical {
   background-image: linear-gradient(120deg, #000 0%, #000 100%);
   background-repeat: no-repeat;
-  background-size: 0% 5px;
-  background-position: 50% 102.75%;
+  background-size: 0% 20px;
+  background-position: 50% 280%;
   transition: all 0.4s ease; }
   .underline-magical:hover {
-    background-size: 95% 5px; }
+    background-size: 95% 20px; }
 
 .header-desc {
   font-size: 35px;
-  font-family: Super Grotesk;
+  /*font-family: Super Grotesk;*/
   color: #222222;
   line-height: 52px;
   letter-spacing: -0.5px;
@@ -142,7 +143,8 @@ nav {
   flex-direction: row; }
 
 .nav-link {
-  padding: 10px 8px;
+  padding: 10px 16px;
+  padding-left: 0px;
   color: #212121;
   justify-content: flex-start; }
 
@@ -461,25 +463,23 @@ footer {
       width: 50%;
       margin-right: 100px; } }
 
-.project-title {
-  /* title: */
-  font-family: Super Grotesk;
+#project-title {
   font-weight: 500;
   font-size: 50px;
   color: #000000;
   letter-spacing: 0; }
   @media only screen and (min-width: 768px) {
-    .project-title {
+    #project-title {
       margin-top: 0px; } }
 
 .project-desc-container {
   margin: 0 auto; }
 
-.project-desc {
+#project-desc {
   margin-top: -15px;
   line-height: 28px; }
   @media only screen and (min-width: 768px) {
-    .project-desc {
+    #project-desc {
       margin-top: -30px; } }
 
 .tags {
