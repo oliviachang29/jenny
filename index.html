@@ -13,7 +13,8 @@ layout: default
 		}
 		preload(
 			{% for project in site.projects %}
-				"/assets/images/projects/{{project.image}}.jpg"
+				"/assets/images/highquality/{{project.image}}.jpg",
+				"/assets/images/compressed/{{project.image}}.jpg"
 			{% endfor %}
 		)
 	</script>
@@ -23,7 +24,7 @@ layout: default
 	{% for project in site.projects %}
 		<li><a class="modal-link" id="{{project.image}}" data-title="{{project.title}}" data-desc="{{project.description}}" href="#animatedModal">
 		<div class="image-hover-container">
-			<img class="image-hover-img" src="/assets/images/projects/{{project.image}}.jpg">
+			<img class="image-hover-img" src="/assets/images/compressed/{{project.image}}.jpg">
 			<div class="overlay">
 				<div class="overlay-text">{{project.title}}</div>
 			</div>

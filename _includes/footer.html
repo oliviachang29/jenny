@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="/assets/css/main_css_file.css">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <script src="/assets/js/masonry.pkgd.min.js"></script>
 <script src="/assets/js/imagesloaded.js"></script>
@@ -16,7 +17,7 @@ $(window).on('load', function () {
 });
 
 $('.modal-link').on('click', function(event) {
-	var newSrc = "/assets/images/projects/" + event.currentTarget.id + ".jpg"
+	var newSrc = "/assets/images/highquality/" + event.currentTarget.id + ".jpg"
 	$('#project-img').attr('src', newSrc);
 	$(".project-title").text(event.currentTarget.getAttribute("data-title"));
 	$(".project-desc").text(event.currentTarget.getAttribute("data-desc"));
