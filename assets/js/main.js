@@ -16,7 +16,7 @@ $(".modal-link").animatedModal({
 });
 
 $('.modal-link').on('click', function(event) {
-    var newSrc = "/assets/images/highquality/" + event.currentTarget.id + ".jpg"
+    var newSrc = event.currentTarget.id
     $('#project-img').attr('src', newSrc);
     $('#project-img').hide()
     $(".project-title").text(event.currentTarget.getAttribute("data-title"));

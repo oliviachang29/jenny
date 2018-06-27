@@ -13,8 +13,8 @@ layout: default
 		}
 		preload(
 			{% for project in site.projects %}
-				"/assets/images/highquality/{{project.image}}.jpg",
-				"/assets/images/compressed/{{project.image}}.jpg"
+				"{{project.high_res_image}}",
+				"{{project.low_res_image}}"
 			{% endfor %}
 		)
 	</script>
@@ -22,9 +22,9 @@ layout: default
 
 <ul class="grid effect-2" id="grid">
 	{% for project in site.projects %}
-		<li><a class="modal-link" id="{{project.image}}" data-title="{{project.title}}" data-desc="{{project.description}}" href="#animatedModal">
+		<li><a class="modal-link" id="{{project.high_res_image}}" data-title="{{project.title}}" data-desc="{{project.description}}" href="#animatedModal">
 		<div class="image-hover-container">
-			<img class="image-hover-img" src="/assets/images/compressed/{{project.image}}.jpg">
+			<img class="image-hover-img" src="{{project.low_res_image}}">
 			<div class="overlay">
 				<div class="overlay-text">{{project.title}}</div>
 			</div>
