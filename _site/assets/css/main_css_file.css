@@ -440,10 +440,14 @@ footer {
   margin: 0 auto;
   /* Will not center vertically and won't work in IE6/7. */
   left: 0;
-  right: 0; }
+  right: 0;
+  transition: all .5s; }
   @media only screen and (min-width: 768px) {
     #project-img {
       max-height: 90vh; } }
+
+#project-img:active {
+  transform: scale(2); }
 
 .project-other {
   background-color: white;
@@ -465,6 +469,10 @@ footer {
   padding: 0;
   margin: 0; }
   @media only screen and (min-width: 768px) {
+    .title-desc {
+      width: 50%;
+      margin-right: 40px; } }
+  @media only screen and (min-width: 992px) {
     .title-desc {
       width: 50%;
       margin-right: 100px; } }
@@ -489,13 +497,9 @@ footer {
     #project-desc {
       margin-top: -30px; } }
 
-.tags {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-  @media only screen and (min-width: 768px) {
-    .tags {
-      width: 50%; } }
+@media only screen and (min-width: 768px) {
+  .tags {
+    width: 50%; } }
 
 .tags ul {
   list-style-type: none;
