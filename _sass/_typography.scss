@@ -1,29 +1,15 @@
 @font-face {
-   font-family: Playfair Display;
-   font-weight: bold;
-   font-style: normal;
-   src: url('/assets/fonts/PlayfairDisplay-Black.ttf');
-} 
-
-@font-face {
    font-family: Super Grotesk;
    font-weight: 100;
    font-style: normal;
-   src: url('/assets/fonts/SuperGroteskWeb.ttf');
+   src: url('/assets/fonts/SuperGroteskLight.ttf');
 } 
 
 @font-face {
-   font-family: Proxima Nova;
-   font-weight: 100;
+   font-family: Sofia Pro;
+   font-weight: bold;
    font-style: normal;
-   src: url('/assets/fonts/ProximaNova-Light.otf');
-} 
-
-@font-face {
-   font-family: Proxima Nova;
-   font-weight: 100;
-   font-style: italic;
-   src: url('/assets/fonts/ProximaNova-LightItalic.otf');
+   src: url('/assets/fonts/SofiaProSemibold.ttf');
 } 
 
 h1 {

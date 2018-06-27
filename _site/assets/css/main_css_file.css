@@ -17,7 +17,7 @@ body, html {
   clear: both; }
 
 * {
-  font-family: Super Grotesk,Proxima Nova,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-family: Super Grotesk,Sofia Pro,Helvetica Neue,Helvetica,Arial,sans-serif;
   font-weight: 100; }
 
 .not-selectable {
@@ -103,19 +103,20 @@ body, html {
   font-weight: bold;
   line-height: 0;
   padding-bottom: 30px;
-  max-width: 200px; }
+  max-width: 210px; }
 
 .underline-magical {
   background-image: linear-gradient(120deg, #000 0%, #000 100%);
   background-repeat: no-repeat;
   background-size: 0% 5px;
   background-position: 50% 102.75%;
-  transition: all 0.2s ease; }
+  transition: all 0.4s ease; }
   .underline-magical:hover {
     background-size: 95% 5px; }
 
 .header-desc {
-  font: 400 35px "Super Grotesk";
+  font-size: 35px;
+  font-family: Super Grotesk;
   color: #222222;
   line-height: 52px;
   letter-spacing: -0.5px;
@@ -157,25 +158,15 @@ nav {
     background-size: 95% 2px; }
 
 @font-face {
-  font-family: Playfair Display;
-  font-weight: bold;
-  font-style: normal;
-  src: url("/assets/fonts/PlayfairDisplay-Black.ttf"); }
-@font-face {
   font-family: Super Grotesk;
   font-weight: 100;
   font-style: normal;
-  src: url("/assets/fonts/SuperGroteskWeb.ttf"); }
+  src: url("/assets/fonts/SuperGroteskLight.ttf"); }
 @font-face {
-  font-family: Proxima Nova;
-  font-weight: 100;
+  font-family: Sofia Pro;
+  font-weight: bold;
   font-style: normal;
-  src: url("/assets/fonts/ProximaNova-Light.otf"); }
-@font-face {
-  font-family: Proxima Nova;
-  font-weight: 100;
-  font-style: italic;
-  src: url("/assets/fonts/ProximaNova-LightItalic.otf"); }
+  src: url("/assets/fonts/SofiaProSemibold.ttf"); }
 h1 {
   font-weight: 500;
   font-size: 20px;
@@ -422,16 +413,13 @@ footer {
   flex-direction: column;
   align-self: center;
   align-items: center; }
-  @media only screen and (min-width: 992px) {
-    .project-container {
-      flex-direction: row; } }
 
 .project-img-container {
   margin-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center; }
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: 768px) {
     .project-img-container {
       margin-top: 0px;
       height: 100vh; } }
@@ -445,10 +433,14 @@ footer {
   /* Will not center vertically and won't work in IE6/7. */
   left: 0;
   right: 0; }
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: 768px) {
     #project-img {
-      max-width: 70%;
-      /*max-height: 90vh;*/ } }
+      max-height: 90vh; } }
+
+.project-other {
+  background-color: white;
+  z-index: 99999;
+  width: 100%; }
 
 .project-info-container {
   margin-top: 0px;
@@ -456,14 +448,18 @@ footer {
   display: flex;
   flex-direction: column;
   width: 90%; }
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: 768px) {
     .project-info-container {
-      width: 30%;
-      /*flex-direction: column*/ } }
+      width: 80%;
+      flex-direction: row; } }
 
 .title-desc {
   padding: 0;
   margin: 0; }
+  @media only screen and (min-width: 768px) {
+    .title-desc {
+      width: 50%;
+      margin-right: 100px; } }
 
 .project-title {
   /* title: */
@@ -471,8 +467,10 @@ footer {
   font-weight: 500;
   font-size: 50px;
   color: #000000;
-  letter-spacing: 0;
-  /*line-height: 0px*/ }
+  letter-spacing: 0; }
+  @media only screen and (min-width: 768px) {
+    .project-title {
+      margin-top: 0px; } }
 
 .project-desc-container {
   margin: 0 auto; }
@@ -480,7 +478,7 @@ footer {
 .project-desc {
   margin-top: -15px;
   line-height: 28px; }
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: 768px) {
     .project-desc {
       margin-top: -30px; } }
 
@@ -488,7 +486,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center; }
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: 768px) {
     .tags {
       width: 50%; } }
 
@@ -507,12 +505,9 @@ hr {
   cursor: pointer;
   text-align: center;
   margin-top: 50px; }
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: 768px) {
     .close-animatedModal {
-      position: absolute;
-      margin: 50px;
-      top: 0;
-      left: 0; } }
+      margin-top: 100px; } }
 
 .close-icon {
   transition: all .5s ease; }

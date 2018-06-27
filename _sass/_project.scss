@@ -12,9 +12,6 @@
 	flex-direction: column;
 	align-self: center;
 	align-items: center;
-	@media only screen and (min-width : 992px) {
-		flex-direction: row;
-	}
 }
 
 
@@ -23,7 +20,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	@media only screen and (min-width : 992px) {
+	@media only screen and (min-width : 768px) {
 		margin-top: 0px;
 		height: 100vh;
 	}
@@ -33,9 +30,8 @@
 	object-fit: cover;
 	max-width: 90%;
 	max-height: 800px;
-	@media only screen and (min-width : 992px) {
-		max-width: 70%;
-		/*max-height: 90vh;*/
+	@media only screen and (min-width : 768px) {
+		max-height: 90vh;
 	}
 	/*position: fixed;*/
 	margin: 0 auto; /* Will not center vertically and won't work in IE6/7. */
@@ -43,21 +39,30 @@
 	right: 0;
 }
 
+.project-other {
+	background-color: white;
+	z-index: 99999;
+	width: 100%;
+}
 .project-info-container {
 	margin-top: 0px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	width: 90%;
-	@media only screen and (min-width : 992px) {
-		width: 30%;
-		/*flex-direction: column*/
+	@media only screen and (min-width : 768px) {
+		width: 80%;
+		flex-direction: row
 	}
 }
 
 .title-desc {
 	padding: 0;
 	margin: 0;
+	@media only screen and (min-width : 768px) {
+		width: 50%;
+		margin-right: 100px;
+	}
 }
 
 .project-title {
@@ -67,7 +72,9 @@
 	font-size: 50px;
 	color: #000000;
 	letter-spacing: 0;
-	/*line-height: 0px*/
+	@media only screen and (min-width : 768px) {
+		margin-top: 0px;
+	}
 }
 
 .project-desc-container {
@@ -76,7 +83,7 @@
 
 .project-desc {
 	margin-top: -15px;
-	@media only screen and (min-width : 992px) {
+	@media only screen and (min-width : 768px) {
 		margin-top: -30px;
 	}
 	line-height: 28px;
@@ -86,7 +93,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	@media only screen and (min-width : 992px) {
+	@media only screen and (min-width : 768px) {
 		width: 50%;
 	}
 }
@@ -106,16 +113,11 @@ hr {
 }
 
 .close-animatedModal {
-	
 	cursor: pointer;
 	text-align: center;
-
 	margin-top: 50px;
-	@media only screen and (min-width : 992px) {
-		position: absolute;
-		margin: 50px;
-		top: 0;
-		left: 0;
+	@media only screen and (min-width : 768px) {
+		margin-top: 100px;
 	}
 }
 

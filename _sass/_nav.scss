@@ -8,7 +8,7 @@
   font-weight: bold;
   line-height: 0;
   padding-bottom: 30px;
-  max-width: 200px;
+  max-width: 210px;
 }
 
 .underline-magical {
@@ -16,14 +16,15 @@
   background-repeat: no-repeat;
   background-size: 0% 5px;
   background-position: 50% 102.75%;
-  transition: all 0.2s ease;
+  transition: all 0.4s ease;
   &:hover {
     background-size: 95% 5px;
   }
 }
 
 .header-desc {
-  font: 400 35px "Super Grotesk";
+  font-size: 35px;
+  font-family: Super Grotesk;
   color: #222222;
   line-height: 52px;
   letter-spacing: -0.5px;
