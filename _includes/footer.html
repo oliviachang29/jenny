@@ -16,34 +16,41 @@ $(window).on('load', function () {
  	$("#loading").fadeOut("slow");;
 });
 
+$(".modal-link").animatedModal({
+  	color: 'white',
+  	animatedIn: 'zoomIn',
+  	animatedOut: 'zoomOut',
+  	animationDuration: '.8s'
+});
+
 $('.modal-link').on('click', function(event) {
 	var newSrc = "/assets/images/highquality/" + event.currentTarget.id + ".jpg"
 	$('#project-img').attr('src', newSrc);
+	$('#project-img').hide()
 	$(".project-title").text(event.currentTarget.getAttribute("data-title"));
 	$(".project-desc").text(event.currentTarget.getAttribute("data-desc"));
 
-	// show loading image
-	$('#loading').show();
+	setTimeout(
+    function() {
+        $('#project-img').fadeIn("slow")
+    }, 200); // 600 is same number ms as animatedModal fadeOut
 
-	// main image loaded ?
-	$('#project-img').on('load', function(){
-	  // hide/remove the loading image
-	  $('#loading').hide();
-	});
+	// // show loading image
+	// $('#loading').show();
+
+	// // main image loaded ?
+	// $('#project-img').on('load', function(){
+	//   // hide/remove the loading image
+	//   $('#loading').hide();
+	// });
 
 });
-
-$(".modal-link").animatedModal({
-  	color: 'white',
-  	animatedIn: 'fadeIn',
-  	animatedOut: 'fadeOut',
-  	animationDuration: '.8s'
-  });
 
 $('.close-animatedModal').on('click', function(event) {
 	setTimeout(
     function() {
         $('#project-img').attr('src', '');
+		document.getElementById('animatedModal').scrollTop = 0;
     }, 600); // 600 is same number ms as animatedModal fadeOut
 });
 
