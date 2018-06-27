@@ -1,25 +1,29 @@
 ---
 title: Jenny Shi
-email:
-description: >
-  Painter and artist based in nowhere, curabitur blandit tempus porttitor donec ullamcorper nulla non metus auctor fringilla.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://jshi.netlify.com" # the base hostname & protocol for your site, e.g. http://example.com
-link1-name: "instagram"
-link1-url: "https://instagram.com"
-link2-name: "linkedin"
-link2-url: "https://linkedin.com"
-link3-name: "contact"
-link3-url: "mailto:hello@jennyshi.me"
-
 timezone: UTC
 collections:
+  posts:
+    title: Posts
+    output: true
   projects:
     title: Projects
     output: false
   uploads:
     title: Uploads
     output: false
+email: 
+description: 'Painter and artist based in nowhere, curabitur blandit tempus porttitor
+  donec ullamcorper nulla non metus auctor fringilla.
+
+'
+baseurl: ''
+url: https://jshi.netlify.com
+link1-name: instagram
+link1-url: https://instagram.com
+link2-name: linkedin
+link2-url: https://linkedin.com
+link3-name: contact
+link3-url: mailto:hello@jennyshi.me
 markdown: kramdown
 theme: minima
 gems:
