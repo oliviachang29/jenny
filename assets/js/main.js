@@ -7,7 +7,7 @@ new AnimOnScroll( document.getElementById( 'grid' ), {
 } );
 
 $(window).on('load', function () {
-    $("#loading").fadeOut("slow");;
+    $("#loading").fadeOut("slow");
 });
 
 $(".modal-link").animatedModal({
@@ -29,7 +29,10 @@ $('.modal-link').on('click', function(event) {
     
     $("#project-date").text(months[date.getMonth()] + " " + date.getDate() + ", " + date.getFullYear());
 
+    $("#loading").show();
+
     $('#project-img').on('load', function(){
+        $("#loading").hide();
       $('#project-img').fadeIn("slow")
     });
 
