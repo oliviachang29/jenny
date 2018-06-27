@@ -1,16 +1,24 @@
 @font-face {
-   font-family: Super Grotesk;
+   font-family: Proxima Nova;
    font-weight: 100;
    font-style: normal;
-   src: url('/assets/fonts/SuperGroteskLight.ttf');
+   src: url('/assets/fonts/ProximaNova-Light.ttf');
 } 
 
 @font-face {
-   font-family: Sofia Pro;
+   font-family: Proxima Nova;
+   font-weight: 100;
+   font-style: italic;
+   src: url('/assets/fonts/ProximaNova-LightIt.ttf');
+} 
+
+@font-face {
+   font-family: Proxima Nova;
    font-weight: bold;
    font-style: normal;
-   src: url('/assets/fonts/SofiaProSemibold.ttf');
+   src: url('/assets/fonts/ProximaNova-Bold.ttf');
 } 
+
 
 h1 {
 	font-weight: 500;

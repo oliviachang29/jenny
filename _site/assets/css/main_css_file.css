@@ -104,7 +104,8 @@ body, html {
   font-weight: bold;
   line-height: 0;
   padding-bottom: 30px;
-  max-width: 220px; }
+  max-width: 220px;
+  margin-top: 30px; }
 
 .underline-magical {
   background-image: linear-gradient(120deg, #000 0%, #000 100%);
@@ -160,15 +161,20 @@ nav {
     background-size: 95% 2px; }
 
 @font-face {
-  font-family: Super Grotesk;
+  font-family: Proxima Nova;
   font-weight: 100;
   font-style: normal;
-  src: url("/assets/fonts/SuperGroteskLight.ttf"); }
+  src: url("/assets/fonts/ProximaNova-Light.ttf"); }
 @font-face {
-  font-family: Sofia Pro;
+  font-family: Proxima Nova;
+  font-weight: 100;
+  font-style: italic;
+  src: url("/assets/fonts/ProximaNova-LightIt.ttf"); }
+@font-face {
+  font-family: Proxima Nova;
   font-weight: bold;
   font-style: normal;
-  src: url("/assets/fonts/SofiaProSemibold.ttf"); }
+  src: url("/assets/fonts/ProximaNova-Bold.ttf"); }
 h1 {
   font-weight: 500;
   font-size: 20px;
@@ -466,6 +472,7 @@ footer {
 #project-title {
   font-weight: 500;
   font-size: 50px;
+  line-height: 60px;
   color: #000000;
   letter-spacing: 0; }
   @media only screen and (min-width: 768px) {
