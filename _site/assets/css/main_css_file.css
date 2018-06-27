@@ -422,13 +422,16 @@ footer {
   flex-direction: column;
   align-self: center;
   align-items: center; }
+  @media only screen and (min-width: 992px) {
+    .project-container {
+      flex-direction: row; } }
 
 .project-img-container {
   margin-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 992px) {
     .project-img-container {
       margin-top: 0px;
       height: 100vh; } }
@@ -442,14 +445,10 @@ footer {
   /* Will not center vertically and won't work in IE6/7. */
   left: 0;
   right: 0; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 992px) {
     #project-img {
-      max-height: 90vh; } }
-
-.project-other {
-  background-color: white;
-  z-index: 99999;
-  width: 100%; }
+      max-width: 70%;
+      /*max-height: 90vh;*/ } }
 
 .project-info-container {
   margin-top: 0px;
@@ -457,18 +456,14 @@ footer {
   display: flex;
   flex-direction: column;
   width: 90%; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 992px) {
     .project-info-container {
-      width: 80%;
-      flex-direction: row; } }
+      width: 30%;
+      /*flex-direction: column*/ } }
 
 .title-desc {
   padding: 0;
   margin: 0; }
-  @media only screen and (min-width: 768px) {
-    .title-desc {
-      width: 50%;
-      margin-right: 70px; } }
 
 .project-title {
   /* title: */
@@ -485,7 +480,7 @@ footer {
 .project-desc {
   margin-top: -15px;
   line-height: 28px; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 992px) {
     .project-desc {
       margin-top: -30px; } }
 
@@ -493,7 +488,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 992px) {
     .tags {
       width: 50%; } }
 
@@ -512,9 +507,12 @@ hr {
   cursor: pointer;
   text-align: center;
   margin-top: 50px; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 992px) {
     .close-animatedModal {
-      margin-top: 100px; } }
+      position: absolute;
+      margin: 50px;
+      top: 0;
+      left: 0; } }
 
 .close-icon {
   transition: all .5s ease; }
