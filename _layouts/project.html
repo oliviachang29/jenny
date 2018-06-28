@@ -44,4 +44,9 @@ layout: default
 	</div>
 </div>
 
-<script src="/assets/js/project.js"></script>
+<script>
+	$('#project-img').hide()
+	$('#project-img').on('load', function() {
+	  $('#project-img').fadeIn()
+	});
+</script>
