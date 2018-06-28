@@ -41,12 +41,10 @@
 }
 
 #project-img:active {
-	transform: scale(2);
+	/*transform: scale(2);*/
 }
 
 .project-other {
-	background-color: white;
-	z-index: 99999;
 	width: 100%;
 }
 .project-info-container {
@@ -70,7 +68,6 @@
 	}
 
 	@media only screen and (min-width : 992px) {
-		width: 50%;
 		margin-right: 100px;
 	}
 }

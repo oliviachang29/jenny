@@ -2,9 +2,6 @@
 layout: default
 ---
 
-<div id="loading"></div>
-{% include nav.html %}
-
 <div class="hidden">
 	<script type="text/javascript">
 		var images = new Array()
@@ -16,55 +13,27 @@ layout: default
 		}
 		preload(
 			{% for project in site.projects %}
-				"{{project.high_res_image}}",
-				"{{project.low_res_image}}"
+					"{{project.low_res_image}}"
 			{% endfor %}
 		)
 	</script>
 </div>
 
-<ul class="grid effect-2" id="grid">
-	{% for project in site.projects %}
-		<li><a href="#animatedModal" class="modal-link" data-image-url="{{project.high_res_image}}" data-title="{{project.title}}" data-desc="{{project.description}}" data-date="{{project.date}}" data-medium="{{project.medium}}" data-medium="{{project.medium}}" data-style="{{project.style}}">
-		<div class="image-hover-container">
-			<img class="image-hover-img" src="{{project.low_res_image}}">
-			<div class="overlay">
-				<div class="overlay-text">{{project.title}}</div>
-			</div>
-		</div>
-		</a></li>
-	{% endfor %}
-</ul>
-
- <div id="animatedModal">
-        <div class="modal-content">
-             <div class="project-container">
-             	<div class="project-img-container">
-					<img id="project-img">
-				</div>
-				<div class="project-other">
-					<div class="project-info-container">
-						<div class="title-desc">
-							<p id="project-title">title</p>
-							<div class="project-desc-container">
-								<p id="project-desc"></p>
-							</div>
-						</div>
-						<div class="tags">
-							<ul>
-								<li id="project-medium"></li>
-								<hr id="project-medium-hr" class="tag-hr">
-								<li id="project-style"></li>
-								<hr id="project-style-hr" class="tag-hr">
-								<li id="project-date"></li>
-							</ul>
+<div id="barba-wrapper">
+	<div class="barba-container">
+		<!-- <div id="loading"></div> -->
+		{% include nav.html %}
+		<ul class="grid effect-2" id="grid">
+			{% for project in site.projects %}
+				<li><a href="{{project.url}}" class="modal-link" data-image-url="{{project.high_res_image}}" data-title="{{project.title}}" data-desc="{{project.description}}" data-date="{{project.date}}" data-medium="{{project.medium}}" data-medium="{{project.medium}}" data-style="{{project.style}}">
+					<div class="image-hover-container">
+						<img class="image-hover-img" src="{{project.low_res_image}}">
+						<div class="overlay">
+							<div class="overlay-text">{{project.title}}</div>
 						</div>
 					</div>
-					<div class="close-animatedModal">
-						<img class="close-icon" src="/assets/images/close-icon.svg">
-						<p class="p-text not-selectable">Back</p>
-					</div>
-				</div>
-			</div>
-        </div>
-    </div>
+				</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>

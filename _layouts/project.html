@@ -1,0 +1,47 @@
+---
+layout: default
+---
+<script>preload("{{page.high_res_image}}")</script>
+<div id="barba-wrapper">
+	<div class="barba-container">
+		<div class="project-container">
+			<div class="project-img-container">
+				<img id="project-img" src="{{page.high_res_image}}">
+			</div>
+			<div class="project-other">
+				<div class="project-info-container">
+					<div class="title-desc">
+						<p id="project-title">{{page.title}}</p>
+						<div class="project-desc-container">
+							<p id="project-desc">{{page.desc}}</p>
+						</div>
+					</div>
+					<div class="tags">
+						<ul>
+							{% if page.medium %}
+								<li id="project-medium">{{page.medium | capitalize}}</li>
+								<hr id="project-medium-hr" class="tag-hr">
+							{% endif %}
+							{% if page.style %}
+								<li id="project-style">{{page.style | capitalize}}</li>
+								<hr id="project-style-hr" class="tag-hr">
+							{% endif %}
+							{% if page.date %}
+								<li id="project-date">{{ page.date | date: "%Y" }}</li>
+								<hr class="tag-hr">
+							{% endif %}
+						</ul>
+					</div>
+				</div>
+				<a href="{{site.url}}">
+					<div class="close-animatedModal">
+						<img class="close-icon" src="/assets/images/close-icon.svg">
+						<p class="p-text not-selectable">Back</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="/assets/js/project.js"></script>

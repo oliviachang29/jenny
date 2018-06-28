@@ -1,3 +1,27 @@
+nav {
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+  margin: 60px 20px;
+  @media only screen and (min-width : 480px) {
+    margin: 60px 40px;
+  }
+   
+  @media only screen and (min-width : 768px) {
+    margin: 80px 40px;
+  }
+
+  @media only screen and (min-width : 992px) {
+    margin: 80px 100px;
+  }
+
+  @media only screen and (min-width : 74em) {
+    max-width: 69em;
+    margin: 80px auto;
+    /* same as padding for borders of grid */
+    padding-left: 7px
+  }
+}
 
 #logo {
   /*font-family: Sofia Pro;*/
@@ -30,28 +54,6 @@
   line-height: 52px;
   letter-spacing: -0.5px;
   text-transform: none;
-}
-
-nav {
-  display: flex;
-  flex-direction: column;
-  /*align-items: center;*/
-  margin: 80px 20px;
-  @media only screen and (min-width : 480px) {
-    margin: 60px 40px;
-  }
-   
-  @media only screen and (min-width : 768px) {
-    margin: 80px 40px;
-  }
-   
-  @media only screen and (min-width : 992px) {
-    margin: 80px 100px;
-  }
-   
-  @media only screen and (min-width : 1200px) {
-   
-  }
 }
 
 .nav-link-container {

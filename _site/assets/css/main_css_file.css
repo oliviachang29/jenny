@@ -95,6 +95,27 @@ body, html {
 .project-img {
   /*min-height: 800px;*/ }
 
+nav {
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+  margin: 60px 20px; }
+  @media only screen and (min-width: 480px) {
+    nav {
+      margin: 60px 40px; } }
+  @media only screen and (min-width: 768px) {
+    nav {
+      margin: 80px 40px; } }
+  @media only screen and (min-width: 992px) {
+    nav {
+      margin: 80px 100px; } }
+  @media only screen and (min-width: 74em) {
+    nav {
+      max-width: 69em;
+      margin: 80px auto;
+      /* same as padding for borders of grid */
+      padding-left: 7px; } }
+
 #logo {
   /*font-family: Sofia Pro;*/
   text-transform: lowercase;
@@ -123,21 +144,6 @@ body, html {
   line-height: 52px;
   letter-spacing: -0.5px;
   text-transform: none; }
-
-nav {
-  display: flex;
-  flex-direction: column;
-  /*align-items: center;*/
-  margin: 80px 20px; }
-  @media only screen and (min-width: 480px) {
-    nav {
-      margin: 60px 40px; } }
-  @media only screen and (min-width: 768px) {
-    nav {
-      margin: 80px 40px; } }
-  @media only screen and (min-width: 992px) {
-    nav {
-      margin: 80px 100px; } }
 
 .nav-link-container {
   display: flex;
@@ -235,17 +241,6 @@ footer {
   display: block;
   max-width: 100%; }
 
-/* Effect 1: opacity */
-.grid.effect-1 li.animate {
-  -webkit-animation: fadeIn 0.65s ease forwards;
-  animation: fadeIn 0.65s ease forwards; }
-
-@-webkit-keyframes fadeIn {
-  100% {
-    opacity: 1; } }
-@keyframes fadeIn {
-  100% {
-    opacity: 1; } }
 /* Effect 2: Move Up */
 .grid.effect-2 li.animate {
   -webkit-transform: translateY(200px);
@@ -262,152 +257,6 @@ footer {
     -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1; } }
-/* Effect 3: Scale up */
-.grid.effect-3 li.animate {
-  -webkit-transform: scale(0.6);
-  transform: scale(0.6);
-  -webkit-animation: scaleUp 0.65s ease-in-out forwards;
-  animation: scaleUp 0.65s ease-in-out forwards; }
-
-@-webkit-keyframes scaleUp {
-  100% {
-    -webkit-transform: scale(1);
-    opacity: 1; } }
-@keyframes scaleUp {
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 1; } }
-/* Effect 4: fall perspective */
-.grid.effect-4 {
-  -webkit-perspective: 1300px;
-  perspective: 1300px; }
-
-.grid.effect-4 li.animate {
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform: translateZ(400px) translateY(300px) rotateX(-90deg);
-  transform: translateZ(400px) translateY(300px) rotateX(-90deg);
-  -webkit-animation: fallPerspective .8s ease-in-out forwards;
-  animation: fallPerspective .8s ease-in-out forwards; }
-
-@-webkit-keyframes fallPerspective {
-  100% {
-    -webkit-transform: translateZ(0px) translateY(0px) rotateX(0deg);
-    opacity: 1; } }
-@keyframes fallPerspective {
-  100% {
-    -webkit-transform: translateZ(0px) translateY(0px) rotateX(0deg);
-    transform: translateZ(0px) translateY(0px) rotateX(0deg);
-    opacity: 1; } }
-/* Effect 5: fly (based on http://lab.hakim.se/scroll-effects/ by @hakimel) */
-.grid.effect-5 {
-  -webkit-perspective: 1300px;
-  perspective: 1300px; }
-
-.grid.effect-5 li.animate {
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform-origin: 50% 50% -300px;
-  transform-origin: 50% 50% -300px;
-  -webkit-transform: rotateX(-180deg);
-  transform: rotateX(-180deg);
-  -webkit-animation: fly .8s ease-in-out forwards;
-  animation: fly .8s ease-in-out forwards; }
-
-@-webkit-keyframes fly {
-  100% {
-    -webkit-transform: rotateX(0deg);
-    opacity: 1; } }
-@keyframes fly {
-  100% {
-    -webkit-transform: rotateX(0deg);
-    transform: rotateX(0deg);
-    opacity: 1; } }
-/* Effect 6: flip (based on http://lab.hakim.se/scroll-effects/ by @hakimel) */
-.grid.effect-6 {
-  -webkit-perspective: 1300px;
-  perspective: 1300px; }
-
-.grid.effect-6 li.animate {
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform-origin: 0% 0%;
-  transform-origin: 0% 0%;
-  -webkit-transform: rotateX(-80deg);
-  transform: rotateX(-80deg);
-  -webkit-animation: flip .8s ease-in-out forwards;
-  animation: flip .8s ease-in-out forwards; }
-
-@-webkit-keyframes flip {
-  100% {
-    -webkit-transform: rotateX(0deg);
-    opacity: 1; } }
-@keyframes flip {
-  100% {
-    -webkit-transform: rotateX(0deg);
-    transform: rotateX(0deg);
-    opacity: 1; } }
-/* Effect 7: helix (based on http://lab.hakim.se/scroll-effects/ by @hakimel) */
-.grid.effect-7 {
-  -webkit-perspective: 1300px;
-  perspective: 1300px; }
-
-.grid.effect-7 li.animate {
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform: rotateY(-180deg);
-  transform: rotateY(-180deg);
-  -webkit-animation: helix .8s ease-in-out forwards;
-  animation: helix .8s ease-in-out forwards; }
-
-@-webkit-keyframes helix {
-  100% {
-    -webkit-transform: rotateY(0deg);
-    opacity: 1; } }
-@keyframes helix {
-  100% {
-    -webkit-transform: rotateY(0deg);
-    transform: rotateY(0deg);
-    opacity: 1; } }
-/* Effect 8:  */
-.grid.effect-8 {
-  -webkit-perspective: 1300px;
-  perspective: 1300px; }
-
-.grid.effect-8 li.animate {
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform: scale(0.4);
-  transform: scale(0.4);
-  -webkit-animation: popUp .8s ease-in forwards;
-  animation: popUp .8s ease-in forwards; }
-
-@-webkit-keyframes popUp {
-  70% {
-    -webkit-transform: scale(1.1);
-    opacity: .8;
-    -webkit-animation-timing-function: ease-out; }
-  100% {
-    -webkit-transform: scale(1);
-    opacity: 1; } }
-@keyframes popUp {
-  70% {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    opacity: .8;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out; }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 1; } }
-@media screen and (max-width: 900px) {
-  .grid li {
-    width: 50%; } }
-@media screen and (max-width: 400px) {
-  .grid li {
-    width: 100%; } }
 .modal-content {
   /*padding: 5% 0px;*/ }
   @media only screen and (min-width: 768px) {
@@ -447,11 +296,9 @@ footer {
       max-height: 90vh; } }
 
 #project-img:active {
-  transform: scale(2); }
+  /*transform: scale(2);*/ }
 
 .project-other {
-  background-color: white;
-  z-index: 99999;
   width: 100%; }
 
 .project-info-container {
@@ -474,7 +321,6 @@ footer {
       margin-right: 40px; } }
   @media only screen and (min-width: 992px) {
     .title-desc {
-      width: 50%;
       margin-right: 100px; } }
 
 #project-title {
