@@ -4,17 +4,27 @@ timezone: UTC
 collections:
   posts:
     title: Posts
-    output: false
+    output: true
   projects:
     title: Projects
     output: true
-    layout: "project"
+    layout: project
   uploads:
     title: Uploads
     output: false
+defaults:
+- scope:
+    path: ''
+  values:
+    layout: default
+- scope:
+    path: ''
+    type: projects
+  values:
+    layout: project
 email: 
-description: 'Painter and artist based in nowhere, curabitur blandit tempus porttitor
-  donec ullamcorper nulla non metus auctor fringilla.'
+description: Painter and artist based in nowhere, curabitur blandit tempus porttitor
+  donec ullamcorper nulla non metus auctor fringilla.
 baseurl: ''
 url: https://jshi.netlify.com
 link1-name: instagram
@@ -30,13 +40,3 @@ gems:
 exclude:
 - Gemfile
 - Gemfile.lock
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: "default"
-  - scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "project"
