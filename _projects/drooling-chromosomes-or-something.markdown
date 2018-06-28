@@ -1,0 +1,8 @@
+---
+title: Drooling Chromosomes or something
+date: 2018-06-28 04:30:00 Z
+Description: what is the meaning of life?
+low_res_image: 
+high_res_image: "/uploads/THepointistonotunderstandribosomes.jpg"
+---
+
