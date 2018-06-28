@@ -9,8 +9,8 @@
 	display: block;
 	float: left;
 	padding: 7px;
-	width: 33%; 
-	opacity: 0
+	width: 33%;
+	opacity: 0;
 }
 
 .grid li.shown,
@@ -43,4 +43,16 @@
 @keyframes moveUp {
 	0% { }
 	100% { -webkit-transform: translateY(0); transform: translateY(0); opacity: 1; }
+}
+
+@media screen and (max-width: 900px) {
+	.grid li {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.grid li {
+		width: 100%;
+	}
 }

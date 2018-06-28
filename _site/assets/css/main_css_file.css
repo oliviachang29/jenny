@@ -17,7 +17,7 @@ body, html {
   clear: both; }
 
 * {
-  font-family: Proxima Nova,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-family: Graphik,Proxima Nova,Helvetica Neue,Helvetica,Arial,sans-serif;
   font-weight: 100; }
 
 .not-selectable {
@@ -117,7 +117,7 @@ nav {
       padding-left: 7px; } }
 
 #logo {
-  /*font-family: Sofia Pro;*/
+  font-family: Graphik;
   text-transform: lowercase;
   /*letter-spacing: 4px;*/
   font-size: 50px !important;
@@ -125,7 +125,7 @@ nav {
   font-weight: bold;
   line-height: 0;
   padding-bottom: 30px;
-  max-width: 220px;
+  max-width: 240px;
   margin-top: 30px; }
 
 .underline-magical {
@@ -139,7 +139,7 @@ nav {
 
 .header-desc {
   font-size: 35px;
-  /*font-family: Super Grotesk;*/
+  font-family: Graphik;
   color: #222222;
   line-height: 52px;
   letter-spacing: -0.5px;
@@ -181,6 +181,16 @@ nav {
   font-weight: bold;
   font-style: normal;
   src: url("/assets/fonts/ProximaNova-Bold.ttf"); }
+@font-face {
+  font-family: Graphik;
+  font-weight: 100;
+  font-style: normal;
+  src: url("/assets/fonts/Graphik-Light.ttf"); }
+@font-face {
+  font-family: Graphik;
+  font-weight: bold;
+  font-style: normal;
+  src: url("/assets/fonts/Graphik-Semibold.ttf"); }
 h1 {
   font-weight: 500;
   font-size: 20px;
@@ -257,6 +267,12 @@ footer {
     -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1; } }
+@media screen and (max-width: 900px) {
+  .grid li {
+    width: 50%; } }
+@media screen and (max-width: 400px) {
+  .grid li {
+    width: 100%; } }
 .modal-content {
   /*padding: 5% 0px;*/ }
   @media only screen and (min-width: 768px) {

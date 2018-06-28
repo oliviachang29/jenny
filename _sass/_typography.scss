@@ -20,6 +20,22 @@
 } 
 
 
+@font-face {
+   font-family: Graphik;
+   font-weight: 100;
+   font-style: normal;
+   src: url('/assets/fonts/Graphik-Light.ttf');
+} 
+
+
+@font-face {
+   font-family: Graphik;
+   font-weight: bold;
+   font-style: normal;
+   src: url('/assets/fonts/Graphik-Semibold.ttf');
+} 
+
+
 h1 {
 	font-weight: 500;
 	font-size: 20px;
