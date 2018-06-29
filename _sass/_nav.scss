@@ -1,7 +1,49 @@
+#logo {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#logo path {
+  fill-opacity: 0;
+  fill: #000 !important;
+  stroke: #000;
+  stroke-width: 4;
+  animation: in 10s 200ms forwards, out 1s 2s forwards;
+  animation-timing-function: linear; 
+}
+
+#logo:hover {
+  /*transform: scale(1.2)*/
+  /*animation: in 10s 200ms forwards, out 1s 2s forwards;*/
+}
+
+@keyframes in {
+    0% {
+        fill-opacity: 0;
+        stroke-dasharray: 3319;
+        stroke-dashoffset: 3319;
+        stroke-width: 0;
+    }
+  100% {
+        stroke-dashoffset: 0;
+        stroke-width: 4;
+  }
+}
+
+@keyframes out {
+    0% {
+        fill-opacity: 0;
+    }
+  100% {
+    fill-opacity: 1;
+  }
+}
+
 nav {
   display: flex;
   flex-direction: column;
-  /*align-items: center;*/
+  align-items: center;
+  text-align: center;
   margin: 60px 20px;
   @media only screen and (min-width : 480px) {
     margin: 60px 40px;
@@ -21,19 +63,6 @@ nav {
     /* same as padding for borders of grid */
     padding-left: 7px
   }
-}
-
-#logo {
-  font-family: Graphik;
-  text-transform: lowercase;
-  /*letter-spacing: 4px;*/
-  font-size: 50px !important;
-  color: #000000;
-  font-weight: bold;
-  line-height: 0;
-  padding-bottom: 30px;
-  max-width: 240px;
-  margin-top: 30px;
 }
 
 .underline-magical {
