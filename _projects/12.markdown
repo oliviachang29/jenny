@@ -1,6 +1,5 @@
 ---
 title: A Fleeting Moment
-date: 2016-06-28 04:41:00 Z
 Description: 'oh dear lord i hate this painting '
 low_res_image: "/uploads/fleetingmoment4-bffcdd.jpg"
 high_res_image: "/uploads/fleetingmoment4-cf935d.jpg"
