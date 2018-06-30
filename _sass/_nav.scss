@@ -5,9 +5,10 @@
 
 #logo path {
   fill-opacity: 0;
+  stroke-width: 0;
   fill: #000 !important;
   stroke: #000;
-  stroke-width: 4;
+  animation-delay: 2s;
   animation: in 10s 200ms forwards, out 1s 2s forwards;
   animation-timing-function: linear; 
 }
