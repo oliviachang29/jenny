@@ -125,10 +125,10 @@ hr {
 	}
 }
 
-.close-icon {
+#close-icon {
 	transition: all .5s ease;
 }
 
-.close-animatedModal:hover .close-icon {
+.close-animatedModal:hover #close-icon {
 	transform: rotate(90deg);
 }
