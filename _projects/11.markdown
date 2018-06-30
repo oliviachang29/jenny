@@ -1,7 +1,7 @@
 ---
 title: Drooling Chromosomes or something
 Description: what is the meaning of life?
-low_res_image: "/uploads/THepointistonotunderstandribosomes-089851.jpg"
+low_res_image: "/uploads/THepointistonotunderstandribosomescompressed.jpg"
 high_res_image: "/uploads/THepointistonotunderstandribosomes.jpg"
 ---
 

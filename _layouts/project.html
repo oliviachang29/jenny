@@ -14,7 +14,13 @@ layout: default
 					<div class="title-desc">
 						<p id="project-title">{{page.title}}</p>
 						<div class="project-desc-container">
-							<p id="project-desc">{{page.description}}</p>
+							{% if page.description %}
+							 {% assign desc = page.description %}
+							{% endif %}
+							{% if page.Description %}
+								{% assign desc = page.Description %}
+							{% endif %}
+							<p id="project-desc">{{desc}}</p>
 						</div>
 					</div>
 					<div class="tags">
