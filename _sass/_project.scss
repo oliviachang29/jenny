@@ -7,7 +7,7 @@
 
 .project-container {
 	width: 100%;
-	height: 90%;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	align-self: center;
@@ -16,7 +16,7 @@
 
 
 .project-img-container {
-	margin-top: 100px;
+	margin: 100px 0px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -29,14 +29,15 @@
 #project-img {
 	object-fit: cover;
 	max-width: 90%;
-	max-height: 800px;
+	max-height: 100%;
 	/*position: fixed;*/
 	margin: 0 auto; /* Will not center vertically and won't work in IE6/7. */
 	left: 0;
 	right: 0;
+	margin-bottom: 0px;
 	transition: all .5s;
 	@media only screen and (min-width : 768px) {
-		max-height: 90vh;
+		/*max-height: 90vh;*/
 	}
 }
 

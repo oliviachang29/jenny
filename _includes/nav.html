@@ -1,5 +1,5 @@
 <header>
-	<nav>
+	<nav class="container">
 		<a href="{{site.url}}">
 			{% include svg.html%}
 		</a>
@@ -7,11 +7,11 @@
 			<p class="header-desc">{{site.description}}</p>
 		</div>
 		<div class="nav-link-container">
-			<a href="{{site.link1-url}}" class="p-text nav-link"><span class="underline">{{site.link1-name}}</span></a>
+			<a href="{{site.url}}" class="p-text nav-link"><span class="underline">work</span></a>
 			<span class="p-text nav-link dot">·</span>
-			<a href="{{site.link2-url}}" class="p-text nav-link"><span class="underline">{{site.link2-name}}</span></a>
+			<a href="{{site.url}}/about" class="p-text nav-link"><span class="underline">about</span></a>
 			<span class="p-text nav-link dot">·</span>
-			<a href="{{site.link3-url}}" class="p-text nav-link"><span class="underline">{{site.link3-name}}</span></a>
+			<a href="{{site.contact-link}}" class="p-text nav-link"><span class="underline">contact</span></a>
 		</div>
 	</nav>
 </header>

@@ -16,9 +16,30 @@ body, html {
 .clearfix:after {
   clear: both; }
 
+body {
+  padding-bottom: 100px; }
+
 * {
   font-family: Graphik,Proxima Nova,Helvetica Neue,Helvetica,Arial,sans-serif;
   font-weight: 100; }
+
+.container {
+  margin: 60px 20px; }
+  @media only screen and (min-width: 480px) {
+    .container {
+      margin: 60px 40px; } }
+  @media only screen and (min-width: 768px) {
+    .container {
+      margin: 80px 40px; } }
+  @media only screen and (min-width: 992px) {
+    .container {
+      margin: 80px 100px; } }
+  @media only screen and (min-width: 74em) {
+    .container {
+      max-width: 69em;
+      margin: 80px auto;
+      /* same as padding for borders of grid */
+      padding-left: 7px; } }
 
 .not-selectable {
   -webkit-touch-callout: none;
@@ -129,23 +150,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  margin: 60px 20px; }
-  @media only screen and (min-width: 480px) {
-    nav {
-      margin: 60px 40px; } }
-  @media only screen and (min-width: 768px) {
-    nav {
-      margin: 80px 40px; } }
-  @media only screen and (min-width: 992px) {
-    nav {
-      margin: 80px 100px; } }
-  @media only screen and (min-width: 74em) {
-    nav {
-      max-width: 69em;
-      margin: 80px auto;
-      /* same as padding for borders of grid */
-      padding-left: 7px; } }
+  text-align: center; }
 
 .underline-magical {
   background-image: linear-gradient(120deg, #000 0%, #000 100%);
@@ -228,23 +233,6 @@ a {
   a:hover {
     text-decoration: none; }
 
-#footer-copyright {
-  /*margin-top: 30px;*/
-  text-align: center;
-  font-weight: 300;
-  color: #DBDBDB; }
-
-#footer-underline {
-  background-color: #DBDBDB;
-  margin-bottom: 1em; }
-
-footer {
-  padding: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; }
-
 .grid {
   max-width: 69em;
   list-style: none;
@@ -292,6 +280,13 @@ footer {
 @media screen and (max-width: 400px) {
   .grid li {
     width: 100%; } }
+.about {
+  margin: 30px inherit;
+  line-height: 30px; }
+
+.about p {
+  margin: 0 auto; }
+
 .modal-content {
   /*padding: 5% 0px;*/ }
   @media only screen and (min-width: 768px) {
@@ -300,14 +295,14 @@ footer {
 
 .project-container {
   width: 100%;
-  height: 90%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-self: center;
   align-items: center; }
 
 .project-img-container {
-  margin-top: 100px;
+  margin: 100px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -319,16 +314,17 @@ footer {
 #project-img {
   object-fit: cover;
   max-width: 90%;
-  max-height: 800px;
+  max-height: 100%;
   /*position: fixed;*/
   margin: 0 auto;
   /* Will not center vertically and won't work in IE6/7. */
   left: 0;
   right: 0;
+  margin-bottom: 0px;
   transition: all .5s; }
   @media only screen and (min-width: 768px) {
     #project-img {
-      max-height: 90vh; } }
+      /*max-height: 90vh;*/ } }
 
 #project-img:active {
   /*transform: scale(2);*/ }

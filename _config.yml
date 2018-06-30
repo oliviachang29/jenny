@@ -26,12 +26,7 @@ email:
 description: painter and artist based in palo alto.
 baseurl: 
 url: https://www.jennyshi.me
-link1-name: instagram
-link1-url: https://instagram.com
-link2-name: linkedin
-link2-url: https://linkedin.com
-link3-name: contact
-link3-url: mailto:hello@jennyshi.me
+contact-link: mailto:hello@jennyshi.me
 markdown: kramdown
 theme: minima
 gems:

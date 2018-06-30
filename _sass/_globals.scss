@@ -6,9 +6,35 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 .clearfix:before, .clearfix:after { content: " "; display: table; }
 .clearfix:after { clear: both; }
 
+body {
+  padding-bottom: 100px
+}
+
 * {
   font-family: Graphik,Proxima Nova,Helvetica Neue,Helvetica,Arial,sans-serif;
   font-weight: 100;
+}
+
+.container {
+   margin: 60px 20px;
+  @media only screen and (min-width : 480px) {
+    margin: 60px 40px;
+  }
+   
+  @media only screen and (min-width : 768px) {
+    margin: 80px 40px;
+  }
+
+  @media only screen and (min-width : 992px) {
+    margin: 80px 100px;
+  }
+
+  @media only screen and (min-width : 74em) {
+    max-width: 69em;
+    margin: 80px auto;
+    /* same as padding for borders of grid */
+    padding-left: 7px
+  }
 }
 
 .not-selectable {

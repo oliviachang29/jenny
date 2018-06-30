@@ -2,8 +2,12 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 	{% include head.html %}
 	<body>
-		
-		{{content}}	
+		{% include nav.html %}
+		<div id="barba-wrapper">
+			<div class="barba-container">
+				{{content}}	
+			</div>
+		</div>
 	</body>
 	{% include footer.html %}
 </html>

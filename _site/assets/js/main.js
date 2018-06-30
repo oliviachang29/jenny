@@ -17,7 +17,12 @@ $(function() {
   },
 
   fadeOut: function() {
-     setTimeout(
+    return $(this.oldContainer).animate({ opacity: 0 }).promise();
+  },
+
+  fadeIn: function() {
+
+    setTimeout(
     function() {
         new AnimOnScroll( document.getElementById( 'grid' ), {
             minDuration : 0.4,
@@ -25,18 +30,7 @@ $(function() {
             viewportFactor : 0.2
         } );
     }, 1000);
-    // $("nav").slideUp()
-    // $(".grid").slideDown()
-    return $(this.oldContainer).animate({ opacity: 0 }).promise();
-  },
-
-  fadeIn: function() {
-    /**
-     * this.newContainer is the HTMLElement of the new Container
-     * At this stage newContainer is on the DOM (inside our #barba-container and with visibility: hidden)
-     * Please note, newContainer is available just after newContainerLoading is resolved!
-     */
-
+    
     var _this = this;
     var $el = $(this.newContainer);
 
