@@ -21,7 +21,7 @@ $(function() {
   },
 
   fadeIn: function() {
-
+    $('#project-img').hide()
     setTimeout(
     function() {
         new AnimOnScroll( document.getElementById( 'grid' ), {
@@ -29,6 +29,10 @@ $(function() {
             maxDuration : 0.7,
             viewportFactor : 0.2
         } );
+        $('#project-img').imgPreload()
+        $('#project-img').on('load', function() {
+          $('#project-img').fadeIn()
+        });
     }, 1000);
     
     var _this = this;
