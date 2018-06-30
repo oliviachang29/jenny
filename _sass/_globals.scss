@@ -16,22 +16,22 @@ body {
 }
 
 .container {
-   margin: 60px 20px;
+   margin: 60px 20px 40px;
   @media only screen and (min-width : 480px) {
-    margin: 60px 40px;
+    margin: 60px 40px 40px;
   }
    
   @media only screen and (min-width : 768px) {
-    margin: 80px 40px;
+    margin: 80px 40px 40px;
   }
 
   @media only screen and (min-width : 992px) {
-    margin: 80px 100px;
+    margin: 80px 100px 40px;
   }
 
   @media only screen and (min-width : 74em) {
     max-width: 69em;
-    margin: 80px auto;
+    margin: 80px auto 40px;
     /* same as padding for borders of grid */
     padding-left: 7px
   }
