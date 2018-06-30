@@ -1,25 +1,7 @@
 ---
 layout: default
 ---
-
-<div class="hidden">
-	<script type="text/javascript">
-		var images = new Array()
-		function preload() {
-			for (i = 0; i < preload.arguments.length; i++) {
-				images[i] = new Image()
-				images[i].src = preload.arguments[i]
-			}
-		}
-		preload(
-			{% for project in site.projects %}
-					"{{project.high_res_image}}",
-			{% endfor %}
-		)
-	</script>
-</div>
-
-
+<script>preload("{{page.high_res_image}}")</script>
 <div id="barba-wrapper">
 	<div class="barba-container">
 		<div class="project-container">
@@ -59,9 +41,7 @@ layout: default
 				</a>
 			</div>
 		</div>
-		<script>
-		    
-		</script>
-
 	</div>
 </div>
+
+<script src="/assets/js/project.js"></script>

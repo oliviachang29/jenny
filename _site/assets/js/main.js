@@ -2,7 +2,7 @@ $('body').hide()
 
 $(function() {
   $('body').fadeIn()
-	var FadeTransition = Barba.BaseTransition.extend({
+  var FadeTransition = Barba.BaseTransition.extend({
   start: function() {
     /**
      * This function is automatically called as soon the Transition starts
@@ -17,24 +17,26 @@ $(function() {
   },
 
   fadeOut: function() {
-    return $(this.oldContainer).animate({ opacity: 0 }).promise();
-  },
-
-  fadeIn: function() {
-    $('#project-img').hide()
-    setTimeout(
+     setTimeout(
     function() {
         new AnimOnScroll( document.getElementById( 'grid' ), {
             minDuration : 0.4,
             maxDuration : 0.7,
             viewportFactor : 0.2
         } );
-        $('#project-img').imgPreload()
-        $('#project-img').on('load', function() {
-          $('#project-img').fadeIn()
-        });
     }, 1000);
-    
+    // $("nav").slideUp()
+    // $(".grid").slideDown()
+    return $(this.oldContainer).animate({ opacity: 0 }).promise();
+  },
+
+  fadeIn: function() {
+    /**
+     * this.newContainer is the HTMLElement of the new Container
+     * At this stage newContainer is on the DOM (inside our #barba-container and with visibility: hidden)
+     * Please note, newContainer is available just after newContainerLoading is resolved!
+     */
+
     var _this = this;
     var $el = $(this.newContainer);
 
