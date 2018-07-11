@@ -433,11 +433,16 @@ a {
   .grid li {
     width: 100%; } }
 .about {
-  margin: 30px inherit;
-  line-height: 30px; }
-
-.about p {
-  margin: 0 auto; }
+  margin-top: 0;
+  align-items: center; }
+  .about p {
+    line-height: 30px;
+    margin: 0px auto 20px; }
+  .about img {
+    display: block;
+    justify-content: center;
+    margin: 30px auto;
+    max-height: 50%; }
 
 .modal-content {
   /*padding: 5% 0px;*/ }

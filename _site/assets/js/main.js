@@ -1,7 +1,17 @@
 $('body').hide()
 
+jQuery(window).on("load", function(){
+    $('svg').css({
+      'opacity': '1'
+    })
+});
+
 $(function() {
   $('body').fadeIn()
+  $('svg').css({
+      'opacity': '0'
+    })
+
   var FadeTransition = Barba.BaseTransition.extend({
   start: function() {
     /**
