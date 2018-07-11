@@ -24,20 +24,20 @@ body {
   font-weight: 100; }
 
 .container {
-  margin: 60px 20px 40px; }
+  margin: 60px 20px 50px; }
   @media only screen and (min-width: 480px) {
     .container {
-      margin: 60px 40px 40px; } }
+      margin: 60px 40px 50px; } }
   @media only screen and (min-width: 768px) {
     .container {
-      margin: 80px 40px 40px; } }
+      margin: 50px 50px; } }
   @media only screen and (min-width: 992px) {
     .container {
-      margin: 80px 100px 40px; } }
+      margin: 40px 100px 50px; } }
   @media only screen and (min-width: 74em) {
     .container {
       max-width: 69em;
-      margin: 80px auto 40px;
+      margin: 40px auto 50px;
       /* same as padding for borders of grid */
       padding-left: 7px; } }
 
@@ -67,6 +67,13 @@ body {
   z-index: 9999;
   background: url("/assets/images/preloader.gif") center no-repeat #fff;
   background-size: 20%; }
+
+footer {
+  margin-top: 60px; }
+  footer p {
+    font-size: 12px;
+    color: #999a9b;
+    text-align: center; }
 
 .image-hover-container {
   overflow: hidden; }
@@ -126,14 +133,10 @@ body {
   fill: #000 !important;
   stroke: #000;
   animation-delay: 2s;
-  animation: in 10s 200ms forwards, out 1s 2s forwards;
+  animation: stroke 10s 200ms forwards, fill 1s 2s forwards;
   animation-timing-function: linear; }
 
-#logo:hover {
-  /*transform: scale(1.2)*/
-  /*animation: in 10s 200ms forwards, out 1s 2s forwards;*/ }
-
-@keyframes in {
+@keyframes stroke {
   0% {
     fill-opacity: 0;
     stroke-dasharray: 3319;
@@ -142,7 +145,7 @@ body {
   100% {
     stroke-dashoffset: 0;
     stroke-width: 4; } }
-@keyframes out {
+@keyframes fill {
   0% {
     fill-opacity: 0; }
   100% {
@@ -185,27 +188,12 @@ nav {
   cursor: pointer;
   background-image: linear-gradient(120deg, #212121 0%, #212121 100%);
   background-repeat: no-repeat;
-  background-size: 0% 2px;
+  background-size: 0% 1.5px;
   background-position: 50% 102.75%;
   transition: all 0.2s ease; }
   .underline:hover {
-    background-size: 95% 2px; }
+    background-size: 80% 1.5px; }
 
-@font-face {
-  font-family: Proxima Nova;
-  font-weight: 100;
-  font-style: normal;
-  src: url("/assets/fonts/ProximaNova-Light.ttf"); }
-@font-face {
-  font-family: Proxima Nova;
-  font-weight: 100;
-  font-style: italic;
-  src: url("/assets/fonts/ProximaNova-LightIt.ttf"); }
-@font-face {
-  font-family: Proxima Nova;
-  font-weight: bold;
-  font-style: normal;
-  src: url("/assets/fonts/ProximaNova-Bold.ttf"); }
 @font-face {
   font-family: Graphik;
   font-weight: 100;
@@ -216,12 +204,10 @@ nav {
   font-weight: bold;
   font-style: normal;
   src: url("/assets/fonts/Graphik-Semibold.ttf"); }
-h1 {
-  font-weight: 500;
-  font-size: 20px;
-  margin-bottom: 5px; }
+h1, h2, h3 {
+  font-weight: bold; }
 
-h2 {
+h1, h2 {
   text-align: center; }
 
 span {
@@ -437,11 +423,11 @@ a {
   align-items: center; }
   .about p {
     line-height: 30px;
-    margin: 0px auto 20px; }
+    margin: 0 0 20px; }
   .about img {
     display: block;
     justify-content: center;
-    margin: 30px auto;
+    margin: 50px auto;
     max-height: 50%; }
 
 .modal-content {
@@ -459,32 +445,26 @@ a {
   align-items: center; }
 
 .project-img-container {
-  margin: 100px 0px;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  margin-bottom: 0px; }
   @media only screen and (min-width: 768px) {
     .project-img-container {
-      margin-top: 0px;
+      margin-bottom: 50px;
       height: 100vh; } }
 
 #project-img {
   object-fit: cover;
   max-width: 90%;
-  max-height: 100%;
-  /*position: fixed;*/
+  max-height: 800px;
   margin: 0 auto;
-  /* Will not center vertically and won't work in IE6/7. */
   left: 0;
   right: 0;
-  margin-bottom: 0px;
   transition: all .5s; }
   @media only screen and (min-width: 768px) {
     #project-img {
-      /*max-height: 90vh;*/ } }
-
-#project-img:active {
-  /*transform: scale(2);*/ }
+      max-height: 100%; } }
 
 .project-other {
   width: 100%; }
@@ -512,7 +492,6 @@ a {
       margin-right: 100px; } }
 
 #project-title {
-  font-weight: 500;
   font-size: 50px;
   line-height: 60px;
   color: #000000;

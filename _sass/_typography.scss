@@ -1,26 +1,4 @@
 @font-face {
-   font-family: Proxima Nova;
-   font-weight: 100;
-   font-style: normal;
-   src: url('/assets/fonts/ProximaNova-Light.ttf');
-} 
-
-@font-face {
-   font-family: Proxima Nova;
-   font-weight: 100;
-   font-style: italic;
-   src: url('/assets/fonts/ProximaNova-LightIt.ttf');
-} 
-
-@font-face {
-   font-family: Proxima Nova;
-   font-weight: bold;
-   font-style: normal;
-   src: url('/assets/fonts/ProximaNova-Bold.ttf');
-} 
-
-
-@font-face {
    font-family: Graphik;
    font-weight: 100;
    font-style: normal;
@@ -35,15 +13,12 @@
    src: url('/assets/fonts/Graphik-Semibold.ttf');
 } 
 
-
-h1 {
-	font-weight: 500;
-	font-size: 20px;
-	margin-bottom: 5px;
+h1, h2, h3 {
+   font-weight: bold;  
 }
 
-h2 {
-	text-align: center;
+h1, h2 {
+   text-align: center;
 }
 
 span {

@@ -9,16 +9,11 @@
   fill: #000 !important;
   stroke: #000;
   animation-delay: 2s;
-  animation: in 10s 200ms forwards, out 1s 2s forwards;
+  animation: stroke 10s 200ms forwards, fill 1s 2s forwards;
   animation-timing-function: linear; 
 }
 
-#logo:hover {
-  /*transform: scale(1.2)*/
-  /*animation: in 10s 200ms forwards, out 1s 2s forwards;*/
-}
-
-@keyframes in {
+@keyframes stroke {
     0% {
         fill-opacity: 0;
         stroke-dasharray: 3319;
@@ -31,7 +26,7 @@
   }
 }
 
-@keyframes out {
+@keyframes fill {
     0% {
         fill-opacity: 0;
     }
@@ -84,10 +79,10 @@ nav {
   cursor: pointer;
   background-image: linear-gradient(120deg, #212121 0%, #212121 100%);
   background-repeat: no-repeat;
-  background-size: 0% 2px;
+  background-size: 0% 1.5px;
   background-position: 50% 102.75%;
   transition: all 0.2s ease;
   &:hover {
-    background-size: 95% 2px;
+    background-size: 80% 1.5px;
   }
 }

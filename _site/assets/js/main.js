@@ -9,8 +9,9 @@ jQuery(window).on("load", function(){
 $(function() {
   $('body').fadeIn()
   $('svg').css({
-      'opacity': '0'
-    })
+    'opacity': '0'
+  })
+  $('footer').hide();
 
   var FadeTransition = Barba.BaseTransition.extend({
   start: function() {
@@ -27,26 +28,22 @@ $(function() {
   },
 
   fadeOut: function() {
-     setTimeout(
-    function() {
-        new AnimOnScroll( document.getElementById( 'grid' ), {
-            minDuration : 0.4,
-            maxDuration : 0.7,
-            viewportFactor : 0.2
-        } );
-    }, 1000);
-    // $("nav").slideUp()
-    // $(".grid").slideDown()
+    if (window.location.pathname == '/') {
+      setTimeout(
+        function() {
+            new AnimOnScroll( document.getElementById( 'grid' ), {
+                minDuration : 0.4,
+                maxDuration : 0.7,
+                viewportFactor : 0.2
+            } );
+      }, 1000);
+    }
+
+    $('footer').hide();
     return $(this.oldContainer).animate({ opacity: 0 }).promise();
   },
 
   fadeIn: function() {
-    /**
-     * this.newContainer is the HTMLElement of the new Container
-     * At this stage newContainer is on the DOM (inside our #barba-container and with visibility: hidden)
-     * Please note, newContainer is available just after newContainerLoading is resolved!
-     */
-
     var _this = this;
     var $el = $(this.newContainer);
 
@@ -58,11 +55,10 @@ $(function() {
     });
 
     $el.animate({ opacity: 1 }, 400, function() {
-      /**
-       * Do not forget to call .done() as soon your transition is finished!
-       * .done() will automatically remove from the DOM the old Container
-       */
       _this.done();
+      if (window.location.pathname != '/') {
+        $('footer').fadeIn();
+      }
     });
   }
 });

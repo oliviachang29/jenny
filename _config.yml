@@ -2,9 +2,6 @@
 title: Jenny Shi
 timezone: UTC
 collections:
-  posts:
-    title: Posts
-    output: true
   projects:
     title: Projects
     output: true

@@ -16,12 +16,12 @@
 
 
 .project-img-container {
-	margin: 100px 0px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin-bottom: 0px;
 	@media only screen and (min-width : 768px) {
-		margin-top: 0px;
+		margin-bottom: 50px;
 		height: 100vh;
 	}
 }
@@ -29,20 +29,14 @@
 #project-img {
 	object-fit: cover;
 	max-width: 90%;
-	max-height: 100%;
-	/*position: fixed;*/
-	margin: 0 auto; /* Will not center vertically and won't work in IE6/7. */
+	max-height: 800px;
+	margin: 0 auto;
 	left: 0;
 	right: 0;
-	margin-bottom: 0px;
 	transition: all .5s;
 	@media only screen and (min-width : 768px) {
-		/*max-height: 90vh;*/
+		max-height: 100%;
 	}
-}
-
-#project-img:active {
-	/*transform: scale(2);*/
 }
 
 .project-other {
@@ -74,7 +68,6 @@
 }
 
 #project-title {
-	font-weight: 500;
 	font-size: 50px;
 	line-height: 60px;
 	color: #000000;
