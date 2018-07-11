@@ -1,5 +1,5 @@
 ---
-title: A Fleeting Moment extremely long title wow asdf hi yo bye
+title: A Fleeting Moment
 Description: 'oh dear lord i hate this painting '
 low_res_image: "/uploads/fleetingmomentcompressed.jpg"
 high_res_image: "/uploads/fleetingmoment4.jpg"
