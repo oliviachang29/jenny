@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <div class="hidden">
 	<script type="text/javascript">
 		var images = new Array()
@@ -13,27 +12,29 @@ layout: default
 		}
 		preload(
 			{% for project in site.projects %}
-					"{{project.low_res_image}}"
+						"{{project.low_res_image}}"
 			{% endfor %}
 		)
 	</script>
 </div>
-
 <div id="barba-wrapper">
 	<div class="barba-container">
 		<!-- <div id="loading"></div> -->
 		
-		<ul class="grid effect-2" id="grid">
+		<section id="photos">
 			{% for project in site.projects %}
-				<li><a href="{{project.url}}" class="modal-link" data-image-url="{{project.high_res_image}}" data-title="{{project.title}}" data-desc="{{project.description}}" data-date="{{project.date}}" data-medium="{{project.medium}}" data-medium="{{project.medium}}" data-style="{{project.style}}">
-					<div class="image-hover-container">
-						<img class="image-hover-img" width="400" src="{{project.low_res_image}}">
-						<div class="overlay">
-							<div class="overlay-text">{{project.title}}</div>
+				<li>
+					<a href="{{project.url}}" class="modal-link">
+						<div class="image-hover-container">
+							<img class="image image-hover-img" width="400" src="{{project.low_res_image}}">
+							<div class="overlay">
+								<div class="text overlay-text">{{project.title}}</div>
+							</div>
 						</div>
-					</div>
-				</a></li>
+					</a>
+				</li>
 			{% endfor %}
-		</ul>
+		</section>
+
 	</div>
 </div>

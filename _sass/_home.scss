@@ -1,5 +1,6 @@
 
 .image-hover-container {
+  position: relative;
   overflow: hidden;
 }
 
@@ -42,7 +43,7 @@
 }
 
 .image-hover-container:hover .overlay {
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .image-hover-container:hover .image-hover-img {

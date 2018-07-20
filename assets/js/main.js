@@ -11,7 +11,6 @@ $(function() {
   $('svg').css({
     'opacity': '0'
   })
-  $('footer').hide();
 
   var FadeTransition = Barba.BaseTransition.extend({
   start: function() {
@@ -28,16 +27,6 @@ $(function() {
   },
 
   fadeOut: function() {
-    if (window.location.pathname == '/') {
-      setTimeout(
-        function() {
-            new AnimOnScroll( document.getElementById( 'grid' ), {
-                minDuration : 0.4,
-                maxDuration : 0.7,
-                viewportFactor : 0.2
-            } );
-      }, 1000);
-    }
 
     $('footer').hide();
     return $(this.oldContainer).animate({ opacity: 0 }).promise();
@@ -56,8 +45,8 @@ $(function() {
 
     $el.animate({ opacity: 1 }, 400, function() {
       _this.done();
-      if (window.location.pathname != '/') {
-        $('footer').fadeIn();
+      if (window.location.pathname.split('/')[1] == 'projects') {
+        smoothScroll($('.project-container'))
       }
     });
   }
@@ -88,12 +77,6 @@ function smoothScroll(target) {
         500
     );
 }
-
-new AnimOnScroll( document.getElementById( 'grid' ), {
-    minDuration : 0.4,
-    maxDuration : 0.7,
-    viewportFactor : 0.2
-} );
 
 $(window).on('load', function () {
     $("#loading").fadeOut("slow");
