@@ -1,11 +1,10 @@
 ---
 title: About
 date: 2018-07-11 22:32:00 Z
-low_res_image: "/uploads/IMG_1499.JPG"
 layout: about
 ---
 
-> [IMG_1499.JPG](/uploads/IMG_1499.JPG)
+[IMG_1499.JPG](/uploads/IMG_1499.JPG)
 
 <h1>My name is Jenny and I like cats</h1>
 <h2>My name is Jenny and I like cats</h2>
