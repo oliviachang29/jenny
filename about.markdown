@@ -10,7 +10,7 @@ layout: static
 <!-- if you don't want it to be centered, take the text out of <div class="text"> -->
 <div class="text">
 	<p>Hi!!!!</p>
-	<p>I am open to commissions and selling some of the artwork on my site. Please contact me at jennyshi772@gmail.com for more information.</p>
+	<p>I am a junior at Palo Alto High School and interested in biological, elements, processes, and scale. </p>
 	<h3>exhibitions</h3>
 	<ul>
 		<li>Art. Write. Now DC exhibition at the U.S. Department of Education</li>
