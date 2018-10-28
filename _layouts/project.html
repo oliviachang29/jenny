@@ -43,7 +43,18 @@ layout: default
 						</ul>
 					</div>
 				</div>
-				<a href="/year/{{page.date | date: "%Y"}}">
+
+				{% capture current_year %}{{ site.time | date: "%Y" }}{% endcapture %}
+				{% capture page_year %}{{ page.date | date: "%Y" }}{% endcapture %}
+
+				{% if page_year == current_year %}
+					<!-- index.html is back_link -->
+					{% assign back_link = "/" %}
+				{% else %}
+					{% assign back_link = "/year/" | append: page_year %}
+				{% endif %}
+
+				<a href="{{back_link}}">
 					<div class="close-animatedModal">
 						<img id="close-icon" src="/assets/images/close-icon.svg">
 						<p class="p-text not-selectable">Back</p>
