@@ -4,7 +4,7 @@ date: 2018-07-11 22:32:00 Z
 layout: about
 ---
 
-<img src="/uploads/IMG_1499.JPG" >
+<img src="/uploads/high6.jpg" >
 
 ### exhibitions
 * Art. Write. Now DC exhibition at the U.S. Department of Education
