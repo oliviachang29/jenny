@@ -5,5 +5,5 @@ layout: static
 ---
 
 <div class="text">
-	<p>contact contact contact</p>
+	<p>jennyshi772@gmail.com</p>
 </div>
