@@ -4,14 +4,14 @@ date: 2018-07-11 22:32:00 Z
 layout: about
 ---
 
-### exhibitions
 
-U.S. Department of Education
-Pratt Manhattan Gallery
-Building Bridges Art Exchange
-UCLA Royce Hall large screens
+
+### exhibitions
+* Art. Write. Now DC exhibition at the U.S. Department of Education
+* Art. Write. Now National Exhibition at Pratt Manhattan Gallery
+* YoungArts LA exhibition at Building Bridges Art Exchange
+* UCLA Royce Hall large screen
 
 ### awards
-
-Merit Winner Young Arts Foundation (2018)
-National Gold Medal Scholastic Art and Writing (2018)
+* National Youngarts Merit Winner in Visual Arts (2018)
+* National Gold Medal Scholastic Art and Writing (2018)
