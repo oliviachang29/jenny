@@ -9,13 +9,13 @@ collections:
     title: Projects
     output: true
     layout: project
+  uploads:
+    title: Uploads
+    output: false
   year:
     title: Year
     output: true
     layout: year
-  uploads:
-    title: Uploads
-    output: false
   yeet:
     title: yeet
     output: true
