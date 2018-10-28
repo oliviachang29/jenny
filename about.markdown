@@ -4,10 +4,6 @@ date: 2018-07-11 22:32:00 Z
 layout: about
 ---
 
-<<<<<<< HEAD
-<img src="/uploads/IMG_1499.JPG" >
-=======
->>>>>>> e9d4bc6365fc6797d22a84bd6cc00b31ae2ccde2
 
 
 ### exhibitions
