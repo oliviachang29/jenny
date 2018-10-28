@@ -158,7 +158,8 @@ nav {
   text-align: center; }
 
 .header-desc {
-  font-size: 35px;
+  margin-top: 2px;
+  font-size: 28px;
   font-family: Graphik;
   color: #222222;
   line-height: 52px;

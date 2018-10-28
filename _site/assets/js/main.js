@@ -1,15 +1,13 @@
 $('body').hide()
 
 jQuery(window).on("load", function(){
-  fadeOutLoading()
-  $('svg').css({
+    $('svg').css({
     'opacity': '1'
   })
 });
 
 $(function() {
   markCurrentLink()
-  fadeOutLoading()
   $('body').fadeIn()
   $('svg').css({
     'opacity': '0'
@@ -46,10 +44,6 @@ $(function() {
       opacity : 0
     });
 
-    fadeOutLoading()
-
-    // alert('fade out loader')
-
     $el.animate({ opacity: 1 }, 400, function() {
       _this.done();
       if (window.location.pathname.split('/')[1] == 'projects') {
@@ -76,7 +70,7 @@ Barba.Pjax.getTransition = function() {
     // hideStyle()
 });
 
-function markCurrentLink() {
+function markCurrentLink(target) {
   $('a').each(function() {
     if ($(this).prop('href') == window.location.href) {
       $(this).addClass('current');
@@ -94,6 +88,13 @@ function smoothScroll(target) {
     );
 }
 
-function fadeOutLoading() {
-  $("#loading").fadeOut("slow");
-}
+$(window).on('load', function () {
+    $("#loading").fadeOut("slow");
+});
+
+// $(".modal-link").animatedModal({
+//     color: 'white',
+//     animatedIn: 'fadeInDown',
+//     animatedOut: 'fadeOutUp',
+//     animationDuration: '.8s'
+// });
