@@ -1,7 +1,8 @@
 $('body').hide()
 
 jQuery(window).on("load", function(){
-    $('svg').css({
+  fadeOutLoading()
+  $('svg').css({
     'opacity': '1'
   })
 });
