@@ -1,10 +1,16 @@
 .about {
 	margin-top: 0;
 	align-items: center;
-	
+	h3 {
+		margin-top: 30px;
+	}
 	p {
 		line-height: 30px;
 		margin: 0 0 20px;
+	}
+	li {
+		margin-bottom: 10px;
+		line-height: 20px;
 	}
 	img {
 		display: block;
@@ -12,6 +18,13 @@
 		margin: 50px auto;
 		max-height: 50%;
 		max-width: 100%;
+	}
+
+	.text {
+		@media only screen and (min-width : 600px) {
+		    width: 50%;
+		    margin: 0 auto;
+		}
 	}
 }
 

@@ -32,7 +32,6 @@ defaults:
 description: painter and artist based in palo alto.
 baseurl: 
 url: https://www.jennyshi.me
-contact-link: mailto:hello@jennyshi.me
 markdown: kramdown
 theme: minima
 gems:
