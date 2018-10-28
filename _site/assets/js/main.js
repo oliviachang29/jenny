@@ -46,9 +46,12 @@ $(function() {
       opacity : 0
     });
 
+    fadeOutLoading()
+
+    alert('fade out loader')
+
     $el.animate({ opacity: 1 }, 400, function() {
       _this.done();
-      fadeOutLoading()
       if (window.location.pathname.split('/')[1] == 'projects') {
         smoothScroll($('.project-container'))
       }
