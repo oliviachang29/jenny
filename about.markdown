@@ -14,4 +14,3 @@ layout: about
 ### awards
 * National Youngarts Merit Winner in Visual Arts (2018)
 * National Gold Medal Scholastic Art and Writing (2018)
-![hi-6237a3.jpg](/uploads/hi-6237a3.jpg)
