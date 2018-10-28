@@ -249,25 +249,25 @@ a {
 .container:hover .overlay {
   opacity: 1; }
 
-.about {
+.static {
   margin-top: 0;
   align-items: center; }
-  .about h3 {
+  .static h3 {
     margin-top: 30px; }
-  .about p {
+  .static p {
     line-height: 30px;
     margin: 0 0 20px; }
-  .about li {
+  .static li {
     margin-bottom: 10px;
     line-height: 20px; }
-  .about img {
+  .static img {
     display: block;
     justify-content: center;
     margin: 50px auto;
     max-height: 50%;
     max-width: 100%; }
   @media only screen and (min-width: 600px) {
-    .about .text {
+    .static .text {
       width: 50%;
       margin: 0 auto; } }
 
