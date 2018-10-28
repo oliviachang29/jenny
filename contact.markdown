@@ -8,5 +8,5 @@ layout: static
 
 <div class="text">
 	<p>
-I am open to commissions and selling some of the artwork on my site. Please contact me at jennyshi772@gmail.com for more information.</p>
+I am open to commissions and selling some of the artwork on my site. Please contact me at [jennyshi772@gmail.com](mailto:jennyshi772@gmail.com) for more information.</p>
 </div>
