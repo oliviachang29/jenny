@@ -5,5 +5,7 @@ layout: static
 ---
 
 <div class="text">
-	<p>jennyshi772@gmail.com</p>
+	<p>Hi!!!!
+
+I am open to commissions and selling some of the artwork on my site. Please contact me at jennyshi772@gmail.com for more information.</p>
 </div>
