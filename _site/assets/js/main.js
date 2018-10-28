@@ -8,6 +8,7 @@ jQuery(window).on("load", function(){
 
 $(function() {
   markCurrentLink()
+  fadeOutLoading()
   $('body').fadeIn()
   $('svg').css({
     'opacity': '0'
@@ -46,6 +47,7 @@ $(function() {
 
     $el.animate({ opacity: 1 }, 400, function() {
       _this.done();
+      fadeOutLoading()
       if (window.location.pathname.split('/')[1] == 'projects') {
         smoothScroll($('.project-container'))
       }
@@ -70,7 +72,7 @@ Barba.Pjax.getTransition = function() {
     // hideStyle()
 });
 
-function markCurrentLink(target) {
+function markCurrentLink() {
   $('a').each(function() {
     if ($(this).prop('href') == window.location.href) {
       $(this).addClass('current');
@@ -88,13 +90,6 @@ function smoothScroll(target) {
     );
 }
 
-$(window).on('load', function () {
-    $("#loading").fadeOut("slow");
-});
-
-// $(".modal-link").animatedModal({
-//     color: 'white',
-//     animatedIn: 'fadeInDown',
-//     animatedOut: 'fadeOutUp',
-//     animationDuration: '.8s'
-// });
+function fadeOutLoading() {
+  $("#loading").fadeOut("slow");
+}
