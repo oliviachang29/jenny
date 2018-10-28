@@ -12,6 +12,9 @@ collections:
   uploads:
     title: Uploads
     output: false
+  yeet:
+    title: yeet
+    output: true
 defaults:
 - scope:
     path: ''
