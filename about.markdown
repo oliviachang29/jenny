@@ -4,11 +4,7 @@ date: 2018-07-11 22:32:00 Z
 layout: about
 ---
 
-[IMG_1499.JPG](/uploads/IMG_1499.JPG)
-
-<h1>My name is Jenny and I like cats</h1>
-<h2>My name is Jenny and I like cats</h2>
-<h3>My name is Jenny and I like cats</h3>
+<h3>CV</h3>
 
 Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit. 
 
