@@ -21,7 +21,8 @@ layout: default
 
 <div id="barba-wrapper">
 	<div class="barba-container">
-		<div id="loading"></div>
+		<!-- just loader -->
+		{{content}}
 	  {% if page.is_index %}
 	  	{% capture page_year %}{{ site.time | date: "%Y" }}{% endcapture %}
 	  {% else %}
