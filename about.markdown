@@ -19,3 +19,9 @@ layout: static
 		<li>UCLA Royce Hall large screen</li>
 	</ul>
 </div>
+<div class="text">
+<h3>awards</h3>
+<ul>
+		<li>Scholastic Art and Writing National Gold Medal (2018)</li>
+		<li>National Youngarts Foundation Merit Winner in Visual Arts (2018)</li>
+		
