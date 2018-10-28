@@ -48,7 +48,7 @@ $(function() {
 
     fadeOutLoading()
 
-    alert('fade out loader')
+    // alert('fade out loader')
 
     $el.animate({ opacity: 1 }, 400, function() {
       _this.done();
