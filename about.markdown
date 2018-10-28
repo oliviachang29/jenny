@@ -6,13 +6,13 @@ layout: about
 
 <h3>CV</h3>
 **exhibitions**
-U.S. dept of education
-pratt manhattan gallery
-building bridges art exchange
+U.S. Department of Education
+Pratt Manhattan Gallery
+Building Bridges Art Exchange
 UCLA Royce Hall large screens
 
 **awards**
-merit winner youngarts foundation (2018)
-national gold medal scholastic art and writing (2018)
+Merit Winner Youngarts Foundation (2018)
+National Gold Medal Scholastic Art and Writing (2018)
 
 
