@@ -9,6 +9,10 @@ collections:
     title: Projects
     output: true
     layout: project
+  year:
+    title: Year
+    output: true
+    layout: year
   uploads:
     title: Uploads
     output: false

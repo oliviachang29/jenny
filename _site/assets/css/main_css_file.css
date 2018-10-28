@@ -157,15 +157,6 @@ nav {
   align-items: center;
   text-align: center; }
 
-.underline-magical {
-  background-image: linear-gradient(120deg, #000 0%, #000 100%);
-  background-repeat: no-repeat;
-  background-size: 0% 20px;
-  background-position: 50% 280%;
-  transition: all 0.4s ease; }
-  .underline-magical:hover {
-    background-size: 95% 20px; }
-
 .header-desc {
   font-size: 35px;
   font-family: Graphik;
@@ -183,6 +174,9 @@ nav {
   padding-left: 0px;
   color: #212121;
   justify-content: flex-start; }
+
+.current .underline {
+  background-size: 80% 1.5px; }
 
 .underline {
   padding-bottom: 3px;
@@ -265,7 +259,8 @@ a {
     display: block;
     justify-content: center;
     margin: 50px auto;
-    max-height: 50%; }
+    max-height: 50%;
+    max-width: 100%; }
 
 .modal-content {
   /*padding: 5% 0px;*/ }
@@ -294,7 +289,7 @@ a {
 #project-img {
   object-fit: cover;
   max-width: 90%;
-  max-height: 800px;
+  /*max-height: 800px;*/
   margin: 0 auto;
   left: 0;
   right: 0;

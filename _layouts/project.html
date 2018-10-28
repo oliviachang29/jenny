@@ -8,6 +8,9 @@ layout: default
 		<div class="project-container">
 			<div class="project-img-container">
 				<img id="project-img" src="{{page.high_res_image}}">
+				{% unless page.high_res_image %}
+					<img id="project-img" src="{{page.low_res_image}}">
+				{% endunless %}
 			</div>
 			<div class="project-other">
 				<div class="project-info-container">
@@ -40,7 +43,7 @@ layout: default
 						</ul>
 					</div>
 				</div>
-				<a href="/">
+				<a href="/year/{{page.date | date: "%Y"}}">
 					<div class="close-animatedModal">
 						<img id="close-icon" src="/assets/images/close-icon.svg">
 						<p class="p-text not-selectable">Back</p>

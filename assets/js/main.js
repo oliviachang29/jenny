@@ -2,11 +2,12 @@ $('body').hide()
 
 jQuery(window).on("load", function(){
     $('svg').css({
-      'opacity': '1'
-    })
+    'opacity': '1'
+  })
 });
 
 $(function() {
+  markCurrentLink()
   $('body').fadeIn()
   $('svg').css({
     'opacity': '0'
@@ -27,7 +28,7 @@ $(function() {
   },
 
   fadeOut: function() {
-
+    markCurrentLink()
     $('footer').hide();
     return $(this.oldContainer).animate({ opacity: 0 }).promise();
   },
@@ -69,6 +70,15 @@ Barba.Pjax.getTransition = function() {
     // hideStyle()
 });
 
+function markCurrentLink(target) {
+  $('a').each(function() {
+    if ($(this).prop('href') == window.location.href) {
+      $(this).addClass('current');
+    } else {
+      $(this).removeClass('current');
+    }
+  });
+}
 
 function smoothScroll(target) {
     $('body,html').animate({

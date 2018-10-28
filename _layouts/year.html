@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<div class="hidden">
+	<script type="text/javascript">
+		var images = new Array()
+		function preload() {
+			for (i = 0; i < preload.arguments.length; i++) {
+				images[i] = new Image()
+				images[i].src = preload.arguments[i]
+			}
+		}
+		preload(
+			{% for project in site.projects %}
+						"{{project.low_res_image}}"
+			{% endfor %}
+		)
+	</script>
+
+	
+</div>
+
+<div id="barba-wrapper">
+	<div class="barba-container">
+		<!-- <div id="loading"></div> -->
+
+	{% if page.is_index %}
+	  	{% capture page_year %}{{ site.time | date: "%Y" }}{% endcapture %}
+	  {% else %}
+	  	{% assign page_year = page.title %}
+	  {% endif %}
+
+		<section id="photos">
+			{% for project in site.projects %}
+			  {% capture project_year %}{{project.date | date: "%Y"}}{% endcapture %}
+
+			    {% if project_year == page_year %}
+					<li>
+						<a href="{{project.url}}" class="modal-link">
+							<div class="image-hover-container">
+								<img class="image image-hover-img" width="400" src="{{project.low_res_image}}">
+								<div class="overlay">
+									<div class="text overlay-text">{{project.title}}</div>
+								</div>
+							</div>
+						</a>
+					</li>
+				{% endif %}
+			{% endfor %}
+		</section>
+
+	</div>
+</div>

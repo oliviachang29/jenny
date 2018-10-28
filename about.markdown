@@ -4,7 +4,7 @@ date: 2018-07-11 22:32:00 Z
 layout: about
 ---
 
-[IMG_1499.JPG](/uploads/IMG_1499.JPG)
+<img src="/uploads/IMG_1499.JPG" >
 
 <h1>My name is Jenny and I like cats</h1>
 <h2>My name is Jenny and I like cats</h2>

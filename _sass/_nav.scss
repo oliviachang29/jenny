@@ -1,3 +1,7 @@
+@mixin nav-underline {
+  background-size: 80% 1.5px;
+}
+
 #logo {
   max-width: 100%;
   max-height: 100%;
@@ -42,17 +46,6 @@ nav {
   text-align: center;
 }
 
-.underline-magical {
-  background-image: linear-gradient(120deg, #000 0%, #000 100%);
-  background-repeat: no-repeat;
-  background-size: 0% 20px;
-  background-position: 50% 280%;
-  transition: all 0.4s ease;
-  &:hover {
-    background-size: 95% 20px;
-  }
-}
-
 .header-desc {
   font-size: 35px;
   font-family: Graphik;
@@ -74,6 +67,12 @@ nav {
   justify-content: flex-start;
 }
 
+.current {
+  .underline {
+    @include nav-underline;
+  }
+}
+
 .underline {
   padding-bottom: 3px;
   cursor: pointer;
@@ -83,6 +82,7 @@ nav {
   background-position: 50% 102.75%;
   transition: all 0.2s ease;
   &:hover {
-    background-size: 80% 1.5px;
+    @include nav-underline; 
   }
+
 }
