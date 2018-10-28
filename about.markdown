@@ -4,7 +4,7 @@ date: 2018-07-11 22:32:00 Z
 layout: about
 ---
 
-<img src="/hi.jpg" >
+<img src="/uploads/hi.jpg" >
 ### exhibitions
 * Art. Write. Now DC exhibition at the U.S. Department of Education
 * Art. Write. Now National Exhibition at Pratt Manhattan Gallery
