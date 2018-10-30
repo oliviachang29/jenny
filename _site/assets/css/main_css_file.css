@@ -177,7 +177,7 @@ nav {
   justify-content: flex-start; }
 
 .current .underline {
-  background-size: 90% 1.5px; }
+  background-size: 50% 1.5px; }
 
 .underline {
   padding-bottom: 3px;
@@ -185,10 +185,10 @@ nav {
   background-image: linear-gradient(120deg, #212121 0%, #212121 100%);
   background-repeat: no-repeat;
   background-size: 0% 1.5px;
-  background-position: 50% 102.75%;
+  background-position: 50% 105.75%;
   transition: all 0.2s ease; }
   .underline:hover {
-    background-size: 90% 1.5px; }
+    background-size: 50% 1.5px; }
 
 @font-face {
   font-family: Graphik;

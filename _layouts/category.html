@@ -13,7 +13,7 @@ layout: default
 		}
 		preload(
 			{% for project in site.projects %}
-						"{{project.low_res_image}}"
+				"{{project.low_res_image}}"
 			{% endfor %}
 		)
 	</script>
@@ -26,7 +26,7 @@ layout: default
 
 		<section id="photos">
 			{% assign page_category = page.title | downcase %}
-			
+
 			{% for project in site.projects %}
 			  {% if project.categories contains page_category %}
 					<li>

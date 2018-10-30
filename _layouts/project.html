@@ -1,8 +1,9 @@
 ---
 layout: default
 ---
-
-<script>preload("{{page.high_res_image}}")</script>
+{% unless page.high_res_image %}
+	<script>preload("{{page.high_res_image}}")</script>
+{% endunless %}
 <div id="barba-wrapper">
 	<div class="barba-container">
 		
