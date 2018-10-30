@@ -275,6 +275,38 @@ a {
       width: 50%;
       margin: 0 auto; } }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none; }
+
+#contact-me {
+  text-align: center; }
+
+form {
+  display: flex;
+  flex-direction: column; }
+
+input, textarea {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 3px;
+  border: none;
+  background-color: #FAFAFA;
+  margin-bottom: 10px; }
+
+textarea {
+  min-height: 200px; }
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: white;
+  border: none;
+  color: #353535;
+  font-size: 16px; }
+
 .modal-content {
   /*padding: 5% 0px;*/ }
   @media only screen and (min-width: 768px) {

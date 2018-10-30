@@ -1,0 +1,73 @@
+.static {
+	margin-top: 0;
+	align-items: center;
+
+	a {
+		font-weight: bold;
+	}
+
+	h3 {
+		margin-top: 30px;
+	}
+	p {
+		line-height: 30px;
+		margin: 0 0 20px;
+	}
+	li {
+		margin-bottom: 10px;
+		line-height: 20px;
+	}
+	img {
+		display: block;
+		justify-content: center;
+		margin: 50px auto;
+		max-height: 50%;
+		max-width: 100%;
+	}
+
+	.text {
+		@media only screen and (min-width : 600px) {
+		    width: 50%;
+		    margin: 0 auto;
+		}
+	}
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+#contact-me {
+	text-align: center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+input, textarea {
+	padding: 10px;
+	font-size: 16px;
+	border-radius: 3px;
+	border: none;
+	background-color: #FAFAFA;
+	margin-bottom: 10px;
+}
+
+textarea {
+	min-height: 200px;
+}
+
+button {
+	margin-top: 20px;
+	padding: 10px;
+	background-color: white;
+	border: none;
+	color: #353535;
+	font-size: 16px;
+}
+
