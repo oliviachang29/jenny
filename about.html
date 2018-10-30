@@ -10,7 +10,7 @@ layout: static
 <!-- if you don't want it to be centered, take the text out of <div class="text"> -->
 <div class="text">
 	<p>Hi!</p>
-	<p>I am a junior at Palo Alto High School and interested in biological elements, processes, and scale. </p>
+	<p>I am a junior at Palo Alto High School who is interested in biological elements, processes, and scale. </p>
 	<h3>exhibitions</h3>
 	<ul>
 		<li>Art. Write. Now DC exhibition at the U.S. Department of Education</li>

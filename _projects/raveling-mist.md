@@ -2,7 +2,7 @@
 title: Raveling Mist
 date: 2017-08-14 00:39:00 Z
 categories:
-- series 2
+- landscapes
 description: 'dunno man '
 low_res_image: "/uploads/comp1.jpg"
 high_res_image: "/uploads/high1.jpg"
