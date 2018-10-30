@@ -9,7 +9,7 @@ layout: static
 <!-- this keeps it in a container so that the text isn't left justified while the image is in the center  -->
 <!-- if you don't want it to be centered, take the text out of <div class="text"> -->
 <div class="text">
-	<p>Hi!!!!</p>
+	<p>Hi!</p>
 	<p>I am a junior at Palo Alto High School and interested in biological elements, processes, and scale. </p>
 	<h3>exhibitions</h3>
 	<ul>
