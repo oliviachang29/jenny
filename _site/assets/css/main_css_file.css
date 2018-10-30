@@ -177,7 +177,7 @@ nav {
   justify-content: flex-start; }
 
 .current .underline {
-  background-size: 80% 1.5px; }
+  background-size: 90% 1.5px; }
 
 .underline {
   padding-bottom: 3px;
@@ -188,7 +188,7 @@ nav {
   background-position: 50% 102.75%;
   transition: all 0.2s ease; }
   .underline:hover {
-    background-size: 80% 1.5px; }
+    background-size: 90% 1.5px; }
 
 @font-face {
   font-family: Graphik;

@@ -7,15 +7,15 @@
 			<p class="header-desc">{{site.description}}</p>
 		</div>
 		<div class="nav-link-container">
-			<!-- the current year is in index.html -->
-			<!-- so we don't create a year page for current year -->
-			{% capture page_year %}{{ site.time | date: "%Y" }}{% endcapture %}
-			<a href="/" class="p-text nav-link"><span class="underline">{{page_year}}</span></a>
+			<!-- series 1 is in index.html -->
+			<!-- so we don't create a category page for series 1 -->
+			<a href="/" class="p-text nav-link"><span class="underline">series 1</span></a>
 			<span class="p-text nav-link dot">·</span>
 
-			<!-- rest of the years -->
-			{% for year in site.year reversed %}
-				<a href="{{ year.url }}" class="p-text nav-link"><span class="underline">{{year.title}}</span></a>
+			<!-- rest of the categories -->
+			{% assign categories = site.category | sort: "order" %}
+			{% for category in categories %}
+				<a href="{{ category.url }}" class="p-text nav-link"><span class="underline">{{category.title | downcase}}</span></a>
 				<span class="p-text nav-link dot">·</span>
 			{% endfor %}
 

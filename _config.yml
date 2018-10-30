@@ -12,10 +12,10 @@ collections:
   uploads:
     title: Uploads
     output: false
-  year:
-    title: Year
+  category:
+    title: Category
     output: true
-    layout: year
+    layout: category
   yeet:
     title: yeet
     output: true

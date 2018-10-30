@@ -23,17 +23,12 @@ layout: default
 	<div class="barba-container">
 		<!-- just loader -->
 		{{content}}
-	  {% if page.is_index %}
-	  	{% capture page_year %}{{ site.time | date: "%Y" }}{% endcapture %}
-	  {% else %}
-	  	{% assign page_year = page.title %}
-	  {% endif %}
 
 		<section id="photos">
+			{% assign page_category = page.title | downcase %}
+			
 			{% for project in site.projects %}
-			  {% capture project_year %}{{project.date | date: "%Y"}}{% endcapture %}
-
-			    {% if project_year == page_year %}
+			  {% if project.categories contains page_category %}
 					<li>
 						<a href="{{project.url}}" class="modal-link">
 							<div class="image-hover-container">
