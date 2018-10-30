@@ -2,6 +2,10 @@
 title: Jenny Shi
 timezone: UTC
 collections:
+  category:
+    title: Category
+    output: true
+    layout: category
   posts:
     title: Posts
     output: true
@@ -12,10 +16,6 @@ collections:
   uploads:
     title: Uploads
     output: false
-  category:
-    title: Category
-    output: true
-    layout: category
   yeet:
     title: yeet
     output: true
