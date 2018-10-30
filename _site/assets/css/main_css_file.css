@@ -294,9 +294,14 @@ input, textarea {
   border-radius: 3px;
   border: none;
   background-color: #FAFAFA;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  transition: .4s all; }
+  input:focus, input:hover, textarea:focus, textarea:hover {
+    background-color: white;
+    color: black; }
 
 textarea {
+  background-color: #FAFAFA;
   min-height: 200px; }
 
 button {

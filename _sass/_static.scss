@@ -56,9 +56,15 @@ input, textarea {
 	border: none;
 	background-color: #FAFAFA;
 	margin-bottom: 10px;
+	transition: .4s all;
+	&:focus, &:hover {
+		background-color: white;
+		color: black;
+	}
 }
 
 textarea {
+	background-color: #FAFAFA;
 	min-height: 200px;
 }
 
