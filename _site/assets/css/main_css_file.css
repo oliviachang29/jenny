@@ -253,6 +253,8 @@ a {
 .static {
   margin-top: 0;
   align-items: center; }
+  .static a {
+    font-weight: bold; }
   .static h3 {
     margin-top: 30px; }
   .static p {
