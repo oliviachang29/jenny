@@ -34,6 +34,7 @@ baseurl:
 url: https://www.jennyshi.me
 markdown: kramdown
 theme: minima
+first_link: "Series 1"
 gems:
 - jekyll-feed
 exclude:
