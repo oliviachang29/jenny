@@ -59,6 +59,7 @@ nav {
 .nav-link-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .nav-link {
