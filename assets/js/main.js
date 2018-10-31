@@ -1,3 +1,5 @@
+$('body').hide()
+
 // executes this after load
 jQuery(window).on("load", function(){
     $('svg').css({
@@ -8,7 +10,6 @@ jQuery(window).on("load", function(){
 
 // executes this stuff before load
 $(function() {
-  $('body').hide()
   markCurrentLink()
 
   $('svg').css({
