@@ -1,14 +1,16 @@
-$('body').hide()
-
+// executes this after load
 jQuery(window).on("load", function(){
     $('svg').css({
     'opacity': '1'
   })
+    $('body').fadeIn()
 });
 
+// executes this stuff before load
 $(function() {
+  $('body').hide()
   markCurrentLink()
-  $('body').fadeIn()
+
   $('svg').css({
     'opacity': '0'
   })
