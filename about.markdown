@@ -20,7 +20,7 @@ layout: static
 	</ul>
 	<h3>awards</h3>
 	<ul>
-                        <li>National Youngarts Foundation Finalist Winner in Visual Arts (2018)</li>
+                        <li>National Youngarts Foundation Finalist Winner in Visual Arts (2019)</li>
 			<li>Scholastic Art and Writing National Gold Medal (2018)</li>
 			<li>National Youngarts Foundation Merit Winner in Visual Arts (2018)</li>
 	</ul>
