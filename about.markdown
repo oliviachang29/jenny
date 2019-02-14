@@ -16,8 +16,8 @@ layout: static
                 <li>Infinite Possibilities - National YoungArts Week Exhibition, YoungArts Gallery, 2019</li>
 		<li>Art. Write. Now. DC Exhibition, Institute of Museum and Library Services, 2018</li>
 		<li>Art. Write. Now National Exhibition, Pratt Manhattan Gallery, 2018</li>
-		<li>YoungArts LA exhibition, Building Bridges Art Exchange, 2018</li>
-		<li>UCLA Royce Hall large screen, 2018</li>
+		<li>YoungArts LA Exhibition, Building Bridges Art Exchange, 2018</li>
+		<li>UCLA Royce Hall Large Screens, 2018</li>
 	</ul>
 	<h3>awards</h3>
 	<ul>
