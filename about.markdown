@@ -19,11 +19,5 @@ layout: static
 		<li>YoungArts LA Exhibition, Building Bridges Art Exchange, 2018</li>
 		<li>UCLA Royce Hall Large Screens, 2018</li>
 	</ul>
-	<h3>awards</h3>
-	<ul>
-                        <li>National Youngarts Foundation Finalist in Visual Arts, 2019</li>
-			<li>National Gold Medal in Painting, Scholastic Art and Writing Awards, 2018</li>
-			<li>National Youngarts Foundation Merit in Visual Arts, 2018</li>
-	</ul>
-</div>
+	
 		
