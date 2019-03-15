@@ -13,6 +13,8 @@ layout: static
 	<p>Jenny Shi is an oil painter who creates abstractions and landscapes and is a junior at Palo Alto High School, California. She is deeply interested in cells and biology, so her work draws inspiration from microscopic images and nature, often incorporating petri dishes and other 3D elements. By combining miniscule objects with familiar forms in nature, she seeks to create spaces that are simultaneously familiar and unfamiliar and find parallels between the processes of nature and the processes of cells. </p>
 	<h3>exhibitions</h3>
 	<ul>
+                <li>Scholastic Art & Writing Awards Regional Exhibition, Pacific Grove Art Center, 2019</li>
+                <li>ArtNow Exhibition, New Museum Los Gatos, 2019</li>
                 <li>Infinite Possibilities - National YoungArts Week Exhibition, YoungArts Gallery, 2019</li>
 		<li>Art. Write. Now. DC Exhibition, Institute of Museum and Library Services, 2018</li>
 		<li>Art. Write. Now National Exhibition, Pratt Manhattan Gallery, 2018</li>
