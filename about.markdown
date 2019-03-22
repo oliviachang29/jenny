@@ -4,7 +4,7 @@ date: 2018-07-11 22:32:00 Z
 layout: static
 ---
 
-<img src="/uploads/IMG_1537.jpg" width="300px">
+
 
 <!-- this keeps it in a container so that the text isn't left justified while the image is in the center  -->
 <!-- if you don't want it to be centered, take the text out of <div class="text"> -->
