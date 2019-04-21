@@ -1,4 +1,3 @@
-$('body').hide()
 
 // executes this after load
 jQuery(window).on("load", function(){
