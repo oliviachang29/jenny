@@ -42,3 +42,5 @@ fields:
     required: false
   label: Style
   description: 'ex: "Cubism"'
+pages:
+- _projects/bleached-interstellar-dust.md
