@@ -7,6 +7,8 @@ fields:
   name: title
   label: Title
   description: Title of the thing
+  config:
+    required: true
 - type: datetime
   name: date
   label: Date
@@ -14,6 +16,15 @@ fields:
 - type: list
   name: categories
   label: Categories
+  config:
+    use_select: true
+    source:
+      type: simple
+    options:
+    - series 1
+    - series 2
+    - landscapes
+    - portraits
 - type: text
   name: description
   label: Description
