@@ -1,7 +1,4 @@
 ---
----
-
----
 new_page_extension: md
 auto_deploy: false
 admin_path: 
@@ -15,7 +12,12 @@ sections:
   label: Projects
   create: all
   match: "**/*"
-upload_dir: _uploads
+- type: directory
+  path: _category
+  label: Category
+  create: all
+  match: "**/*"
+upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: false
