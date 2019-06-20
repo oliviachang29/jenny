@@ -4,19 +4,40 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
+  description: Title of the thing
 - type: datetime
   name: date
-  label: date
+  label: Date
+  description: Date that you made the thing
 - type: list
   name: categories
-  label: categories
+  label: Categories
 - type: text
   name: description
-  label: description
+  label: Description
+  description: Description of the thing
 - type: file
   name: low_res_image
-  label: low_res_image
+  label: Low resolution image
+  description: 'For the front page (the images need to be much smaller). Max dimensions:
+    500 x 500 - the low_res_image appears on the front page, where it appears in very
+    small dimensions. Having images bigger than that will make your page take longer
+    to load. Preferably < 20 kb.'
 - type: file
   name: high_res_image
-  label: high_res_image
+  label: High resolution image
+  description: 'For when you click on an image and it opens the project page. Max
+    dimensions: 2500x2500. Preferably < 1 MB - use compression sites'
+- name: medium
+  type: text
+  config:
+    required: false
+  label: Medium
+  description: 'ex: "Oil on canvas"'
+- name: style
+  type: text
+  config:
+    required: false
+  label: Style
+  description: 'ex: "Cubism"'
