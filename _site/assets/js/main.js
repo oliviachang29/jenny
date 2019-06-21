@@ -1,7 +1,7 @@
 var scroll;
 
 function markCurrentLink(target) {
-  $('a').each(function() {
+  $('.nav-link-container a').each(function() {
     if ($(this).prop('href') == window.location.href) {
       $(this).addClass('current');
     } else {
@@ -32,7 +32,7 @@ $(function() {
   swup.on('contentReplaced', function() {
       initJS();
       if (window.location.pathname.split('/')[1] == 'projects') {
-        scroll.animateScroll($('#project-img-container'))
+        // scroll.animateScroll($('#project-img-container'))
       }
   });
 });
