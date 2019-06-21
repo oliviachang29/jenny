@@ -25,22 +25,19 @@ fields:
     - series 2
     - landscapes
     - portraits
+    min: '1'
+    max: '1'
 - type: text
   name: description
   label: Description
   description: Description of the thing
 - type: file
-  name: low_res_image
-  label: Low resolution image
-  description: 'For the front page (the images need to be much smaller). Max dimensions:
-    500 x 500 - the low_res_image appears on the front page, where it appears in very
-    small dimensions. Having images bigger than that will make your page take longer
-    to load. Preferably < 20 kb.'
-- type: file
-  name: high_res_image
-  label: High resolution image
-  description: 'For when you click on an image and it opens the project page. Max
-    dimensions: 2500x2500. Preferably < 1 MB - use compression sites'
+  name: image
+  description: Now relying on only one image for both the category page and the project
+    page. Should be fairly high res.
+  label: Image
+  config:
+    maxSize: '10'
 - name: medium
   type: text
   config:
