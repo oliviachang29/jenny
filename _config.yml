@@ -35,4 +35,4 @@ exclude:
 sass:
   style: compressed
 tag_page_layout: category
-tag_page_dir: category
+tag_page_dir: cat_test

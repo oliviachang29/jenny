@@ -20,8 +20,9 @@
 	
 	li {
 		margin-bottom: 10px;
-		line-height: 20px;
+		line-height: 30px;
 	}
+
 	img {
 		display: block;
 		justify-content: center;
@@ -30,12 +31,10 @@
 		max-width: 100%;
 	}
 
-	.text {
-		/*@media only screen and (min-width : 600px) {
-		    width: 50%;
-		    margin: 0 auto;
-		}*/
-	}
+}
+
+.static-centered {
+	text-align: center;
 }
 
 input:focus,

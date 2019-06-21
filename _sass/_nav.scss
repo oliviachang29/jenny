@@ -47,7 +47,7 @@ nav {
 }
 
 .header-desc {
-  margin-top: 2px;
+  margin-top: 20px;
   font-size: 28px;
   font-family: Graphik;
   color: #222222;
@@ -60,10 +60,13 @@ nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  /* centers the links that get wrapped around */
+  justify-content: center;
 }
 
 .nav-link {
-  padding: 10px 6px 0;
+  margin: 10px 6px 0;
+  padding: 0;
   color: #212121;
   justify-content: flex-start;
 }

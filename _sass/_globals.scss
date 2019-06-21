@@ -12,7 +12,7 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 }
 
 .transition-fade {
-    transition: .4s;
+    transition: .5s;
     opacity: 1;
 }
 html.is-animating .transition-fade{
