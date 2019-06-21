@@ -1,127 +1,79 @@
+@import "variables";
+
 .modal-content {
 	/*padding: 5% 0px;*/
-	@media only screen and (min-width : 768px) {
+	@media only screen and (min-width: $md) {
 		/*padding: 80px 0px;*/
 	}
 }
 
-.project-container {
-	width: 100%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	align-self: center;
-	align-items: center;
-}
-
-
-.project-img-container {
+#project-img-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin-bottom: 0px;
-	@media only screen and (min-width : 768px) {
-		margin-bottom: 50px;
-		height: 100vh;
-	}
+	margin: 80px 0 100px;
 }
 
 #project-img {
 	object-fit: cover;
-	max-width: 90%;
 	/*max-height: 800px;*/
 	margin: 0 auto;
-	left: 0;
-	right: 0;
-	transition: all .5s;
-	@media only screen and (min-width : 768px) {
-		max-height: 100%;
+	max-width: 100%;
+	@media (min-width: $md) {
+		max-height: 90vh;
 	}
 }
 
-.project-other {
-	width: 100%;
-}
 .project-info-container {
 	margin-top: 0px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
-	width: 90%;
-	@media only screen and (min-width : 768px) {
-		width: 80%;
-		flex-direction: row
+	@media only screen and (min-width: $md) {
+		flex-direction: row;
 	}
 }
 
 .title-desc {
-	padding: 0;
-	margin: 0;
-	@media only screen and (min-width : 768px) {
-		width: 50%;
-		margin-right: 40px;
-	}
-
-	@media only screen and (min-width : 992px) {
-		margin-right: 100px;
+	@media (max-width: $md) {
+		margin-bottom: 30px;
 	}
 }
 
 #project-title {
-	font-size: 50px;
-	line-height: 60px;
-	color: #000000;
-	letter-spacing: 0;
-	@media only screen and (min-width : 768px) {
-		margin-top: 0px;
-	}
-}
-
-.project-desc-container {
-	margin: 0 auto;
+	font-weight: 100;
+	text-align: left;
+	margin-bottom: 20px;
 }
 
 #project-desc {
-	margin-top: -15px;
-	@media only screen and (min-width : 768px) {
-		margin-top: -30px;
-	}
 	line-height: 28px;
 }
 
 .tags {
-	@media only screen and (min-width : 768px) {
-		width: 50%;
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
 	}
-}
-
-.tags ul {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-}
-
-.tags li {
-	padding: 16px 0px 10px;
 }
 
 hr {
 	border-top: 1px solid #E7EDF1;
 }
 
-.close-animatedModal {
+#close-icon-container {
 	cursor: pointer;
 	text-align: center;
 	margin-top: 50px;
-	@media only screen and (min-width : 768px) {
-		margin-top: 100px;
+	
+	&:hover {
+		#close-icon {
+			transform: rotate(90deg);
+		}
 	}
 }
 
 #close-icon {
 	transition: all .5s ease;
-}
-
-.close-animatedModal:hover #close-icon {
-	transform: rotate(90deg);
 }

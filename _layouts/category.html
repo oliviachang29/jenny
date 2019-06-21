@@ -2,46 +2,23 @@
 layout: default
 ---
 
-<div class="hidden">
-	<script type="text/javascript">
-		var images = new Array()
-		function preload() {
-			for (i = 0; i < preload.arguments.length; i++) {
-				images[i] = new Image()
-				images[i].src = preload.arguments[i]
-			}
-		}
-		preload(
-			{% for project in site.projects %}
-				"{{project.low_res_image}}"
-			{% endfor %}
-		)
-	</script>
-</div>
+<div class="container">
+	<section id="photos">
+		{% assign page_category = page.title | downcase %}
 
-<div id="barba-wrapper">
-	<div class="barba-container">
-		<!-- just loader -->
-		{{content}}
-
-		<section id="photos">
-			{% assign page_category = page.title | downcase %}
-
-			{% for project in site.projects %}
-			  {% if project.categories contains page_category %}
-					<li>
-						<a href="{{project.url}}" class="modal-link">
-							<div class="image-hover-container">
-								<img class="image image-hover-img" width="400" src="{{project.low_res_image}}">
-								<div class="overlay">
-									<div class="text overlay-text">{{project.title}}</div>
-								</div>
+		{% for project in site.projects %}
+	 	{% if project.categories contains page_category %}
+				<li>
+					<a href="{{project.url}}" class="modal-link">
+						<div class="image-hover-container">
+							<img class="lazy image image-hover-img" width="400" src="/assets/images/lazy.jpg" data-src="{{project.image}}">
+							<div class="overlay">
+								<div class="text overlay-text">{{project.title}}</div>
 							</div>
-						</a>
-					</li>
-				{% endif %}
-			{% endfor %}
-		</section>
-
-	</div>
+						</div>
+					</a>
+				</li>
+			{% endif %}
+		{% endfor %}
+	</section>
 </div>

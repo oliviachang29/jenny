@@ -6,9 +6,6 @@ collections:
     title: Category
     output: true
     layout: category
-  posts:
-    title: Posts
-    output: true
   projects:
     title: Projects
     output: true
@@ -16,9 +13,6 @@ collections:
   uploads:
     title: Uploads
     output: false
-  yeet:
-    title: yeet
-    output: true
 defaults:
 - scope:
     path: ''
@@ -35,8 +29,10 @@ url: https://www.jennyshi.me
 markdown: kramdown
 theme: minima
 first_link: Series 1
-gems:
-- jekyll-feed
 exclude:
 - Gemfile
 - Gemfile.lock
+sass:
+  style: compressed
+tag_page_layout: category
+tag_page_dir: category

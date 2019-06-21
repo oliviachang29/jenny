@@ -9,8 +9,11 @@
   </title>
   <meta name="description" content="painter and artist based in palo alto.">
   <meta name="viewport" content="width=device-width">
+
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="/assets/css/main_css_file.css">
-  <!-- <link rel="stylesheet" href="/assets/css/aos.css"> -->
   
   <!-- FAVICON -->
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
@@ -24,10 +27,9 @@
 </head>
 
 	<body>
-		<header>
-	<nav class="container">
-		<a href="https://www.jennyshi.me">
-			
+		<nav class="container" data-aos="fade-in">
+	<a href="https://www.jennyshi.me">
+		
 <svg id="logo" width="450px" viewBox="0 0 545 186" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
     <desc>Created with Sketch.</desc>
@@ -36,297 +38,210 @@
         <path d="M39.848,113.456 C47.272,106.544 51.88,103.728 61.992,81.072 C61.992,81.072 64.296,81.584 64.552,82.096 C65.064,83.12 64.936,84.784 64.936,84.784 C57,105.904 47.144,113.2 39.976,119.088 C39.72,153.392 34.6,162.352 31.272,170.672 C20.776,193.456 5.928,183.856 3.752,180.528 C-8.408,157.488 22.568,123.44 24.104,119.216 C25.128,103.6 25,79.792 25,63.664 C26.024,56.496 28.584,57.392 32.424,60.208 C36.264,62.512 40.872,65.456 40.872,69.296 C39.848,78.896 39.848,103.856 39.848,113.456 Z M24.232,126.768 C24.232,132.4 22.952,189.616 10.664,179.632 C-5.72,166.32 24.232,126.768 24.232,126.768 Z M37.672,50.096 C37.672,50.096 35.624,51.376 28.456,49.072 C28.456,49.072 22.952,43.056 27.432,35.248 C28.456,34.224 38.056,36.656 39.336,36.656 C42.024,39.728 37.672,50.096 37.672,50.096 Z M63.784,112.688 C57.384,97.84 58.664,63.408 82.344,63.408 C87.08,63.664 95.528,63.152 96.552,72.752 C96.936,88.752 82.344,94.64 77.096,93.744 C77.608,114.096 84.52,112.688 87.592,114.608 C90.664,115.888 104.744,113.968 115.24,81.328 C115.24,81.328 117.288,80.944 117.672,81.584 C118.312,82.48 118.056,84.4 118.056,84.4 C105.128,133.296 68.904,122.416 63.784,112.688 Z M76.712,89.008 C82.984,88.496 89.256,87.088 90.792,74.928 C90.408,67.504 85.544,67.376 83.368,68.912 C79.528,73.648 77.992,78.512 76.712,89.008 Z M194.472,84.528 C181.416,153.648 162.472,146.992 159.144,141.616 C149.544,131.888 148.648,104.624 149.672,95.664 C149.672,88.496 157.736,60.464 150.696,65.328 C140.072,74.672 131.368,101.296 130.088,103.6 C132.392,112.048 129.96,113.584 128.04,113.968 C118.184,115.504 117.416,109.488 116.392,106.032 C113.576,93.744 115.24,78.512 118.056,66.608 C118.056,64.304 122.024,63.152 123.304,64.176 C128.168,66.992 132.648,69.296 131.624,74.928 C130.6,79.792 129.704,90.416 129.704,92.72 C135.848,74.8 143.4,66.48 147.496,62.384 C153.384,56.496 165.928,64.176 167.336,72.496 C168.36,82.352 166.568,92.336 165.544,99.504 C161.448,123.44 165.416,132.912 166.44,133.936 C169,136.752 177.32,141.616 191.144,81.328 C191.144,81.328 193.576,81.712 193.704,81.968 C194.344,82.992 194.472,84.528 194.472,84.528 Z M270.248,84.528 C257.192,153.648 238.248,146.992 234.92,141.616 C225.32,131.888 224.424,104.624 225.448,95.664 C225.448,88.496 233.512,60.464 226.472,65.328 C215.848,74.672 207.144,101.296 205.864,103.6 C208.168,112.048 205.736,113.584 203.816,113.968 C193.96,115.504 193.192,109.488 192.168,106.032 C189.352,93.744 191.016,78.512 193.832,66.608 C193.832,64.304 197.8,63.152 199.08,64.176 C203.944,66.992 208.424,69.296 207.4,74.928 C206.376,79.792 205.48,90.416 205.48,92.72 C211.624,74.8 219.176,66.48 223.272,62.384 C229.16,56.496 241.704,64.176 243.112,72.496 C244.136,82.352 242.344,92.336 241.32,99.504 C237.224,123.44 241.192,132.912 242.216,133.936 C244.776,136.752 253.096,141.616 266.92,81.328 C266.92,81.328 269.352,81.712 269.48,81.968 C270.12,82.992 270.248,84.528 270.248,84.528 Z M285.992,104.112 C290.216,104.88 293.288,101.808 300.2,90.16 C302.504,87.344 301.992,47.28 305.448,46.256 C311.08,47.28 319.144,52.144 318.12,58.288 C318.12,65.968 316.712,99.632 316.456,105.008 C320.552,102.064 332.2,96.432 337.448,80.176 C337.448,80.176 339.624,78.64 340.648,80.176 C342.44,80.944 341.032,83.888 341.032,83.888 C337.064,96.688 322.856,107.696 316.712,110.768 C317.352,146.736 314.28,161.072 312.744,164.912 C302.632,190.512 279.464,182.832 276.392,175.152 C269.864,158.512 280.872,131.248 300.072,113.328 C299.944,108.592 300.072,100.784 299.944,97.968 C287.016,120.624 272.68,103.216 270.376,99.376 C262.824,87.6 269.224,67.76 271.528,61.616 C272.552,59.312 275.752,57.136 278.568,58.16 C282.024,59.44 284.84,62.768 283.816,66.608 C281.128,82.864 281.512,102.448 285.992,104.112 Z M300.2,119.856 C277.288,142.384 278.184,161.072 279.208,170.032 C280.232,177.2 284.712,179.12 291.88,175.664 C306.216,169.264 299.944,127.536 300.2,119.856 Z M377.384,91.696 C365.352,63.664 372.008,56.752 378.664,52.656 C391.592,44.72 399.4,59.44 388.392,78.384 C391.336,85.808 401.96,102.576 403.112,104.496 C404.52,103.856 417.96,98.992 428.328,81.328 C428.328,81.328 429.608,79.92 431.272,80.944 C432.936,81.968 431.656,84.016 431.656,84.016 C423.336,100.272 410.28,106.416 405.672,110.256 C406.696,112.816 410.408,118.064 411.048,128.944 C413.48,149.936 392.744,150.832 387.368,150.064 C377.896,148.784 356.52,136.88 388.264,114.224 C385.832,107.696 379.304,95.92 377.384,91.696 Z M390.312,119.984 C393.896,128.688 403.88,146.352 390.312,145.328 C379.688,144.56 364.84,133.808 390.312,119.984 Z M385.832,72.496 C388.776,66.096 388.904,65.84 388.392,60.592 C387.112,53.296 384.296,56.24 382.76,57.392 C380.072,63.536 384.296,68.784 385.832,72.496 Z M442.792,110.64 C456.36,72.112 472.616,88.112 474.024,93.36 C478.632,110.768 471.72,123.824 472.36,136.496 C469.416,154.928 491.432,161.968 498.984,81.072 C498.984,81.072 501.416,81.328 501.672,81.968 C502.312,83.12 502.568,84.784 502.568,84.784 C494.76,170.544 467.112,153.648 465.32,153.008 C455.976,148.144 460.456,114.352 462.376,101.296 C462.888,91.056 459.56,90.544 458.92,92.08 C452.776,95.152 443.816,111.28 443.944,123.568 C445.096,130.608 442.408,134.704 439.208,133.168 C435.752,131.12 430.504,129.584 430.376,124.592 C426.024,65.456 431.656,54.32 433.32,44.72 C440.616,16.432 446.632,11.184 449.064,7.984 C463.4,-9.808 477.096,12.08 475.304,31.536 C472.744,66.48 450.344,72.112 443.944,81.072 C443.304,86.064 442.664,104.88 442.792,110.64 Z M444.072,75.056 C448.424,67.248 468.648,62.768 470.696,31.792 C471.72,3.12 459.56,8.368 458.024,10.928 C445.352,34.48 445.352,70.832 444.072,75.056 Z M540.712,80.304 C540.712,80.304 542.76,80.176 543.016,80.56 C543.656,81.456 543.784,83.888 543.784,83.888 C538.536,125.872 524.072,142 506.28,137.392 C491.816,133.04 499.368,78.64 500.136,75.696 C501.032,72.112 505.384,69.808 508.072,71.472 C514.088,75.312 515.368,79.92 514.6,82.864 C512.424,95.536 511.656,107.952 511.016,121.392 C510.248,137.52 531.752,141.616 540.712,80.304 Z M518.312,54.448 C517.672,56.88 517.8,60.464 516.648,61.744 C515.752,62.896 506.536,60.848 506.408,59.568 C501.928,51.248 507.176,48.048 507.176,48.048 C510.12,48.56 517.8,50.608 518.312,54.448 Z" id="jenny-shi" stroke="#979797"></path>
     </g>
 </svg>
-		</a>
-		<div class="header-desc-container">
-			<p class="header-desc">painter and artist based in palo alto.</p>
-		</div>
-		<div class="nav-link-container nav-med">
-			<!-- series 1 is in index.html -->
-			<!-- so we don't create a category page for series 1 -->
-			<a href="/" class="p-text nav-link"><span class="underline">series 1</span></a>
-			<span class="p-text nav-link dot">·</span>
-			
-			<!-- rest of the categories -->
-			
-			
-				<a href="/category/series2.html" class="p-text nav-link"><span class="underline">series 2</span></a>
-				<span class="p-text nav-link dot">·</span>
-			
-				<a href="/category/landscapes.html" class="p-text nav-link"><span class="underline">landscapes</span></a>
-				<span class="p-text nav-link dot">·</span>
-			
-				<a href="/category/portraits.html" class="p-text nav-link"><span class="underline">portraits</span></a>
-				<span class="p-text nav-link dot">·</span>
-			
-
-			<a href="/about" class="p-text nav-link"><span class="underline">about</span></a>
-			<span class="p-text nav-link dot">·</span>
-			<a href="/contact" class="p-text nav-link"><span class="underline">contact</span></a>
-		</div>
-	</nav>
-</header>
-		<div class="hidden">
-	<script type="text/javascript">
-		var images = new Array()
-		function preload() {
-			for (i = 0; i < preload.arguments.length; i++) {
-				images[i] = new Image()
-				images[i].src = preload.arguments[i]
-			}
-		}
-		preload(
-			
-				"/uploads/fleetingmomentcompressed.jpg"
-			
-				"/uploads/comp8.jpg"
-			
-				"/uploads/comp6.jpg"
-			
-				"/uploads/Screen%20Shot%202018-10-29%20at%206.52.28%20PM.jpg"
-			
-				"/uploads/IMG_3943.jpg"
-			
-				"/uploads/IMG_4229%20(1).jpg"
-			
-				"/uploads/comp2.jpg"
-			
-				"/uploads/THepointistonotunderstandribosomescompressed.jpg"
-			
-				"/uploads/comp1.jpg"
-			
-				"/uploads/comp7.jpg"
-			
-				"/uploads/comp4.jpg"
-			
-				"/uploads/comp9.jpg"
-			
-				"/uploads/10.jpg"
-			
-				"/uploads/3.jpg"
-			
-				"/uploads/1.jpg"
-			
-				"/uploads/8-e5c74c.jpg"
-			
-				"/uploads/2.jpg"
-			
-				"/uploads/5.jpg"
-			
-				"/uploads/6.jpg"
-			
-				"/uploads/7.jpg"
-			
-				"/uploads/9.jpg"
-			
-				"/uploads/4.jpg"
-			
-				"/uploads/IMG_6683-44d860.jpg"
-			
-				"/uploads/IMG_6882.jpg"
-			
-				"/uploads/IMG_1544-568f23.jpg"
-			
-				"/uploads/IMG_1460.jpg"
-			
-				"/uploads/IMG_0505.jpg"
-			
-				"/uploads/yeetafds.jpg"
-			
-				"/uploads/IMG_2608%20(1).jpg"
-			
-				"/uploads/finalphantom.jpg"
-			
-				"/uploads/daddyisuglywithoutwrapper-79a636.jpg"
-			
-		)
-	</script>
-</div>
-
-<div id="barba-wrapper">
-	<div class="barba-container">
-		<!-- just loader -->
-		<!-- <div id="loading"></div> -->
-
-		<section id="photos">
-			
-
-			
-			  
-			
-			  
-			
-			  
-			
-			  
-			
-			  
-			
-			  
-			
-			  
-			
-			  
-			
-			  
-			
-			  
-			
-			  
-			
-			  
-			
-			  
-			
-			  
-					<li>
-						<a href="/projects/cotyledon-cross-section-427.html" class="modal-link">
-							<div class="image-hover-container">
-								<img class="image image-hover-img" width="400" src="/uploads/3.jpg">
-								<div class="overlay">
-									<div class="text overlay-text">Plant Embryo Eyes</div>
-								</div>
-							</div>
-						</a>
-					</li>
-				
-			
-			  
-					<li>
-						<a href="/projects/rhizobia.html" class="modal-link">
-							<div class="image-hover-container">
-								<img class="image image-hover-img" width="400" src="/uploads/1.jpg">
-								<div class="overlay">
-									<div class="text overlay-text">Rhizobia</div>
-								</div>
-							</div>
-						</a>
-					</li>
-				
-			
-			  
-			
-			  
-					<li>
-						<a href="/projects/waltz-of-interstellar-volvox.html" class="modal-link">
-							<div class="image-hover-container">
-								<img class="image image-hover-img" width="400" src="/uploads/2.jpg">
-								<div class="overlay">
-									<div class="text overlay-text">Waltz of Interstellar Volvox</div>
-								</div>
-							</div>
-						</a>
-					</li>
-				
-			
-			  
-					<li>
-						<a href="/projects/cell-to-paper.html" class="modal-link">
-							<div class="image-hover-container">
-								<img class="image image-hover-img" width="400" src="/uploads/5.jpg">
-								<div class="overlay">
-									<div class="text overlay-text">Cell to Paper</div>
-								</div>
-							</div>
-						</a>
-					</li>
-				
-			
-			  
-					<li>
-						<a href="/projects/blueberries-and-antibodies.html" class="modal-link">
-							<div class="image-hover-container">
-								<img class="image image-hover-img" width="400" src="/uploads/6.jpg">
-								<div class="overlay">
-									<div class="text overlay-text">Blueberries and Antibodies</div>
-								</div>
-							</div>
-						</a>
-					</li>
-				
-			
-			  
-			
-			  
-			
-			  
-					<li>
-						<a href="/projects/decay1.html" class="modal-link">
-							<div class="image-hover-container">
-								<img class="image image-hover-img" width="400" src="/uploads/4.jpg">
-								<div class="overlay">
-									<div class="text overlay-text">decay1</div>
-								</div>
-							</div>
-						</a>
-					</li>
-				
-			
-			  
-					<li>
-						<a href="/projects/decay2.html" class="modal-link">
-							<div class="image-hover-container">
-								<img class="image image-hover-img" width="400" src="/uploads/IMG_6683-44d860.jpg">
-								<div class="overlay">
-									<div class="text overlay-text">decay2</div>
-								</div>
-							</div>
-						</a>
-					</li>
-				
-			
-			  
-					<li>
-						<a href="/projects/decay3.html" class="modal-link">
-							<div class="image-hover-container">
-								<img class="image image-hover-img" width="400" src="/uploads/IMG_6882.jpg">
-								<div class="overlay">
-									<div class="text overlay-text">decay3</div>
-								</div>
-							</div>
-						</a>
-					</li>
-				
-			
-			  
-			
-			  
-			
-			  
-			
-			  
-			
-			  
-			
-			  
-			
-			  
-			
-		</section>
-
+	</a>
+	<div class="header-desc-container">
+		<p class="header-desc">painter and artist based in palo alto.</p>
 	</div>
-</div>	
+	<div class="nav-link-container nav-med">
+		<!-- series 1 is in index.html -->
+		<!-- so we don't create a category page for series 1 -->
+		<a href="/" class="nav-link text-link">series 1</a>
+		<span class="nav-link dot">·</span>
+		
+		<!-- rest of the categories -->
+		
+		
+			<a href="/category/series2.html" class="nav-link text-link">series 2</a>
+			<span class="nav-link dot">·</span>
+		
+			<a href="/category/landscapes.html" class="nav-link text-link">landscapes</a>
+			<span class="nav-link dot">·</span>
+		
+			<a href="/category/portraits.html" class="nav-link text-link">portraits</a>
+			<span class="nav-link dot">·</span>
+		
+
+		<a href="/about" class="nav-link text-link">about</a>
+		<span class="nav-link dot">·</span>
+		<a href="/contact" class="nav-link text-link">contact</a>
+	</div>
+</nav>
+		<main id="swup" class="transition-fade">
+			<div class="container">
+	<section id="photos">
+		
+
+		
+	 	
+		
+	 	
+		
+	 	
+		
+	 	
+		
+	 	
+		
+	 	
+		
+	 	
+		
+	 	
+		
+	 	
+		
+	 	
+		
+	 	
+		
+	 	
+		
+	 	
+		
+	 	
+				<li>
+					<a href="/projects/cotyledon-cross-section-427.html" class="modal-link">
+						<div class="image-hover-container">
+							<img class="lazy image image-hover-img" width="400" src="/assets/images/lazy.jpg" data-src="/uploads/high10.jpg">
+							<div class="overlay">
+								<div class="text overlay-text">Plant Embryo Eyes</div>
+							</div>
+						</div>
+					</a>
+				</li>
+			
+		
+	 	
+				<li>
+					<a href="/projects/rhizobia.html" class="modal-link">
+						<div class="image-hover-container">
+							<img class="lazy image image-hover-img" width="400" src="/assets/images/lazy.jpg" data-src="/uploads/rhizobia-low-res.jpg">
+							<div class="overlay">
+								<div class="text overlay-text">Rhizobia</div>
+							</div>
+						</div>
+					</a>
+				</li>
+			
+		
+	 	
+		
+	 	
+				<li>
+					<a href="/projects/waltz-of-interstellar-volvox.html" class="modal-link">
+						<div class="image-hover-container">
+							<img class="lazy image image-hover-img" width="400" src="/assets/images/lazy.jpg" data-src="/uploads/2.jpg">
+							<div class="overlay">
+								<div class="text overlay-text">Waltz of Interstellar Volvox</div>
+							</div>
+						</div>
+					</a>
+				</li>
+			
+		
+	 	
+				<li>
+					<a href="/projects/cell-to-paper.html" class="modal-link">
+						<div class="image-hover-container">
+							<img class="lazy image image-hover-img" width="400" src="/assets/images/lazy.jpg" data-src="/uploads/5.jpg">
+							<div class="overlay">
+								<div class="text overlay-text">Cell to Paper</div>
+							</div>
+						</div>
+					</a>
+				</li>
+			
+		
+	 	
+				<li>
+					<a href="/projects/blueberries-and-antibodies.html" class="modal-link">
+						<div class="image-hover-container">
+							<img class="lazy image image-hover-img" width="400" src="/assets/images/lazy.jpg" data-src="/uploads/6.jpg">
+							<div class="overlay">
+								<div class="text overlay-text">Blueberries and Antibodies</div>
+							</div>
+						</div>
+					</a>
+				</li>
+			
+		
+	 	
+		
+	 	
+		
+	 	
+				<li>
+					<a href="/projects/decay1.html" class="modal-link">
+						<div class="image-hover-container">
+							<img class="lazy image image-hover-img" width="400" src="/assets/images/lazy.jpg" data-src="/uploads/4.jpg">
+							<div class="overlay">
+								<div class="text overlay-text">decay1</div>
+							</div>
+						</div>
+					</a>
+				</li>
+			
+		
+	 	
+				<li>
+					<a href="/projects/decay2.html" class="modal-link">
+						<div class="image-hover-container">
+							<img class="lazy image image-hover-img" width="400" src="/assets/images/lazy.jpg" data-src="/uploads/IMG_6683-44d860.jpg">
+							<div class="overlay">
+								<div class="text overlay-text">decay2</div>
+							</div>
+						</div>
+					</a>
+				</li>
+			
+		
+	 	
+				<li>
+					<a href="/projects/decay3.html" class="modal-link">
+						<div class="image-hover-container">
+							<img class="lazy image image-hover-img" width="400" src="/assets/images/lazy.jpg" data-src="/uploads/IMG_6882.jpg">
+							<div class="overlay">
+								<div class="text overlay-text">decay3</div>
+							</div>
+						</div>
+					</a>
+				</li>
+			
+		
+	 	
+		
+	 	
+		
+	 	
+		
+	 	
+		
+	 	
+		
+	 	
+		
+	 	
+		
+	 	
+		
+	 	
+		
+	</section>
+</div>
+		</main>
 	</body>
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
-
-<script src="/assets/js/modernizr.custom.js"></script>
-<script src="/assets/js/jquery.min.js"></script>
-<script src="/assets/js/main.js"></script>
-<!-- <script src="bower_components/aos/dist/aos.js"></script> -->
-<!-- <script src="/assets/js/masonry.pkgd.min.js"></script> -->
-<!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->
-
-<script src="/assets/js/barba.min.js" type="text/javascript"></script>
-
-<footer>
+	<footer>
 	<p>&copy;<script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script> Jenny Shi. All rights reserved.</p>
 	<p>Website by <a href="https://oliviachang.me" target="_blank">Olivia Chang.</a></p>
 </footer>
+	<!-- keep jquery up top -->
+<script src="/assets/js/jquery.min.js"></script>
+<!-- <script src="/assets/js/masonry.pkgd.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="/assets/js/swup.min.js"></script>
+<script src="/assets/js/unveil.js"></script>
 
-<!-- <script>
-	$('.grid').masonry({
-	  itemSelector: '.grid-item',
-	  columnWidth: 400
-	});
-</script> -->
-
+<!-- keep main.js below -->
+<script src="/assets/js/main.js"></script>
 </html>

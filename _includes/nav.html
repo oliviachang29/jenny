@@ -1,27 +1,25 @@
-<header>
-	<nav class="container">
-		<a href="{{site.url}}">
-			{% include svg.html%}
-		</a>
-		<div class="header-desc-container">
-			<p class="header-desc">{{site.description}}</p>
-		</div>
-		<div class="nav-link-container nav-med">
-			<!-- series 1 is in index.html -->
-			<!-- so we don't create a category page for series 1 -->
-			<a href="/" class="p-text nav-link"><span class="underline">{{ site.first_link | downcase }}</span></a>
-			<span class="p-text nav-link dot">·</span>
-			
-			<!-- rest of the categories -->
-			{% assign categories = site.category | sort: "order" %}
-			{% for category in categories %}
-				<a href="{{ category.url }}" class="p-text nav-link"><span class="underline">{{category.title | downcase}}</span></a>
-				<span class="p-text nav-link dot">·</span>
-			{% endfor %}
+<nav class="container" data-aos="fade-in">
+	<a href="{{site.url}}">
+		{% include svg.html%}
+	</a>
+	<div class="header-desc-container">
+		<p class="header-desc">{{site.description}}</p>
+	</div>
+	<div class="nav-link-container nav-med">
+		<!-- series 1 is in index.html -->
+		<!-- so we don't create a category page for series 1 -->
+		<a href="/" class="nav-link text-link">{{ site.first_link | downcase }}</a>
+		<span class="nav-link dot">·</span>
+		
+		<!-- rest of the categories -->
+		{% assign categories = site.category | sort: "order" %}
+		{% for category in categories %}
+			<a href="{{ category.url }}" class="nav-link text-link">{{category.title | downcase}}</a>
+			<span class="nav-link dot">·</span>
+		{% endfor %}
 
-			<a href="/about" class="p-text nav-link"><span class="underline">about</span></a>
-			<span class="p-text nav-link dot">·</span>
-			<a href="/contact" class="p-text nav-link"><span class="underline">contact</span></a>
-		</div>
-	</nav>
-</header>
+		<a href="/about" class="nav-link text-link">about</a>
+		<span class="nav-link dot">·</span>
+		<a href="/contact" class="nav-link text-link">contact</a>
+	</div>
+</nav>

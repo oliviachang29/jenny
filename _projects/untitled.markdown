@@ -3,6 +3,6 @@ title: untitled
 date: 2016-10-30 01:55:00 Z
 categories:
 - landscapes
-low_res_image: "/uploads/IMG_4229%20(1).jpg"
+image: "/uploads/IMG_4229%20(1).jpg"
 ---
 

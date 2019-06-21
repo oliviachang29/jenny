@@ -2,74 +2,57 @@
 layout: default
 ---
 
-{% unless page.high_res_image %}
-	<script>preload("{{page.high_res_image}}")</script>
-{% endunless %}
-<div id="barba-wrapper">
-	<div class="barba-container">
-		
-		<!-- <div id="loading"></div> -->
-
-		<div class="project-container">
-			<div class="project-img-container">
-				<img id="project-img" src="{{page.high_res_image}}">
-				{% unless page.high_res_image %}
-					<img id="project-img" src="{{page.low_res_image}}">
-				{% endunless %}
-			</div>
-			<div class="project-other">
-				<div class="project-info-container">
-					<div class="title-desc">
-						<p id="project-title">{{page.title}}</p>
-						<div class="project-desc-container">
-							{% if page.description %}
-							 {% assign desc = page.description %}
-							{% endif %}
-							{% if page.Description %}
-								{% assign desc = page.Description %}
-							{% endif %}
-							<p id="project-desc">{{desc}}</p>
-						</div>
-					</div>
-					<div class="tags">
-						<ul>
-							{% if page.medium %}
-								<li id="project-medium">{{page.medium | capitalize}}</li>
-								<hr id="project-medium-hr" class="tag-hr">
-							{% endif %}
-							{% if page.style %}
-								<li id="project-style">{{page.style | capitalize}}</li>
-								<hr id="project-style-hr" class="tag-hr">
-							{% endif %}
-							{% if page.date %}
-								<li id="project-date">{{ page.date | date: "%Y" }}</li>
-								<hr class="tag-hr">
-							{% endif %}
-							{% if page.categories %}
-								{% for category in page.categories %}
-									<li id="project-category">{{ category | capitalize }}</li>
-									<hr class="tag-hr">
-								{% endfor %}
-							{% endif %}
-						</ul>
-					</div>
+<div class="container">
+	<div id="project-img-container">
+		<img id="project-img" class="lazy" src="/assets/images/lazy.jpg" data-src="{{page.image}}">
+	</div>
+	<div>
+		<div class="row">
+			<div class="col-md-6 col-lg-5 offset-lg-1">
+				<div class="title-desc">
+					<h1 id="project-title">{{page.title}}</h1>
+					<p id="project-desc">{{page.description}}</p>
 				</div>
-				{% assign page_category = page.categories.first | downcase | remove: " " %}
-				{% assign first_link = site.first_link | downcase | remove: " " %}
-				{% if page_category == first_link %}
-					<!-- index.html is back_link -->
-					{% assign back_link = "/" %}
-				{% else %}
-					{% assign back_link = "/category/" | append: page_category %}
-				{% endif %}
-
-				<a href="{{back_link}}">
-					<div class="close-animatedModal">
-						<img id="close-icon" src="/assets/images/close-icon.svg">
-						<p class="p-text not-selectable">Back</p>
-					</div>
-				</a>
+			</div>
+			<div class="col-md-6 col-lg-5">
+				<div class="tags">
+					<ul>
+						{% if page.medium %}
+							<li id="project-medium">{{page.medium | capitalize}}</li>
+							<hr id="project-medium-hr" class="tag-hr">
+						{% endif %}
+						{% if page.style %}
+							<li id="project-style">{{page.style | capitalize}}</li>
+							<hr id="project-style-hr" class="tag-hr">
+						{% endif %}
+						{% if page.date %}
+							<li id="project-date">{{ page.date | date: "%Y" }}</li>
+							<hr class="tag-hr">
+						{% endif %}
+						{% if page.categories %}
+							{% for category in page.categories %}
+								<li id="project-category">{{ category | capitalize }}</li>
+								<hr class="tag-hr">
+							{% endfor %}
+						{% endif %}
+					</ul>
+				</div>
 			</div>
 		</div>
+
+		{% assign page_category = page.categories.first | downcase | remove: " " %}
+		{% assign first_link = site.first_link | downcase | remove: " " %}
+		{% if page_category == first_link %}
+			<!-- index.html is back_link -->
+			{% assign back_link = "/" %}
+		{% else %}
+			{% assign back_link = "/category/" | append: page_category %}
+		{% endif %}
+
+		<a href="{{back_link}}">
+			<div id="close-icon-container">
+				<img id="close-icon" src="/assets/images/close-icon.svg">
+			</div>
+		</a>
 	</div>
 </div>

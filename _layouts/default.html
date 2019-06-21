@@ -3,7 +3,10 @@
 	{% include head.html %}
 	<body>
 		{% include nav.html %}
-		{{content}}	
+		<main id="swup" class="transition-fade">
+			{{content}}
+		</main>
 	</body>
 	{% include footer.html %}
+	{% include scripts.html %}
 </html>

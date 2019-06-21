@@ -13,6 +13,11 @@
 		line-height: 30px;
 		margin: 0 0 20px;
 	}
+
+	ul {
+		margin-top: 1rem;
+	}
+	
 	li {
 		margin-bottom: 10px;
 		line-height: 20px;
@@ -26,10 +31,10 @@
 	}
 
 	.text {
-		@media only screen and (min-width : 600px) {
+		/*@media only screen and (min-width : 600px) {
 		    width: 50%;
 		    margin: 0 auto;
-		}
+		}*/
 	}
 }
 
@@ -75,6 +80,10 @@ button {
 	border: none;
 	color: #353535;
 	font-size: 16px;
+}
+
+.send-button {
+	padding-bottom: 5px;
 }
 
 .honeypot {
