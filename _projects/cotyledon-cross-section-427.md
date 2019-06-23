@@ -1,9 +1,11 @@
 ---
 title: Plant Embryo Eyes
-date: 2018-08-14 00:39:00 Z
+date: 2018-08-14T00:39:00.000+00:00
 categories:
 - series 1
-description: 
-image: "/uploads/high10.jpg"
----
+description: ''
+image: "/uploads/3.jpg"
+medium: ''
+style: ''
 
+---
