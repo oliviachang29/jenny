@@ -51,6 +51,7 @@ fields:
   label: Style
   description: 'ex: "Cubism"'
 pages:
+- _projects/t-4-bacteriophages.md
 - _projects/parasitic-cycle.markdown
 - _projects/blueberries-and-antibodies.markdown
 - _projects/decay1.markdown
@@ -73,7 +74,6 @@ pages:
 - _projects/yeet.markdown
 - _projects/warrior.md
 - _projects/waltz-of-interstellar-volvox.markdown
-- _projects/t-4-bacteriophages.md
 - _projects/phantoms.markdown
 - _projects/mom.md
 - _projects/mom-2.markdown
