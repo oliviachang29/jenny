@@ -4,7 +4,6 @@ date: 2018-10-28T17:00:00.000+00:00
 layout: static
 
 ---
-<img src="/uploads/IMG_1544-568f23.jpg">
 
 <p></p>
 <!-- <h3 id="contact-me">Contact me</h3> -->
