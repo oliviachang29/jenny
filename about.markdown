@@ -18,3 +18,11 @@ Jenny Shi is an oil painter who creates abstractions and landscapes and is a sen
 * UCLA Royce Hall Large Screens, Los Angeles, CA. March 2018
 * ArtNow Juried Exhibition, New Museum Los Gatos. Los Gatos, CA. March - May 2019
 * National Scholastic Art and Writing Regional Exhibition, Pacific Grove Art Center. Pacific Grove, CA. March 2019
+* PAUSD Art Exhibition, Palo Alto Art Center, Palo Alto, CA. May 2018
+* California Institute of Arts, Lime Gallery, Los Angeles, CA. July 2017
+* Wurster Gallery, U.C. Berkeley, Berkeley, CA. July 2019
+
+### publications
+
+* The Adroit Journal (Forthcoming Spring 2020) 
+* Bitter Melon Magazine (Winter 2019)
