@@ -51,6 +51,7 @@ fields:
   label: Style
   description: 'ex: "Cubism"'
 pages:
+- _projects/bleached-interstellar-dust.md
 - _projects/t-4-bacteriophages.md
 - _projects/haystack.markdown
 - _projects/yeet3.markdown
@@ -68,7 +69,6 @@ pages:
 - _projects/rhizobia.markdown
 - _projects/hulu.markdown
 - _projects/pandemonium.md
-- _projects/bleached-interstellar-dust.md
 - _projects/dad.markdown
 - _projects/raveling-mist.md
 - _projects/deconstructed.markdown

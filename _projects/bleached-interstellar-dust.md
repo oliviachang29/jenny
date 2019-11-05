@@ -1,8 +1,11 @@
 ---
 title: "[Bleached] Interstellar Dust"
-date: 2017-08-14T00:39:00.000+00:00
+date: 2017-08-13 17:39:00 -0700
 categories:
 - landscapes
-description: 'BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH '
+description: ''
 image: "/uploads/high2.jpg"
+medium: oil on canvas
+style: ''
+
 ---
