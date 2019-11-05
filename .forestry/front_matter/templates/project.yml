@@ -51,6 +51,7 @@ fields:
   label: Style
   description: 'ex: "Cubism"'
 pages:
+- _projects/haystack.markdown
 - _projects/yeet3.markdown
 - _projects/yeet2.markdown
 - _projects/yeet.markdown
@@ -76,7 +77,6 @@ pages:
 - _projects/phantoms.markdown
 - _projects/mom.md
 - _projects/mom-2.markdown
-- _projects/haystack.markdown
 - _projects/fleeting-moment.markdown
 - _projects/emily.markdown
 - _projects/drooling-chromosomes.markdown
