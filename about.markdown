@@ -25,7 +25,7 @@ font-size: 20px;
     	/* vertical spaces between bullet points */
     	margin-bottom: 7.5px;
     	/* vertical spaces between lines inside single bullet point */
-    	line-height: 26px;
+    	line-height: 25px;
     }
     
     #about-container img {
