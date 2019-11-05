@@ -5,10 +5,10 @@ layout: about
 
 ---
 <style>
-    #about-container h1, h2, h3, h4, h5 {
-        /* font size of titles */
-        font-size: 20px;
-    }
+\#about-container h1, h2, h3, h4, h5 {
+/* font size of titles */
+font-size: 20px;
+}
 
     #about-container p {
     	/* font size of paragraphs */
@@ -27,27 +27,28 @@ layout: about
     	/* vertical spaces between lines inside single bullet point */
     	line-height: 26px;
     }
-
+    
     #about-container img {
         /* you can change these if you want */
         margin-top: inherit;
         margin-bottom: inherit;
     }
+
 </style>
 
 <!-- if you want to change the photo, change the url in data-src -->
 <!-- <img class="lazy" src="/assets/images/lazy.jpg" data-src="/uploads/high6.jpg"> -->
 
-###### **About**
+###### **ABOUT**
 
 Jenny Shi is an oil painter who creates abstractions and landscapes and is a senior at Palo Alto High School, California.
 
-###### **Publications**
+###### **PUBLICATIONS**
 
 * The Adroit Journal (_forthcoming_ Spring 2020)
 * Bitter Melon Magazine (Winter 2019)
 
-###### **Exhibitions**
+###### **EXHIBITIONS**
 
 * Congressional Art Exhibition, U.S. Capitol, Washington, D.C. 2019
 * _Infinite Possibilities,_ National Young Arts Week Exhibition, Young Arts Gallery. Miami, FL. January – February 2019
