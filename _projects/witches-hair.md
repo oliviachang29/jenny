@@ -7,6 +7,5 @@ date:
 description: ''
 medium: ''
 style: ''
-published: false
 
 ---
