@@ -51,6 +51,7 @@ fields:
   label: Style
   description: 'ex: "Cubism"'
 pages:
+- _projects/decay2.markdown
 - _projects/decay1.markdown
 - _projects/figure-drawings.md
 - _projects/witches-hair.md
@@ -80,6 +81,5 @@ pages:
 - _projects/fleeting-moment.markdown
 - _projects/emily.markdown
 - _projects/drooling-chromosomes.markdown
-- _projects/decay2.markdown
 - _projects/cotyledon-cross-section-427.md
 - _projects/cell-to-paper.markdown
