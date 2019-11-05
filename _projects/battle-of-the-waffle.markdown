@@ -1,5 +1,5 @@
 ---
-title: 'Pandemonium '
+title: Battle of the Waffle
 date: 2018-10-28T17:03:00.000+00:00
 categories:
 - series 2
