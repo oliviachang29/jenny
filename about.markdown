@@ -10,7 +10,7 @@ Jenny Shi is an oil painter who creates abstractions and landscapes and is a sen
 
 ### publications
 
-* _(Forthcoming)_ The Adroit Journal (Spring 2020)
+* The Adroit Journal (_Forthcoming_ Spring 2020)
 * Bitter Melon Magazine (Winter 2019)
 
 ### exhibitions
