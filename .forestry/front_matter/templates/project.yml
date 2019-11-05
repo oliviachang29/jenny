@@ -51,6 +51,7 @@ fields:
   label: Style
   description: 'ex: "Cubism"'
 pages:
+- _projects/yeet.markdown
 - _projects/witches-hair.md
 - _projects/t-4-bacteriophages.md
 - _projects/parasitic-cycle.markdown
@@ -72,7 +73,6 @@ pages:
 - _projects/raveling-mist.md
 - _projects/deconstructed.markdown
 - _projects/untitled.markdown
-- _projects/yeet.markdown
 - _projects/warrior.md
 - _projects/waltz-of-interstellar-volvox.markdown
 - _projects/phantoms.markdown
