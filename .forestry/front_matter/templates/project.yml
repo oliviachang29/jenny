@@ -51,6 +51,7 @@ fields:
   label: Style
   description: 'ex: "Cubism"'
 pages:
+- _projects/deconstructed.markdown
 - _projects/emily.markdown
 - _projects/decay3.markdown
 - _projects/decay2.markdown
@@ -73,7 +74,6 @@ pages:
 - _projects/pandemonium.md
 - _projects/dad.markdown
 - _projects/raveling-mist.md
-- _projects/deconstructed.markdown
 - _projects/warrior.md
 - _projects/waltz-of-interstellar-volvox.markdown
 - _projects/phantoms.markdown
