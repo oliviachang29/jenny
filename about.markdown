@@ -5,7 +5,14 @@ layout: about
 
 ---
 <style>
+	#about-container h1, h2, h3, h4, h5 {
+		/* font size of titles */
+		font-size: 20px;
+	}
+
 	#about-container p {
+		/* font size of paragraphs */
+		font-size: 16px;
 		/* vertical spaces between lines in a paragraph */
 		line-height: 26px;
 		/* vertical space after the end of a paragraph */
@@ -13,6 +20,8 @@ layout: about
 	}
 		
 	#about-container li {
+		/* font size of bullet points */
+		font-size: 16px;
 		/* vertical spaces between bullet points */
 		margin-bottom: 7.5px;
 		/* vertical spaces between lines inside single bullet point */
