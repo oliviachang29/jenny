@@ -5,10 +5,10 @@ layout: about
 
 ---
 <style>
-\#about-container h1, h2, h3, h4, h5 {
-/* font size of titles */
-font-size: 20px;
-}
+    #about-container h1, h2, h3, h4, h5 {
+        /* font size of titles */
+        font-size: 20px;
+    }
 
     #about-container p {
     	/* font size of paragraphs */
@@ -28,7 +28,15 @@ font-size: 20px;
     	line-height: 26px;
     }
 
+    #about-container img {
+        /* you can change these if you want */
+        margin-top: inherit;
+        margin-bottom: inherit;
+    }
 </style>
+
+<!-- if you want to change the photo, change the url in data-src -->
+<!-- <img class="lazy" src="/assets/images/lazy.jpg" data-src="/uploads/high6.jpg"> -->
 
 ###### **About**
 

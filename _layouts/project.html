@@ -17,22 +17,24 @@ layout: default
 			<div class="col-md-6 col-lg-5">
 				<div class="tags">
 					<ul>
-						{% if page.medium %}
+						{% if page.medium and page.medium != "" %}
 							<li id="project-medium">{{page.medium | capitalize}}</li>
 							<hr id="project-medium-hr" class="tag-hr">
 						{% endif %}
-						{% if page.style %}
+						{% if page.style and page.style != "" %}
 							<li id="project-style">{{page.style | capitalize}}</li>
 							<hr id="project-style-hr" class="tag-hr">
 						{% endif %}
-						{% if page.date %}
+						{% if page.date and page.date != "" %}
 							<li id="project-date">{{ page.date | date: "%Y" }}</li>
 							<hr class="tag-hr">
 						{% endif %}
 						{% if page.categories %}
 							{% for category in page.categories %}
-								<li id="project-category">{{ category | capitalize }}</li>
-								<hr class="tag-hr">
+								{% if category != "" %}
+									<li id="project-category">{{ category | capitalize }}</li>
+									<hr class="tag-hr">
+								{% endif %}
 							{% endfor %}
 						{% endif %}
 					</ul>
