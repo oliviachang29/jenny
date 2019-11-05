@@ -51,6 +51,7 @@ fields:
   label: Style
   description: 'ex: "Cubism"'
 pages:
+- _projects/decay1.markdown
 - _projects/figure-drawings.md
 - _projects/witches-hair.md
 - _projects/bleached-interstellar-dust.md
@@ -62,7 +63,6 @@ pages:
 - _projects/yeet.markdown
 - _projects/parasitic-cycle.markdown
 - _projects/blueberries-and-antibodies.markdown
-- _projects/decay1.markdown
 - _projects/the-things-we-cannot-touch.md
 - _projects/decay3.markdown
 - _projects/self-portrait.md
