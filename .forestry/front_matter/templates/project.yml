@@ -51,6 +51,7 @@ fields:
   label: Style
   description: 'ex: "Cubism"'
 pages:
+- _projects/witches-hair.md
 - _projects/t-4-bacteriophages.md
 - _projects/parasitic-cycle.markdown
 - _projects/blueberries-and-antibodies.markdown
