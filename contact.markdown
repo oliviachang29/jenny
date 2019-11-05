@@ -4,8 +4,6 @@ date: 2018-10-28T17:00:00.000+00:00
 layout: static
 
 ---
-
-<p></p>
 <!-- <h3 id="contact-me">Contact me</h3> -->
 <form name="contact" method="POST" action="/success" netlify netlify-honeypot="bot-field">
 <input type="text" name="name" placeholder="Name" />

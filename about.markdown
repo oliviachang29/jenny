@@ -1,9 +1,25 @@
 ---
 title: About
 date: 2019-11-04 00:00:00 -0800
-layout: static
+layout: about
 
 ---
+<style>
+	#about-container p {
+		/* vertical spaces between lines in a paragraph */
+		line-height: 26px;
+		/* vertical space after the end of a paragraph */
+		margin-bottom: 30px;
+	}
+		
+	#about-container li {
+		/* vertical spaces between bullet points */
+		margin-bottom: 7.5px;
+		/* vertical spaces between lines inside single bullet point */
+		line-height: 26px;
+	}
+</style>
+
 ##### **About**
 
 Jenny Shi is an oil painter who creates abstractions and landscapes and is a senior at Palo Alto High School, California.
