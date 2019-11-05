@@ -30,16 +30,16 @@ font-size: 20px;
 
 </style>
 
-##### **About**
+###### **About**
 
 Jenny Shi is an oil painter who creates abstractions and landscapes and is a senior at Palo Alto High School, California.
 
-##### **Publications**
+###### **Publications**
 
 * The Adroit Journal (_forthcoming_ Spring 2020)
 * Bitter Melon Magazine (Winter 2019)
 
-##### **Exhibitions**
+###### **Exhibitions**
 
 * Congressional Art Exhibition, U.S. Capitol, Washington, D.C. 2019
 * _Infinite Possibilities,_ National Young Arts Week Exhibition, Young Arts Gallery. Miami, FL. January – February 2019
