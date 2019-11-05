@@ -5,7 +5,7 @@ categories:
 title: Witches Hair
 date: 
 description: ''
-medium: ''
+medium: oil on canvas
 style: ''
 
 ---

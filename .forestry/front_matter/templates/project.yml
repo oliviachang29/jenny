@@ -51,6 +51,7 @@ fields:
   label: Style
   description: 'ex: "Cubism"'
 pages:
+- _projects/witches-hair.md
 - _projects/battle-of-the-waffle.markdown
 - _projects/bleached-interstellar-dust.md
 - _projects/t-4-bacteriophages.md
@@ -58,7 +59,6 @@ pages:
 - _projects/yeet3.markdown
 - _projects/yeet2.markdown
 - _projects/yeet.markdown
-- _projects/witches-hair.md
 - _projects/parasitic-cycle.markdown
 - _projects/blueberries-and-antibodies.markdown
 - _projects/decay1.markdown
