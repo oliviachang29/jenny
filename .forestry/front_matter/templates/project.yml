@@ -51,6 +51,7 @@ fields:
   label: Style
   description: 'ex: "Cubism"'
 pages:
+- _projects/battle-of-the-waffle.markdown
 - _projects/bleached-interstellar-dust.md
 - _projects/t-4-bacteriophages.md
 - _projects/haystack.markdown
@@ -61,7 +62,6 @@ pages:
 - _projects/parasitic-cycle.markdown
 - _projects/blueberries-and-antibodies.markdown
 - _projects/decay1.markdown
-- _projects/battle-of-the-waffle.markdown
 - _projects/runaway.markdown
 - _projects/the-things-we-cannot-touch.md
 - _projects/decay3.markdown
