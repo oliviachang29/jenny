@@ -1,32 +1,33 @@
 ---
 title: About
-date: 2019-11-04 00:00:00 -0800
+date: 2019-11-04T08:00:00.000+00:00
 layout: about
 
 ---
 <style>
-	#about-container h1, h2, h3, h4, h5 {
-		/* font size of titles */
-		font-size: 20px;
-	}
+\#about-container h1, h2, h3, h4, h5 {
+/* font size of titles */
+font-size: 20px;
+}
 
-	#about-container p {
-		/* font size of paragraphs */
-		font-size: 16px;
-		/* vertical spaces between lines in a paragraph */
-		line-height: 26px;
-		/* vertical space after the end of a paragraph */
-		margin-bottom: 30px;
-	}
-		
-	#about-container li {
-		/* font size of bullet points */
-		font-size: 16px;
-		/* vertical spaces between bullet points */
-		margin-bottom: 7.5px;
-		/* vertical spaces between lines inside single bullet point */
-		line-height: 26px;
-	}
+    #about-container p {
+    	/* font size of paragraphs */
+    	font-size: 15px;
+    	/* vertical spaces between lines in a paragraph */
+    	line-height: 26px;
+    	/* vertical space after the end of a paragraph */
+    	margin-bottom: 30px;
+    }
+    	
+    #about-container li {
+    	/* font size of bullet points */
+    	font-size: 15px;
+    	/* vertical spaces between bullet points */
+    	margin-bottom: 7.5px;
+    	/* vertical spaces between lines inside single bullet point */
+    	line-height: 26px;
+    }
+
 </style>
 
 ##### **About**
