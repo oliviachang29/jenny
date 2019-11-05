@@ -51,6 +51,7 @@ fields:
   label: Style
   description: 'ex: "Cubism"'
 pages:
+- _projects/yeet3.markdown
 - _projects/yeet2.markdown
 - _projects/yeet.markdown
 - _projects/witches-hair.md
@@ -69,7 +70,6 @@ pages:
 - _projects/bleached-interstellar-dust.md
 - _projects/untitled-6858e1.markdown
 - _projects/dad.markdown
-- _projects/yeet3.markdown
 - _projects/raveling-mist.md
 - _projects/deconstructed.markdown
 - _projects/untitled.markdown
