@@ -51,10 +51,10 @@ fields:
   label: Style
   description: 'ex: "Cubism"'
 pages:
+- _projects/decay3.markdown
 - _projects/decay1.markdown
 - _projects/headless-worms.md
 - _projects/decay2.markdown
-- _projects/decay3.markdown
 - _projects/phantoms.markdown
 - _projects/deconstructed.markdown
 - _projects/emily.markdown
