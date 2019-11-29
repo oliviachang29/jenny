@@ -2,7 +2,7 @@
 image: "/uploads/zooanthid final.jpg"
 categories:
 - series 1
-title: 'Headless worms '
+title: Headless polychaetes
 date: 
 description: ''
 medium: ''
