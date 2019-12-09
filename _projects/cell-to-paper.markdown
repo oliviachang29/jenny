@@ -1,8 +1,11 @@
 ---
 title: Cell to Paper
-date: 2018-10-28 17:01:00 Z
+date: 2018-10-28 11:01:00 -0700
 categories:
 - series 1
 image: "/uploads/5.jpg"
----
+description: ''
+medium: ''
+style: ''
 
+---

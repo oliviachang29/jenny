@@ -51,6 +51,7 @@ fields:
   label: Style
   description: 'ex: "Cubism"'
 pages:
+- _projects/cell-to-paper.markdown
 - _projects/blueberries-and-antibodies.markdown
 - _projects/waltz-of-interstellar-volvox.markdown
 - _projects/headless-worms.md
@@ -82,4 +83,3 @@ pages:
 - _projects/fleeting-moment.markdown
 - _projects/drooling-chromosomes.markdown
 - _projects/cotyledon-cross-section-427.md
-- _projects/cell-to-paper.markdown
