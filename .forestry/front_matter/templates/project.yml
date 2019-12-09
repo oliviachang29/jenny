@@ -51,6 +51,7 @@ fields:
   label: Style
   description: 'ex: "Cubism"'
 pages:
+- _projects/waltz-of-interstellar-volvox.markdown
 - _projects/headless-worms.md
 - _projects/decay3.markdown
 - _projects/decay1.markdown
@@ -76,7 +77,6 @@ pages:
 - _projects/dad.markdown
 - _projects/raveling-mist.md
 - _projects/warrior.md
-- _projects/waltz-of-interstellar-volvox.markdown
 - _projects/mom.md
 - _projects/mom-2.markdown
 - _projects/fleeting-moment.markdown

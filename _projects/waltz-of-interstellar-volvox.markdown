@@ -1,8 +1,11 @@
 ---
 title: Waltz of Interstellar Volvox
-date: 2018-10-28 16:41:00 Z
+date: 2018-10-28 09:04:00 -0700
 categories:
 - series 1
-image: "/uploads/2.jpg"
----
+image: "/uploads/2-1.jpg"
+description: ''
+medium: ''
+style: ''
 
+---
