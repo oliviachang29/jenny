@@ -51,6 +51,7 @@ fields:
   label: Style
   description: 'ex: "Cubism"'
 pages:
+- _projects/blueberries-and-antibodies.markdown
 - _projects/waltz-of-interstellar-volvox.markdown
 - _projects/headless-worms.md
 - _projects/decay3.markdown
@@ -68,7 +69,6 @@ pages:
 - _projects/yeet2.markdown
 - _projects/yeet.markdown
 - _projects/parasitic-cycle.markdown
-- _projects/blueberries-and-antibodies.markdown
 - _projects/the-things-we-cannot-touch.md
 - _projects/self-portrait.md
 - _projects/rhizobia.markdown
