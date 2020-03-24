@@ -1,9 +1,9 @@
 ---
 image: "/uploads/coralfungimainshot.jpg"
 categories:
-- landscapes
+- series 2
 title: Blue Coral
-date: 2019-12-26 00:00:00 -0800
+date: 2020-03-24 00:00:00 -0700
 description: ''
 medium: ''
 style: ''
