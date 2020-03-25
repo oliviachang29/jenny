@@ -19,8 +19,6 @@ fields:
     max: '1'
 - type: file
   name: primary_image
-  description: Now relying on only one image for both the category page and the project
-    page. Should be fairly high res.
   label: Primary Image
   config:
     maxSize: '10'
