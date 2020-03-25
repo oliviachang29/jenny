@@ -7,7 +7,4 @@ description: ''
 primary_image: "/uploads/3.jpg"
 medium: ''
 style: ''
-other_images:
-- "/uploads/10.jpg"
-- "/uploads/2.jpg"
 ---

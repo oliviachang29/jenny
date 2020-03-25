@@ -1,5 +1,5 @@
 ---
-image: "/uploads/headlesspolychate.jpg"
+primary_image: "/uploads/headlesspolychate.jpg"
 categories:
 - series 1
 title: Headless polychaetes

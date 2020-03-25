@@ -1,5 +1,5 @@
 ---
-image: "/uploads/coralfungimainshot.jpg"
+primary_image: "/uploads/coralfungimainshot.jpg"
 categories:
 - landscapes
 title: Blue Coral
