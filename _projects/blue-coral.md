@@ -8,6 +8,7 @@ description: ''
 medium: ''
 style: ''
 other_images:
+- "/uploads/coralfungijustpainting-1.jpg"
 - "/uploads/coralfungisideview.jpg"
 
 ---
