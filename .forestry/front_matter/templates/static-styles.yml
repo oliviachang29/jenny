@@ -1,0 +1,31 @@
+---
+label: Static Styles
+hide_body: true
+fields:
+- type: text
+  name: title_font_size
+  label: title_font_size
+- type: text
+  name: p_font_size
+  label: p_font_size
+- type: text
+  name: p_line_height
+  label: p_line_height
+- type: text
+  name: p_margin_bottom
+  label: p_margin_bottom
+- type: text
+  name: li_font_size
+  label: li_font_size
+- type: text
+  name: li_line_height
+  label: li_line_height
+- type: text
+  name: li_margin_bottom
+  label: li_margin_bottom
+- type: text
+  name: img_margin_top
+  label: img_margin_top
+- type: text
+  name: img_margin_bottom
+  label: img_margin_bottom
