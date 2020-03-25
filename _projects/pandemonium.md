@@ -4,6 +4,6 @@ date: 2017-10-28 03:21:00 Z
 categories:
 - portraits
 description: 
-image: "/uploads/high7.jpg"
+primary_image: "/uploads/high7.jpg"
 ---
 

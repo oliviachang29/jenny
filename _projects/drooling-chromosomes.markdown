@@ -4,6 +4,6 @@ date: 2017-08-14 00:39:00 Z
 categories:
 - portraits
 description: what is the meaning of life?
-image: "/uploads/THepointistonotunderstandribosomes.jpg"
+primary_image: "/uploads/THepointistonotunderstandribosomes.jpg"
 ---
 

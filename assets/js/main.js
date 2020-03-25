@@ -17,7 +17,7 @@ function initJS() {
 
   scroll = new SmoothScroll();
   
-  $(".lazy").unveil(100, function() {
+  $(".lazy").unveil(0, function() {
     $(this).on('load', function() {
       this.style.opacity = 1;
     });

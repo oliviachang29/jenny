@@ -7,17 +7,17 @@
 	}
 }
 
-#project-img-container {
+#project-images-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin: 80px 0 100px;
+	margin: 80px 0;
 }
 
-#project-img {
+.project-img {
 	object-fit: cover;
 	/*max-height: 800px;*/
-	margin: 0 auto;
+	margin: 0 auto 50px;
 	max-width: 100%;
 	@media (min-width: $md) {
 		max-height: 90vh;

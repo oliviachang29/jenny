@@ -3,8 +3,11 @@ layout: default
 ---
 
 <div class="container">
-	<div id="project-img-container">
-		<img id="project-img" class="lazy" src="/assets/images/lazy.jpg" data-src="{{page.image}}">
+	<div id="project-images-container">
+		<img id="primary-image" class="lazy project-img" src="/assets/images/lazy.jpg" data-src="{{page.primary_image}}">
+		{% for image in page.other_images %}
+			<img class="lazy project-img other-image" src="/assets/images/lazy.jpg" data-src="{{image}}">
+		{% endfor %}
 	</div>
 	<div>
 		<div class="row">

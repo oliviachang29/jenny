@@ -1,5 +1,5 @@
 ---
-image: "/uploads/IMG_1000.jpg"
+primary_image: "/uploads/IMG_1000.jpg"
 categories:
 - landscapes
 title: Witches Hair

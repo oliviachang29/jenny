@@ -4,7 +4,7 @@ date: 2018-10-28 03:21:00 Z
 categories:
 - series 1
 description: 
-image: "/uploads/rhizobia-low-res.jpg"
+primary_image: "/uploads/rhizobia-low-res.jpg"
 medium: oil, petri dishes, string
 ---
 

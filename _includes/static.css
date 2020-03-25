@@ -1,0 +1,28 @@
+#about-container h1, h2, h3, h4, h5 {
+    /* font size of titles */
+    font-size: {{ site.data.static_styles.title_font_size }};
+}
+
+#about-container p {
+	/* font size of paragraphs */
+	font-size: {{ site.data.static_styles.p_font_size }};
+	/* vertical spaces between lines in a paragraph */
+	line-height: {{ site.data.static_styles.p_line_height }};
+	/* vertical space after the end of a paragraph */
+	margin-bottom: {{ site.data.static_styles.p_margin_bottom }};
+}
+	
+#about-container li {
+	/* font size of bullet points */
+	font-size: {{ site.data.static_styles.li_font_size }};
+	/* vertical spaces between bullet points */
+	margin-bottom: {{ site.data.static_styles.li_margin_bottom }};
+	/* vertical spaces between lines inside single bullet point */
+	line-height: {{ site.data.static_styles.li_line_height }};
+}
+
+#about-container img {
+    /* you can change these if you want */
+    margin-top: {{ site.data.static_styles.img_margin_top }};
+    margin-bottom: {{ site.data.static_styles.img_margin_bottom }};
+}
