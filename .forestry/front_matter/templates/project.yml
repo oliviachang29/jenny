@@ -3,13 +3,6 @@ label: Project
 hide_body: true
 display_field: title
 fields:
-- type: file
-  name: primary_image
-  description: Now relying on only one image for both the category page and the project
-    page. Should be fairly high res.
-  label: Primary Image
-  config:
-    maxSize: '10'
 - type: list
   name: categories
   label: Categories
@@ -24,6 +17,18 @@ fields:
     - portraits
     min: '1'
     max: '1'
+- type: file
+  name: primary_image
+  description: Now relying on only one image for both the category page and the project
+    page. Should be fairly high res.
+  label: Primary Image
+  config:
+    maxSize: '10'
+- name: other_images
+  type: image_gallery
+  config: {}
+  label: Other Images
+  description: Other image angles (appears in the same order that you upload).
 - type: text
   name: title
   label: Title
