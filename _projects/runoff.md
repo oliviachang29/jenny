@@ -1,6 +1,6 @@
 ---
 categories:
-- series 1
+- landscapes
 primary_image: "/uploads/tumoralgaepainitng.jpg"
 other_images:
 - "/uploads/tumorsideview tumor.jpg"
