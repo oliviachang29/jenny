@@ -4,28 +4,39 @@ hide_body: true
 fields:
 - type: text
   name: title_font_size
-  label: title_font_size
+  label: title font size
+  description: Font size of titles
 - type: text
   name: p_font_size
-  label: p_font_size
+  label: Paragraph Font Size
+  description: Font size of paragraphs
 - type: text
   name: p_line_height
-  label: p_line_height
+  label: Paragraph Line Height
+  description: vertical spaces between lines in a paragraph
 - type: text
   name: p_margin_bottom
-  label: p_margin_bottom
+  label: Paragraph Margin Bottom
+  description: Vertical space after the end of a paragraph
 - type: text
   name: li_font_size
-  label: li_font_size
+  label: Bullet Point Font Size
+  description: Font size of bullet points
 - type: text
   name: li_line_height
-  label: li_line_height
+  label: Bullet Point Line Height
+  description: Vertical spaces between bullet points
 - type: text
   name: li_margin_bottom
-  label: li_margin_bottom
+  description: Vertical spaces between lines inside single bullet point
+  label: Bullet Point Line Height
 - type: text
   name: img_margin_top
-  label: img_margin_top
+  label: Image Margin Bottom
+  description: Vertical space above an image
 - type: text
   name: img_margin_bottom
-  label: img_margin_bottom
+  label: Image margin bottom
+  description: Vertical space below an image
+pages:
+- _data/static_styles.yml
