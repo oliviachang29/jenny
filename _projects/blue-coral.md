@@ -9,6 +9,5 @@ medium: ''
 style: ''
 other_images:
 - "/uploads/coralfungisideview.jpg"
-- "/uploads/coralfungijustpainting.jpg"
 
 ---
