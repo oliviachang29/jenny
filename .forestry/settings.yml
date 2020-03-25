@@ -17,6 +17,10 @@ sections:
   label: Category
   create: all
   match: "**/*"
+- type: document
+  path: _data/static_styles.yml
+  label: Static Styles
+  match: "**/*"
 upload_dir: _uploads
 public_path: "/uploads"
 front_matter_path: ''
