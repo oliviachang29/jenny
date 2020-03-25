@@ -9,24 +9,22 @@ sections:
   label: Projects
   create: all
   match: "**/*"
-- type: document
-  path: _data/static_styles.yml
-  label: Static Styles
-- type: document
-  path: contact.markdown
-  label: Contact
-  match: "**/*"
-- type: heading
-  label: Pages
-- type: document
-  path: about.markdown
-  label: About
-  match: "**/*"
 - type: directory
   path: _category
   label: Category
   create: all
   match: "**/*"
+- type: document
+  path: _data/static_styles.yml
+  label: Static Styles
+- type: heading
+  label: Pages
+- type: document
+  path: about.markdown
+  label: About
+- type: document
+  path: contact.markdown
+  label: Contact
 upload_dir: _uploads
 public_path: "/uploads"
 front_matter_path: ''

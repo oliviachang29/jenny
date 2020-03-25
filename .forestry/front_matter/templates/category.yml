@@ -1,0 +1,13 @@
+---
+label: Category
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: number
+  name: order
+  label: order
+- type: text
+  name: layout
+  label: layout
