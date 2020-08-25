@@ -1,0 +1,13 @@
+---
+title_font_size: 20px
+p_font_size: 15px
+p_line_height: 26px
+p_margin_bottom: 30px
+li_font_size: 15px
+li_line_height: 26px
+li_margin_bottom: 7.5px
+img_margin_top: inherit
+img_margin_bottom: inherit
+published: false
+
+---
