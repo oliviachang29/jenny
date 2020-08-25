@@ -4,18 +4,19 @@ date: 2019-11-04T08:00:00.000+00:00
 layout: about
 
 ---
-
 <!-- if you want to change the photo, change the url in data-src -->
 <!-- <img class="lazy" src="/assets/images/lazy.jpg" data-src="/uploads/high6.jpg"> -->
 
 ###### **ABOUT**
 
-Jenny Shi is an oil painter who creates abstractions and landscapes and is a senior at Palo Alto High School, California.
+Jenny Shi is an oil painter who creates abstractions and landscapes and a student at Stanford University.
 
 ###### **PUBLICATIONS**
 
-* The Adroit Journal (Issue 31)
-* Bitter Melon Magazine (Winter 2019)
+* Hobart (_forthcoming_)
+* Glass: A Journal of Poetry (Poet's Resist) 
+* The Adroit Journal 
+* Bitter Melon Magazine 
 
 ###### **EXHIBITIONS**
 
