@@ -11,12 +11,6 @@ layout: about
 
 Jenny Shi is an oil painter who creates abstractions and landscapes and a student at Stanford University.
 
-###### **PUBLICATIONS**
-
-* _"Modern Mother-land"_ in Hobart (_forthcoming_)
-* _"Yellow River"_ in Glass: A Journal of Poetry (Poet's Resist) ([x](http://www.glass-poetry.com/poets-resist/shi-yellow.html))
-* _"Deconstructed Digestive System," "Untitled"_ in The Adroit Journal ([x](https://theadroitjournal.org/issue-thirty-one/jenny-shi-art/))
-
 ###### **EXHIBITIONS**
 
 * Congressional Art Exhibition, U.S. Capitol, Washington, D.C. 2019
@@ -30,3 +24,9 @@ Jenny Shi is an oil painter who creates abstractions and landscapes and a studen
 * PAUSD Art Exhibition, Palo Alto Art Center, Palo Alto, CA. May 2018
 * California Institute of Arts, Lime Gallery, Los Angeles, CA. July 2017
 * Wurster Gallery, U.C. Berkeley, Berkeley, CA. July 2019
+
+###### **PUBLICATIONS**
+
+* _"Modern Mother-land"_ in Hobart (_forthcoming_)
+* _"Yellow River"_ in Glass: A Journal of Poetry (Poet's Resist) ([x](http://www.glass-poetry.com/poets-resist/shi-yellow.html))
+* _"Deconstructed Digestive System," "Untitled"_ in The Adroit Journal ([x](https://theadroitjournal.org/issue-thirty-one/jenny-shi-art/))
