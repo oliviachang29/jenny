@@ -13,9 +13,9 @@ Jenny Shi is an oil painter who creates abstractions and landscapes and a studen
 
 ###### **PUBLICATIONS**
 
-* "Modern Motherland" in Hobart (_forthcoming_)
-* "Yellow River" in Glass: A Journal of Poetry (Poet's Resist) ([x](http://www.glass-poetry.com/poets-resist/shi-yellow.html "Yellow River"))
-* "Deconstructed Digestive System," "Untitled" in The Adroit Journal ([x](https://theadroitjournal.org/issue-thirty-one/jenny-shi-art/))
+* "_Modern Mother-land_" in Hobart (_forthcoming_)
+* "_Yellow River_" in Glass: A Journal of Poetry (Poet's Resist) ([x](http://www.glass-poetry.com/poets-resist/shi-yellow.html "Yellow River"))
+* "_Deconstructed Digestive System_," "_Untitled_" in The Adroit Journal ([x](https://theadroitjournal.org/issue-thirty-one/jenny-shi-art/))
 
 ###### **EXHIBITIONS**
 
