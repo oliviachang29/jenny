@@ -39,5 +39,4 @@ fields:
   label: Image margin bottom
   description: Vertical space below an image
 pages:
-- Publications.md
 - _data/static_styles.yml
