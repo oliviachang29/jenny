@@ -16,7 +16,6 @@ Jenny Shi is an oil painter who creates abstractions and landscapes and a studen
 * Hobart (_forthcoming_)
 * Glass: A Journal of Poetry (Poet's Resist) 
 * The Adroit Journal 
-* Bitter Melon Magazine 
 
 ###### **EXHIBITIONS**
 
