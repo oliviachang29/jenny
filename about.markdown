@@ -9,7 +9,7 @@ layout: about
 
 ###### **ABOUT**
 
-Jenny Shi is an oil painter who creates abstractions and landscapes and a student at Stanford University.
+Jenny Shi is an oil painter who creates abstractions and landscapes and a student at Stanford University.    
 
 ###### **EXHIBITIONS**
 
