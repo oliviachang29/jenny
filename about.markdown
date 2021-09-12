@@ -27,7 +27,7 @@ Jenny Shi is an oil painter who creates abstractions and landscapes and a studen
 
 ###### **PUBLICATIONS**
 
-* _"The Cherry Trees"_ and _"what’s there left to say to someone who’s dying"_ in Rumpus ([x](https://therumpus.net/2021/08/rumpus-original-poetry-two-poems-by-jenny-shi/))
+* _"The Cherry Trees"_ and _"what’s there left to say to someone who’s dying"_ in The Rumpus ([x](https://therumpus.net/2021/08/rumpus-original-poetry-two-poems-by-jenny-shi/))
 * _"Modern Mother-land"_ in Hobart ([x](https://www.hobartpulp.com/web_features/modern-mother-land))
 * _"Yellow River"_ in Glass: A Journal of Poetry (Poets Resist) ([x](http://www.glass-poetry.com/poets-resist/shi-yellow.html))
 * _"Deconstructed Digestive System," "Untitled"_ in The Adroit Journal ([x](https://theadroitjournal.org/issue-thirty-one/jenny-shi-art/))
