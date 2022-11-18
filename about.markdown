@@ -7,7 +7,7 @@ layout: about
 <!-- if you want to change the photo, change the url in data-src -->
 <!-- <img class="lazy" src="/assets/images/lazy.jpg" data-src="/uploads/high6.jpg"> -->
 
-###### **ABOUT**
+###### **ABOUT ME.**
 
 Jenny Shi is an oil painter who creates abstractions and landscapes and a student at Stanford University.
 

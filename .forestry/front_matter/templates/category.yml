@@ -11,3 +11,5 @@ fields:
 - type: text
   name: layout
   label: layout
+pages:
+- _category/series-3.md
