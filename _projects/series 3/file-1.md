@@ -3,7 +3,7 @@ categories:
 - portraits
 primary_image: "/uploads/7-1.jpg"
 other_images: []
-title: "//"
+title: "7"
 date: 
 description: ''
 medium: ''
